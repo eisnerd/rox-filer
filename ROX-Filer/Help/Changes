@@ -3,6 +3,10 @@
 			by Thomas Leonard
 
 
+08-Jul-2002
+~~~~~~~~~~~
+Fixed libxml compile problem (reported by Keith Hopper).
+
 02-Jul-2002 (Release 1.2.1)
 ~~~~~~~~~~~
 Backported fixes from 1.3.x series:
