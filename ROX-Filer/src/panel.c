@@ -28,7 +28,7 @@
 #include <errno.h>
 #include <ctype.h>
 #include <unistd.h>
-#include <parser.h>
+#include <libxml/parser.h>
 
 #include <gtk/gtk.h>
 #include <gdk/gdkx.h>

@@ -29,7 +29,7 @@
 #include <string.h>
 #include <unistd.h>
 #include <fnmatch.h>
-#include <parser.h>
+#include <libxml/parser.h>
 #include <time.h>
 
 #include "global.h"

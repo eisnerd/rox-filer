@@ -36,7 +36,7 @@
 #include <string.h>
 #include <time.h>
 #include <unistd.h>
-#include <parser.h>
+#include <libxml/parser.h>
 
 #include "global.h"
 

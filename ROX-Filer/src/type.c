@@ -29,6 +29,8 @@
 #include <ctype.h>
 #include <time.h>
 #include <sys/param.h>
+#include <sys/types.h>
+#include <fcntl.h>
 
 #ifdef HAVE_REGEX_H
 # include <regex.h>
@@ -49,6 +51,7 @@
 #include "dnd.h"
 #include "options.h"
 #include "filer.h"
+#include "action.h"
 
 #ifdef HAVE_REGEX_H
 # define USE_REGEX 1
@@ -515,6 +518,31 @@ gboolean type_open(char *path, MIME_type *type)
 		return FALSE;
 	}
 
+	if (info.st_mode & S_IWOTH)
+	{
+		gchar *choices_dir;
+		GList *paths;
+
+		report_error(_("Executable '%s' is world-writeable! Refusing "
+			"to run. Please change the permissions now (this "
+			"problem may have been caused by a bug in earlier "
+			"versions of the filer).\n\n"
+			"Having (non-symlink) run actions world-writeable "
+			"means that other people who use your computer can "
+			"replace your run actions with malicious versions.\n\n"
+			"If you trust everyone who could write to these files "
+			"then you needn't worry. Otherwise, you should check, "
+			"or even just delete, all the existing run actions."),
+			open);
+		choices_dir = g_dirname(open);
+		paths = g_list_append(NULL, choices_dir);
+		action_chmod(paths, TRUE, "go-w (Fix security problem)");
+		g_free(choices_dir);
+		g_list_free(paths);
+		g_free(open);
+		return TRUE;
+	}
+
 	if (S_ISDIR(info.st_mode))
 		argv[0] = g_strconcat(open, "/AppRun", NULL);
 	else
@@ -622,7 +650,7 @@ static void set_shell_action(GtkWidget *dialog)
 	GtkToggleButton *for_all;
 	guchar	*command, *path, *tmp;
 	int	error = 0, len;
-	FILE	*file;
+	int	fd;
 
 	entry = gtk_object_get_data(GTK_OBJECT(dialog), "shell_command");
 	for_all = gtk_object_get_data(GTK_OBJECT(dialog), "set_for_all");
@@ -643,16 +671,27 @@ static void set_shell_action(GtkWidget *dialog)
 	tmp = g_strdup_printf("#! /bin/sh\nexec %s\n", command);
 	len = strlen(tmp);
 	
-	file = fopen(path, "wb");
-	if (fwrite(tmp, 1, len, file) < len)
-		error = errno;
-	if (fclose(file) && error == 0)
-		error = errno;
-	if (chmod(path, 0777))
-		error = errno;
+	fd = open(path, O_CREAT | O_WRONLY, 0755);
+	if (fd == -1)
+ 		error = errno;
+	else
+	{
+		FILE *file;
+
+		file = fdopen(fd, "w");
+		if (file)
+		{
+			if (fwrite(tmp, 1, len, file) < len)
+				error = errno;
+			if (fclose(file) && error == 0)
+				error = errno;
+		}
+		else
+			error = errno;
+	}
 
 	if (error)
-		report_error(g_strerror(errno));
+		report_error(g_strerror(error));
 
 	g_free(tmp);
 	g_free(path);

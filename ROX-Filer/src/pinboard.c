@@ -27,7 +27,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <errno.h>
-#include <parser.h>
+#include <libxml/parser.h>
 #include <gtk/gtk.h>
 #include <gdk/gdkx.h>
 #include <gtk/gtkinvisible.h>

@@ -16,10 +16,6 @@ Thank you.
 ])
 ])
 
-AC_ARG_WITH(gtk2,
-[  --with-gtk2		  Use Gtk+-2.0 API instead of Gtk+-1.2], gtk2=1, gtk2=0)
-
-
 dnl rox_ARG_WITH(PACKAGE, HELP-STRING, ACTION-IF-TRUE [, ACTION-IF-FALSE])
 dnl This macro does the same thing as AC_ARG_WITH, but it also defines
 dnl with_PACKAGE_arg and with_PACKAGE_sign to avoid complicated logic later.
@@ -86,46 +82,29 @@ if test -z "$GTK_CONFIG"; then
   GTK_CONFIG=gtk-config
 fi
 
-dnl See if we've got Gtk+ 2.0 (or 1.3 developement version)
-dnl AC_MSG_CHECKING(for Gtk+-1.3.13 or later)
-dnl gtk2=0
-dnl if $PKG_CONFIG "--atleast-version=1.3.13" "gtk+-2.0"; then
+GTK_CFLAGS="$GTK_CONFIG --cflags"
+GTK_LIBS="$GTK_CONFIG --libs"
 
-if test "$gtk2" = "1"; then
-  dnl AC_MSG_RESULT(yes)
-  AC_MSG_WARN([Using EXPERIMENTAL Gtk+-2.0 API])
-  AC_DEFINE(GTK2)
-  gtk2=1
-  GTK_CFLAGS="$PKG_CONFIG gtk+-2.0 --cflags"
-  GTK_LIBS="$PKG_CONFIG gtk+-2.0 --libs"
-  GDK_PIXBUF_LIBS=`$PKG_CONFIG gdk-pixbuf-2.0 --libs`
-  GDK_PIXBUF_CFLAGS=`$PKG_CONFIG gdk-pixbuf-2.0 --cflags`
-else
-  dnl AC_MSG_RESULT(no)
-
-  GTK_CFLAGS="$GTK_CONFIG --cflags"
-  GTK_LIBS="$GTK_CONFIG --libs"
-
-  dnl Warn the user if stuff is missing...
-  rox_CHECK_EXISTS([$GTK_CONFIG],
+dnl Warn the user if stuff is missing...
+rox_CHECK_EXISTS([$GTK_CONFIG],
 		   [You need to install the gtk-devel package before compiling:
 		    http://www.gtk.org])
 
-  dnl Make sure we have gdk-pixbuf
-  AC_MSG_CHECKING(for gdk-pixbuf library)
-  if test -z "$GDK_PIXBUF_CONFIG"; then
-    GDK_PIXBUF_CONFIG=gdk-pixbuf-config
-  fi
-  GDK_PIXBUF_CFLAGS=`$GDK_PIXBUF_CONFIG --cflags`
-  GDK_PIXBUF_LIBS=`$GDK_PIXBUF_CONFIG --libs`
-  [
-  if [ -n "$GDK_PIXBUF_LIBS" ]; then
-  ]
-    AC_MSG_RESULT(yes - use '$GDK_PIXBUF_LIBS')
-  else
-    AC_MSG_ERROR(can't run '$GDK_PIXBUF_CONFIG --libs' - make sure it is in your PATH)
-  fi
+dnl Make sure we have gdk-pixbuf
+AC_MSG_CHECKING(for gdk-pixbuf library)
+if test -z "$GDK_PIXBUF_CONFIG"; then
+  GDK_PIXBUF_CONFIG=gdk-pixbuf-config
 fi
+GDK_PIXBUF_CFLAGS=`$GDK_PIXBUF_CONFIG --cflags`
+GDK_PIXBUF_LIBS=`$GDK_PIXBUF_CONFIG --libs`
+[
+if [ -n "$GDK_PIXBUF_LIBS" ]; then
+]
+  AC_MSG_RESULT(yes - use '$GDK_PIXBUF_LIBS')
+else
+  AC_MSG_ERROR(can't run '$GDK_PIXBUF_CONFIG --libs' - make sure it is in your PATH)
+fi
+
 AC_SUBST(GTK_CFLAGS)
 AC_SUBST(GTK_LIBS)
 AC_SUBST(GDK_PIXBUF_CFLAGS)
@@ -223,36 +202,34 @@ fi
 
 dnl Check for libpng
 LIBPNG=""
-if test "$gtk2" != "1" ; then
-  AC_CHECK_LIB(png, png_read_info,
-    AC_TRY_CPP([#include <png.h>], png=yes, png=no),
-    png=no,
-    -lz -lm)
+AC_CHECK_LIB(png, png_read_info,
+  AC_TRY_CPP([#include <png.h>], png=yes, png=no),
+  png=no,
+  -lz -lm)
+if test "$png" = "yes" ; then
+  AC_MSG_CHECKING([if libpng version is >= 1.0.1])
+  oldLIBS=$LIBS
+  LIBS="$LIBS -lpng -lz -lm"
+  AC_TRY_RUN(
+[#include <stdlib.h>
+#include <png.h>
+int main(int argc, char **argv)
+{
+#ifdef PNG_LIBPNG_VER
+  if (PNG_LIBPNG_VER >= 10001)
+	exit(0);
+  else
+	exit(1);
+#else
+  exit(2);
+#endif
+}
+], png=yes, png=no, png=no)
+  AC_MSG_RESULT($png)
+  LIBS=$oldLIBS
   if test "$png" = "yes" ; then
-    AC_MSG_CHECKING([if libpng version is >= 1.0.1])
-    oldLIBS=$LIBS
-    LIBS="$LIBS -lpng -lz -lm"
-    AC_TRY_RUN(
-  [#include <stdlib.h>
-  #include <png.h>
-  int main(int argc, char **argv)
-  {
-  #ifdef PNG_LIBPNG_VER
-    if (PNG_LIBPNG_VER >= 10001)
-  	exit(0);
-    else
-  	exit(1);
-  #else
-    exit(2);
-  #endif
-  }
-  ], png=yes, png=no, png=no)
-    AC_MSG_RESULT($png)
-    LIBS=$oldLIBS
-    if test "$png" = "yes" ; then
-      LIBPNG="-lpng -lz -lm"
-      AC_DEFINE(HAVE_LIBPNG)
-    fi
+    LIBPNG="-lpng -lz -lm"
+    AC_DEFINE(HAVE_LIBPNG)
   fi
 fi
 AC_SUBST(LIBPNG)

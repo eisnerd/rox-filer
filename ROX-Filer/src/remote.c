@@ -34,7 +34,7 @@
 #include <X11/Xatom.h>
 #include <gtk/gtk.h>
 #include <gtk/gtkinvisible.h>
-#include <parser.h>
+#include <libxml/parser.h>
 
 #include "global.h"
 
@@ -344,14 +344,17 @@ static char *read_property(GdkWindow *window, GdkAtom prop, gint *out_length)
 	gint	grab_len = 4096;
 	gint	length;
 	guchar	*data;
+	guchar	*retval = NULL;
 
-	while (1)
+	gdk_error_trap_push();
+
+	while (!retval)
 	{
 		if (!(gdk_property_get(window, prop,
 				gdk_x11_xatom_to_atom(XA_STRING), 0, grab_len,
 				FALSE, NULL, NULL,
 				&length, &data) && data))
-			return NULL;	/* Error? */
+			goto out;	/* Error? */
 
 		if (length >= grab_len)
 		{
@@ -365,8 +368,17 @@ static char *read_property(GdkWindow *window, GdkAtom prop, gint *out_length)
 		data[length] = '\0';	/* libxml seems to need this */
 		*out_length = length;
 
-		return data;
+		retval = data;
 	}
+out:
+
+	if (gdk_error_trap_pop() == Success)
+		return retval;
+
+	g_warning("Error reading %s property!", gdk_atom_name(prop));
+
+	g_free(retval);
+	return NULL;
 }
 
 static gboolean client_event(GtkWidget *window,
@@ -409,13 +421,23 @@ static gboolean client_event(GtkWidget *window,
 		xmlDocDumpMemory(reply, &mem, &size);
 		g_return_val_if_fail(size > 0, TRUE);
 
+		gdk_error_trap_push();
 		gdk_property_change(src_window, prop,
 			gdk_x11_xatom_to_atom(XA_STRING), 8,
 			GDK_PROP_MODE_REPLACE, mem, size);
 		g_free(mem);
+		gdk_flush();
+		if (gdk_error_trap_pop() != Success)
+			g_warning("Failed to send SOAP reply!");
 	}
 	else
+	{
+		gdk_error_trap_push();
 		gdk_property_delete(src_window, prop);
+		gdk_flush();
+		if (gdk_error_trap_pop() != Success)
+			g_warning("Failed to send SOAP reply!");
+	}
 
 	return TRUE;
 }

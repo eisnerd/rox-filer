@@ -1442,7 +1442,14 @@ static void do_copy2(char *path, char *dest)
 				 * we could write to it... change it back now.
 				 */
 				if (chmod(safe_dest, mode))
-					send_error();
+				{
+					/* Some filesystems don't support
+					 * SetGID and SetUID bits. Ignore
+					 * these errors.
+					 */
+					if (errno != EPERM)
+						send_error();
+				}
 
 				/* Also, try to preserve the timestamps */
 				utb.actime = info.st_atime;
@@ -2059,11 +2066,14 @@ void action_delete(GList *paths)
 }
 
 /* Change the permissions of the selected items */
-void action_chmod(GList *paths)
+void action_chmod(GList *paths, gboolean force_recurse, const char *action)
 {
 	GUIside		*gui_side;
 	GtkWidget	*hbox, *label, *combo;
 	static GList	*presets = NULL;
+	gboolean	recurse;
+	
+	recurse = force_recurse || option_get_int("action_recurse");
 
 	if (!paths)
 	{
@@ -2088,17 +2098,25 @@ void action_chmod(GList *paths)
 
 	if (!last_chmod_string)
 		last_chmod_string = g_strdup((guchar *) presets->data);
-	new_entry_string = last_chmod_string;
-	gui_side = start_action(paths, chmod_cb, FALSE);
+
+	if (action)
+		new_entry_string = g_strdup(action);
+	else
+		new_entry_string = g_strdup(last_chmod_string);
+
+	gui_side = start_action_with_options(paths, chmod_cb, FALSE,
+					 option_get_int("action_force"),
+					 option_get_int("action_brief"),
+					 recurse);
 	if (!gui_side)
-		return;
+		goto out;
 
 	add_toggle(gui_side,
 		_("Brief"), _("Don't list processed files"),
 		"B", option_get_int("action_brief"));
 	add_toggle(gui_side,
 		_("Recurse"), _("Also change contents of subdirectories"),
-		"R", option_get_int("action_recurse"));
+		"R", recurse);
 
 	hbox = gtk_hbox_new(FALSE, 0);
 	label = gtk_label_new(_("Command:"));
@@ -2111,7 +2129,7 @@ void action_chmod(GList *paths)
 	gtk_combo_set_popdown_strings(GTK_COMBO(combo), presets);
 	
 	gui_side->entry = GTK_COMBO(combo)->entry;
-	gtk_entry_set_text(GTK_ENTRY(gui_side->entry), last_chmod_string);
+	gtk_entry_set_text(GTK_ENTRY(gui_side->entry), new_entry_string);
 	gtk_editable_select_region(GTK_EDITABLE(gui_side->entry), 0, -1);
 	gtk_widget_set_sensitive(gui_side->entry, FALSE);
 	gtk_box_pack_start(GTK_BOX(hbox), combo, TRUE, TRUE, 4);
@@ -2130,6 +2148,10 @@ void action_chmod(GList *paths)
 
 	number_of_windows++;
 	gtk_widget_show_all(gui_side->window);
+
+out:
+	g_free(new_entry_string);
+	new_entry_string = NULL;
 }
 
 /* If leaf is NULL then the copy has the same name as the original.

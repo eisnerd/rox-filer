@@ -861,10 +861,13 @@ void target_callback(FilerWindow *filer_window,
 			gint item,
 			gpointer action)
 {
-	Collection	*collection = filer_window->collection;
+	Collection	*collection;
 
-	g_return_if_fail(window_with_focus != NULL);
-	g_return_if_fail(window_with_focus == filer_window);
+	g_return_if_fail(filer_window != NULL);
+
+	collection = filer_window->collection;
+
+	window_with_focus = filer_window;
 	
 	/* Don't grab the primary selection */
 	filer_window->temp_item_selected = TRUE;
@@ -1002,7 +1005,7 @@ static void chmod_items(FilerWindow *filer_window)
 {
 	GList *paths;
 	paths = filer_selected_items(filer_window);
-	action_chmod(paths);
+	action_chmod(paths, FALSE, NULL);
 	g_list_foreach(paths, (GFunc) g_free, NULL);
 	g_list_free(paths);
 }

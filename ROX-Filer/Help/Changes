@@ -2,6 +2,25 @@
 			A RISC OS-like filer for X
 			by Thomas Leonard
 
+
+02-Jul-2002
+~~~~~~~~~~~
+Backported fixes from 1.3.x series:
+
+- Set Run Action to a shell command would make the executable world-writeable
+  (spotted by alexander).
+- Short form of '--client-id' option didn't work (reported by Julio Hugo
+  Toloza).
+- Fixed compile problem with libxml's parser.h.
+- More robust approach to SOAP errors.
+- Drop Gtk+-2.0 support (didn't work with stable Gtk+ release anyway; use
+  ROX-Filer 1.3.x instead).
+- When copying directories, ignore an error caused by filesystems,
+  such as Samba shares, that don't support chmod fully (reported by
+  Andrew S Dixon).
+- Using another window in between entering target mode and selecting
+  the target printed a warning instead of performing the operation.
+
 17-Feb-2002 (Release 1.2.0)
 ~~~~~~~~~~~
 New stable release.

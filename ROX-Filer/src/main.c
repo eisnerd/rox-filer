@@ -37,7 +37,7 @@
 #include <fcntl.h>
 #include <pwd.h>
 #include <grp.h>
-#include <parser.h>
+#include <libxml/parser.h>
 
 #ifdef HAVE_GETOPT_LONG
 #  include <getopt.h>
@@ -133,7 +133,7 @@ GtkTooltips *tooltips = NULL;
        "\thttp://rox.sourceforge.net\n"					\
        "\nReport bugs to <tal197@users.sourceforge.net>.\n")
 
-#define SHORT_OPS "d:t:b:l:r:op:s:hvnux:m:D:R"
+#define SHORT_OPS "c:d:t:b:l:r:op:s:hvnux:m:D:R"
 
 #ifdef HAVE_GETOPT_LONG
 static struct option long_opts[] =

@@ -29,7 +29,7 @@
 #include <string.h>
 #include <ctype.h>
 
-#include <parser.h>
+#include <libxml/parser.h>
 
 #include "global.h"
 

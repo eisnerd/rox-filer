@@ -68,7 +68,7 @@
 #include <errno.h>
 #include <ctype.h>
 #include <gtk/gtk.h>
-#include <parser.h>
+#include <libxml/parser.h>
 
 #include "global.h"
 
