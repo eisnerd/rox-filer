@@ -2,7 +2,7 @@
 			A RISC OS-like filer for X
 			by Thomas Leonard
 
-30-Jun-2003
+30-Jun-2003 (Release 2.0.1)
 ~~~~~~~~~~~
 When renaming a non-UTF8 file, still assume the directory is valid UTF-8
 (reported by Arnaud Calvo).
