@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ROX-Filer 1.1.0\n"
-"POT-Creation-Date: 2002-07-16 12:45+0100\n"
+"POT-Creation-Date: 2002-07-16 12:58+0100\n"
 "PO-Revision-Date: 2001-06-05 20:46+0300\n"
 "Last-Translator: Dmitry Elfimov <die@bk.ru>\n"
 "Language-Team: Russian <out of team>\n"
@@ -443,11 +443,11 @@ msgstr "?Искать снова?"
 msgid "!'%s' is a symbolic link\n"
 msgstr "!'%s' это символическая ссылка\n"
 
-#: action.c:1928 tips:38
+#: action.c:1928 tips:41
 msgid "Name"
 msgstr "Имя"
 
-#: action.c:1929 menu.c:250 tips:170
+#: action.c:1929 menu.c:250 tips:173
 msgid "Directory"
 msgstr "Каталог"
 
@@ -480,11 +480,11 @@ msgid "ROX-Filer does not yet support mount points on your system. Sorry."
 msgstr ""
 "ROX-Filer не поддерживает точки подсоединения на вашей системе. Извините. "
 
-#: action.c:2056 action.c:2310 menu.c:239 tips:93
+#: action.c:2056 action.c:2310 menu.c:239 tips:96
 msgid "Delete"
 msgstr "Удалить"
 
-#: action.c:2058 tips:98
+#: action.c:2058 tips:101
 msgid "Force"
 msgstr "Форсировать"
 
@@ -492,7 +492,7 @@ msgstr "Форсировать"
 msgid "Don't confirm deletion of non-writeable items"
 msgstr "Не подтверждать удаление неудаляемых объектов"
 
-#: action.c:2061 action.c:2115 tips:100
+#: action.c:2061 action.c:2115 tips:103
 msgid "Brief"
 msgstr "Коротко"
 
@@ -528,7 +528,7 @@ msgstr "go=u-w (Общий доступ без записи)"
 msgid "Don't list processed files"
 msgstr "Не отображать обработанные файлы"
 
-#: action.c:2118 tips:102
+#: action.c:2118 tips:105
 msgid "Recurse"
 msgstr "Рекурсивно"
 
@@ -540,19 +540,19 @@ msgstr "Иакже изменять содержимое подкаталогов"
 msgid "Command:"
 msgstr "Команда:"
 
-#: action.c:2144 menu.c:195 menu.c:201 menu.c:207 menu.c:241 tips:34
+#: action.c:2144 menu.c:195 menu.c:201 menu.c:207 menu.c:241 tips:37
 msgid "Permissions"
 msgstr "Права доступа"
 
-#: action.c:2174 dnd.c:135 menu.c:1842 tips:87
+#: action.c:2174 dnd.c:135 menu.c:1842 tips:90
 msgid "Copy"
 msgstr "Копировать"
 
-#: action.c:2196 dnd.c:136 tips:89
+#: action.c:2196 dnd.c:136 tips:92
 msgid "Move"
 msgstr "Переместить"
 
-#: action.c:2214 dnd.c:137 tips:91
+#: action.c:2214 dnd.c:137 tips:94
 msgid "Link"
 msgstr "Ссылка"
 
@@ -1284,19 +1284,19 @@ msgstr "Перевод набора символов"
 msgid "No (needs libiconv or Gtk+-2.0)"
 msgstr "Нет (необходимы libiconv или Gtk+-2.0)"
 
-#: menu.c:188 tips:14
+#: menu.c:188 tips:17
 msgid "Display"
 msgstr "Показать"
 
-#: menu.c:189 tips:27
+#: menu.c:189 tips:30
 msgid "Huge Icons"
 msgstr "Огромные значки"
 
-#: menu.c:190 tips:28 tips:159
+#: menu.c:190 tips:31 tips:162
 msgid "Large Icons"
 msgstr "Большие значки"
 
-#: menu.c:191 tips:29 tips:158
+#: menu.c:191 tips:32 tips:161
 msgid "Small Icons"
 msgstr "Маленькие значки"
 
@@ -1304,19 +1304,19 @@ msgstr "Маленькие значки"
 msgid "Huge, With..."
 msgstr "Огромные..."
 
-#: menu.c:193 menu.c:199 menu.c:205 tips:32
+#: menu.c:193 menu.c:199 menu.c:205 tips:35
 msgid "Summary"
 msgstr "Детали"
 
-#: menu.c:194 menu.c:200 menu.c:206 tips:33
+#: menu.c:194 menu.c:200 menu.c:206 tips:36
 msgid "Sizes"
 msgstr "Размер"
 
-#: menu.c:196 menu.c:202 menu.c:208 tips:35 tips:39
+#: menu.c:196 menu.c:202 menu.c:208 tips:38 tips:42
 msgid "Type"
 msgstr "Тип"
 
-#: menu.c:197 menu.c:203 menu.c:209 tips:36
+#: menu.c:197 menu.c:203 menu.c:209 tips:39
 msgid "Times"
 msgstr "Время"
 
@@ -1495,7 +1495,7 @@ msgstr "%d обьектов"
 msgid "Unmount"
 msgstr "Отсоединить"
 
-#: menu.c:898 tips:95
+#: menu.c:898 tips:98
 msgid "Mount"
 msgstr "Присоединить"
 
@@ -1962,7 +1962,7 @@ msgstr "Сканировать"
 msgid "Rescan directory contents"
 msgstr "Перечитать содержимое каталога"
 
-#: tips:41 toolbar.c:124
+#: tips:44 toolbar.c:124
 msgid "Size"
 msgstr "Размер"
 
@@ -1970,7 +1970,7 @@ msgstr "Размер"
 msgid "Change icon size"
 msgstr "Изменить размер пиктограммы"
 
-#: tips:30 toolbar.c:128
+#: tips:33 toolbar.c:128
 msgid "Details"
 msgstr "Детали"
 
@@ -2041,11 +2041,11 @@ msgstr "Символьное устройство"
 msgid "Block dev"
 msgstr "Блочное устройство"
 
-#: tips:172 type.c:387
+#: tips:175 type.c:387
 msgid "Pipe"
 msgstr "Поток"
 
-#: tips:173 type.c:389
+#: tips:176 type.c:389
 msgid "Socket"
 msgstr "Сокет"
 
@@ -2243,51 +2243,64 @@ msgid "Display messages in..."
 msgstr "Отобразить сообщения в..."
 
 #: tips:4
+msgid "Chinese (traditional)"
+msgstr ""
+
+#: tips:5
+msgid "Chinese (simplified)"
+msgstr ""
+
+#: tips:6
+#, fuzzy
+msgid "Danish"
+msgstr "Детали"
+
+#: tips:7
 msgid "Dutch"
 msgstr "Голландский"
 
-#: tips:5
+#: tips:8
 msgid "English (no translation)"
 msgstr "Английский (нет перевода)"
 
-#: tips:6
+#: tips:9
 msgid "French"
 msgstr "Французский"
 
-#: tips:7
+#: tips:10
 msgid "German"
 msgstr "Немецкий"
 
-#: tips:8
+#: tips:11
 msgid "Hungarian"
 msgstr "Венгерский"
 
-#: tips:9
+#: tips:12
 msgid "Italian"
 msgstr "Итальянский"
 
-#: tips:10
+#: tips:13
 msgid "Polish"
 msgstr "Польский"
 
 # tips
-#: tips:11
+#: tips:14
 msgid "Russian"
 msgstr "Русский"
 
-#: tips:12
+#: tips:15
 msgid "Spanish"
 msgstr ""
 
-#: tips:13
+#: tips:16
 msgid "Use the LANG environment variable"
 msgstr "Использовать переменную окружения LANG"
 
-#: tips:15
+#: tips:18
 msgid "Ignore case when sorting"
 msgstr "Игнорировать регистр при сортировке"
 
-#: tips:16
+#: tips:19
 msgid ""
 "If off: Ben, animal, zoo.\n"
 "If on: animal, Ben, zoo."
@@ -2295,11 +2308,11 @@ msgstr ""
 "Выключено: animal, zoo, Ben.\n"
 "Включено: animal, Ben, zoo."
 
-#: tips:17
+#: tips:20
 msgid "Directories always come first"
 msgstr "Сначала каталоги"
 
-#: tips:18
+#: tips:21
 msgid ""
 "If this is on then directories will always appear before anything else, "
 "regardless of the sort type."
@@ -2307,11 +2320,11 @@ msgstr ""
 "Если включено, каталоги отображаются перед всем остальным, вне зависимости "
 "от типа сортировки."
 
-#: tips:19
+#: tips:22
 msgid "Large wrap width"
 msgstr "Максимальная ширина больших значков"
 
-#: tips:20
+#: tips:23
 msgid ""
 "Text wider than this is broken onto two lines in Large Icons mode. In Huge "
 "Icons mode, text is wrapped when 50% wider than this."
@@ -2320,19 +2333,19 @@ msgstr ""
 "больших пиктограмм.В режиме огромных пиктограмм текст переносится когда на "
 "50% шире этого значения."
 
-#: tips:21
+#: tips:24
 msgid "Max Small Icons width"
 msgstr "Максимальный размер малых значков"
 
-#: tips:22
+#: tips:25
 msgid "Maximum width for the text beside a Small Icon."
 msgstr "Максимальный размер текстового поля под маленькими значками."
 
-#: tips:23
+#: tips:26
 msgid "Inherit options from source window"
 msgstr "Наследовать установки из исходного окна"
 
-#: tips:24
+#: tips:27
 msgid ""
 "If this is on then display options for a new window are inherited from the "
 "source window if possible, otherwise they are set to the defaults below."
@@ -2341,31 +2354,31 @@ msgstr ""
 "из исходного окна, когда это возможно, иначе они устанавливаются в значения "
 "по умолчанию"
 
-#: tips:25
+#: tips:28
 msgid "Default settings for new windows:"
 msgstr "Установки по умолчанию для нового окна"
 
-#: tips:26
+#: tips:29
 msgid "Icon size"
 msgstr "Размер пиктограммы"
 
-#: tips:31
+#: tips:34
 msgid "No details"
 msgstr "Без деталей"
 
-#: tips:37
+#: tips:40
 msgid "Sort by"
 msgstr "Порядок сортировки"
 
-#: tips:40
+#: tips:43
 msgid "Date"
 msgstr "Дата"
 
-#: tips:42
+#: tips:45
 msgid "Show hidden files"
 msgstr "Показать спрятанные"
 
-#: tips:43
+#: tips:46
 msgid ""
 "If this is on then files whose names start with a dot are shown too, "
 "otherwise they are hidden."
@@ -2373,11 +2386,11 @@ msgstr ""
 "Если эта опция включена файлы, имена которых начинаются с точки, тоже "
 "показывются, в противном случае они спрятаны."
 
-#: tips:44
+#: tips:47
 msgid "Show image thumbnails"
 msgstr "Показывать thumbs картинок"
 
-#: tips:45 tips:46
+#: tips:48 tips:49
 msgid ""
 "Load every image file and display it, scaled-down, in the filer window "
 "instead of the normal icon."
@@ -2385,11 +2398,11 @@ msgstr ""
 "Загружать каждую картинку и отображать ее в уменьшенном размерев окне "
 "файлового менеджера вместо обычной пиктограммы."
 
-#: tips:47
+#: tips:50
 msgid "Pinboard"
 msgstr "Настройка рабочего стола"
 
-#: tips:48
+#: tips:51
 msgid ""
 "The pinboard is the desktop background.\n"
 "When the pinboard is turned on, you can drag files\n"
@@ -2401,52 +2414,52 @@ msgstr ""
 "Смотрите документацию для подробной информации об использовании\n"
 "рабочего стола"
 
-#: tips:49
+#: tips:52
 msgid "Text style:"
 msgstr "Стиль текста: "
 
-#: tips:50
+#: tips:53
 msgid "No background"
 msgstr "Без фона"
 
-#: tips:51
+#: tips:54
 msgid "The text is drawn directly on the desktop background."
 msgstr "Этот текст отображается на фоне рабочего стола."
 
-#: tips:52
+#: tips:55
 msgid "Outlined text"
 msgstr "Обрамленный текст"
 
-#: tips:53
+#: tips:56
 msgid "The text has a thin outline around each letter."
 msgstr "Текст с обрамлением вокруг каждой буквы."
 
-#: tips:54
+#: tips:57
 msgid "Rectangular background slab"
 msgstr "Прямоугольный фон подписи"
 
-#: tips:55 tips:56
+#: tips:58 tips:59
 msgid "The text is drawn on a solid rectangle."
 msgstr "Этот текст отображается на закрашенном прямоугольнике"
 
-#: tips:57
+#: tips:60
 msgid "Text colours:"
 msgstr "Цвет текста: "
 
-#: tips:58
+#: tips:61
 msgid "Foreground"
 msgstr "Цвет текста"
 
-#: tips:59
+#: tips:62
 msgid "Background"
 msgstr "Фон"
 
-#: tips:60
+#: tips:63
 #, fuzzy
 msgid "Single-click to open"
 msgstr "Навигация одним щелчком"
 
-#: tips:61 tips:130
+#: tips:64 tips:133
 msgid ""
 "Clicking on an item opens it with this on. Hold down Control to select the "
 "item instead. If off, clicking once selects an item; double click to open "
@@ -2456,11 +2469,11 @@ msgstr ""
 "обьектов. Если выключено, один щелчок выбирает обьект; двойной щелчок "
 "открывает его."
 
-#: tips:62
+#: tips:65
 msgid "Keep icons within screen limits"
 msgstr "Удерживать пиктограммы в границах экрана"
 
-#: tips:63
+#: tips:66
 msgid ""
 "If this is set, pinboard icons are always kept completely within screen "
 "limits, including the label."
@@ -2468,42 +2481,42 @@ msgstr ""
 "Если эта опция включена, пиктограммы рабочего стола всегда будут внутри "
 "экрана, включая метку."
 
-#: tips:64
+#: tips:67
 msgid "Icon grid step:"
 msgstr "Размер шага сетки: "
 
-#: tips:65
+#: tips:68
 msgid "Fine"
 msgstr "Точно"
 
-#: tips:66
+#: tips:69
 msgid "Use a 2-pixel grid for positioning icons on the desktop."
 msgstr ""
 "Используется 2-х пиксельная сетка для позиционирования на рабочем столе."
 
-#: tips:67
+#: tips:70
 msgid "Medium"
 msgstr "Средне"
 
-#: tips:68
+#: tips:71
 msgid "Use a 16-pixel grid for positioning icons on the desktop."
 msgstr ""
 "Используется 16-ти пиксельная сетка для позиционирования на рабочем столе."
 
-#: tips:69
+#: tips:72
 msgid "Coarse"
 msgstr "Грубо"
 
-#: tips:70 tips:71 tips:72 tips:73
+#: tips:73 tips:74 tips:75 tips:76
 msgid "Use a 32-pixel grid for positioning icons on the desktop."
 msgstr ""
 "Используется 32-х пиксельная сетка для позиционирования на рабочем столе."
 
-#: tips:74
+#: tips:77
 msgid "Panels"
 msgstr "Панели"
 
-#: tips:75
+#: tips:78
 msgid ""
 "Panels are bars of icons that run along the side of the screen.\n"
 "See the manual for information about using panels."
@@ -2512,36 +2525,36 @@ msgstr ""
 "Смотрите документацию для подробной информации об использовании\n"
 "панелей."
 
-#: tips:76
+#: tips:79
 msgid "Image and text"
 msgstr "Картинка и текст"
 
-#: tips:77
+#: tips:80
 msgid "Every panel icon is shown with an image and some text."
 msgstr "Каждая пиктограмм на панели отображается картинкой и текстом."
 
-#: tips:78
+#: tips:81
 msgid "Image only for applications"
 msgstr "Картинки только для приложений"
 
-#: tips:79
+#: tips:82
 msgid ""
 "Applications have just an image, everything else has both an image and text."
 msgstr "С картинкой только приложения, остальное и с картинкой и с текстом."
 
-#: tips:80
+#: tips:83
 msgid "Image only"
 msgstr "Только картинки"
 
-#: tips:81 tips:82 tips:83
+#: tips:84 tips:85 tips:86
 msgid "Only the image is shown."
 msgstr "Показываются только картинки"
 
-#: tips:84
+#: tips:87
 msgid "Action windows"
 msgstr "Окна действий"
 
-#: tips:85
+#: tips:88
 msgid ""
 "Action windows appear when you start a background\n"
 "operation, such as copying or deleting some files."
@@ -2549,75 +2562,75 @@ msgstr ""
 "Окно действий появляется когда вы запускаете\n"
 "какую-либо операцию в фоне, например копируете или удаляете файлы."
 
-#: tips:86
+#: tips:89
 msgid "Auto-start (Quiet) these actions:"
 msgstr "Выполнять без подтверждения следующие действия:"
 
-#: tips:88
+#: tips:91
 msgid "Copy files without confirming first."
 msgstr "Копировать файлы без подтверждения."
 
-#: tips:90
+#: tips:93
 msgid "Move files without confirming first."
 msgstr "Перемещать файлы без подтверждения."
 
-#: tips:92
+#: tips:95
 msgid "Create links to files without confirming first."
 msgstr "Создавать ссылки на файлы без подтверждения."
 
-#: tips:94
+#: tips:97
 msgid "Delete files without confirming first."
 msgstr "Удалять файлы без подтверждения."
 
-#: tips:96
+#: tips:99
 msgid "Mount and unmount filesystems without confirming first."
 msgstr "Присоединять и отсоединять файловые системы без подтверждения."
 
-#: tips:97
+#: tips:100
 msgid "Default settings:"
 msgstr "Установки по умолчанию:"
 
-#: tips:99
+#: tips:102
 msgid "Don't confirm deletion of non-writeable items."
 msgstr "Принудительно (не подтверждать удаление обьектов)"
 
-#: tips:101
+#: tips:104
 msgid "Don't display so much information in the message area."
 msgstr "Не отображать много информации в поле сообщений"
 
-#: tips:103 tips:104
+#: tips:106 tips:107
 msgid "Also change contents of subdirectories."
 msgstr "Рекурсивно - также меняет содержимое подкаталогов"
 
-#: tips:105
+#: tips:108
 msgid "Toolbar"
 msgstr "Тип панели инструментов"
 
-#: tips:106
+#: tips:109
 msgid "Unshade the tools you want:"
 msgstr "Выбирайте инструменты для панели:"
 
-#: tips:107
+#: tips:110
 msgid "Toolbar type"
 msgstr "Тип панели инструментов"
 
-#: tips:108
+#: tips:111
 msgid "None"
 msgstr "Нет"
 
-#: tips:109
+#: tips:112
 msgid "Small"
 msgstr "Малые"
 
-#: tips:110
+#: tips:113
 msgid "Large"
 msgstr "Большие"
 
-#: tips:111
+#: tips:114
 msgid "Show totals of items"
 msgstr "Показывать статистику объектов"
 
-#: tips:112 tips:113
+#: tips:115 tips:116
 msgid ""
 "Show the number of items displayed in a filer window, as well as the number "
 "of hidden items (if any). When there's a selection, show the number of "
@@ -2627,19 +2640,19 @@ msgstr ""
 "количество скрытых объектов (если они есть). Когда что-либо выбрано, "
 "показывает количество выбранных объектов и их общий размер."
 
-#: tips:114
+#: tips:117
 msgid "Filer windows"
 msgstr "Парамтеры окна файлменеджера"
 
-#: tips:115
+#: tips:118
 msgid "Automatically resize filer windows..."
 msgstr "Автоматический размер окон"
 
-#: tips:116
+#: tips:119
 msgid "...never"
 msgstr "никогда"
 
-#: tips:117
+#: tips:120
 msgid ""
 "You'll have to resize windows manually, using the window manager, the "
 "`Resize Window' menu entry or by double-clicking on the window background."
@@ -2647,11 +2660,11 @@ msgstr ""
 "Размер окон меняется вручную, с помощью оконного менеджера илидвойным "
 "щелчком в окне."
 
-#: tips:118
+#: tips:121
 msgid "...when changing the display style"
 msgstr "когда меняется стиль отображения"
 
-#: tips:119
+#: tips:122
 msgid ""
 "Changing the size of the icons or which details are displayed will resize "
 "the window for you."
@@ -2659,11 +2672,11 @@ msgstr ""
 "При смене размера пиктограмм или количестве отображаемых деталейразмер окна "
 "меняется автоматически."
 
-#: tips:120
+#: tips:123
 msgid "...always"
 msgstr "всегда"
 
-#: tips:121 tips:122
+#: tips:124 tips:125
 msgid ""
 "The filer will resize windows whenever it seems useful (that is, when "
 "changing directory or display style)."
@@ -2671,11 +2684,11 @@ msgstr ""
 "Размер окна меняется всегда, когда это кажется полезным (при смене католога "
 "или стиля отображения)."
 
-#: tips:123
+#: tips:126
 msgid "Window size limit"
 msgstr "Ограничить размер окна"
 
-#: tips:124
+#: tips:127
 msgid ""
 "The largest size, as a percentage of the screen size, that the auto-resizer "
 "will resize a window to."
@@ -2683,11 +2696,11 @@ msgstr ""
 "Самый большой размер, в процентах от размера экрана, на который окно может "
 "изменить размер."
 
-#: tips:125
+#: tips:128
 msgid "Unique windows"
 msgstr "Уникальные окна"
 
-#: tips:126
+#: tips:129
 msgid ""
 "If you open a directory and that directory is already displayed in another "
 "window, then this option causes the other window to be closed."
@@ -2695,11 +2708,11 @@ msgstr ""
 "Если вы откроете каталог и этот же каталог уже отображается в другом окне, "
 "то второе окно будет закрыто."
 
-#: tips:127
+#: tips:130
 msgid "New window on button 1 (RISC OS style)"
 msgstr "Новое окно по нажатию кнопки 1 (как в RISC OS)"
 
-#: tips:128
+#: tips:131
 msgid ""
 "Clicking with mouse button 1 (usually the left button) opens a directory in "
 "a new window with this turned on. Clicking with the button-2 (middle) will "
@@ -2709,15 +2722,15 @@ msgstr ""
 "новом окне. При нажатии кнопки 2, для открытия каталога будет использовано "
 "текущее окно "
 
-#: tips:129
+#: tips:132
 msgid "Single-click navigation in filer windows"
 msgstr "Навигация одним щелчком"
 
-#: tips:131
+#: tips:134
 msgid "Beep if Tab-completion fails"
 msgstr "Сигнал когда Tab-дополнение не удалось"
 
-#: tips:132
+#: tips:135
 msgid ""
 "When using the `Enter Path...' minibuffer and Tab is pressed, beep if "
 "nothing happens (eg, because there are several possibilities and the next "
@@ -2727,11 +2740,11 @@ msgstr ""
 "прозвучит если ничего не произошло (т.е. существует несколько возможных "
 "вариантов дополнения)."
 
-#: tips:133
+#: tips:136
 msgid "Beep if there are several matches"
 msgstr "Сигнал при нескольких совпадениях"
 
-#: tips:134 tips:135
+#: tips:137 tips:138
 msgid ""
 "When using the `Enter Path...' minibuffer and Tab is pressed, beep if there "
 "is more than one matching file, even though some more letters were added."
@@ -2740,15 +2753,15 @@ msgstr ""
 "прозвучит когда существует более одного подходящего файла, даже если "
 "несколько символов было добавлено."
 
-#: tips:136
+#: tips:139
 msgid "Drag and Drop"
 msgstr "Параметры drag'n'drop"
 
-#: tips:137
+#: tips:140
 msgid "Don't use hostnames"
 msgstr "Не использовать имя хоста"
 
-#: tips:138
+#: tips:141
 msgid ""
 "Some older applications don't support XDND fully and may need to have this "
 "option turned on. Use this if dragging files to an application shows a + "
@@ -2759,11 +2772,11 @@ msgstr ""
 "перетаскивании файлов в программу отображается значок + на курсоре, но "
 "перетаскивания не происходит."
 
-#: tips:139
+#: tips:142
 msgid "Allow dragging to icons in filer windows"
 msgstr "Разрешить перетаскивание пиктограмм в окнах Filer'a"
 
-#: tips:140
+#: tips:143
 msgid ""
 "When this is on you can drag a file over a sub-directory or program in a "
 "filer window. The item will highlight when you do this and dropping the file "
@@ -2774,11 +2787,11 @@ msgstr ""
 "наведете курсор, а файл будет помещен в выбранный каталог или же загружен в "
 "программу."
 
-#: tips:141
+#: tips:144
 msgid "Directories spring open"
 msgstr "Открывать каталоги автоматически"
 
-#: tips:142
+#: tips:145
 msgid ""
 "This option, which requires the above option to be turned on too, causes the "
 "highlighted directory to 'spring open' after the file is held over it for a "
@@ -2787,11 +2800,11 @@ msgstr ""
 "Эта опция требует включения верхней опции. Заставляет выбранный каталог "
 "открыться через некоторое время."
 
-#: tips:143
+#: tips:146
 msgid "Spring delay"
 msgstr "Задержка открытия"
 
-#: tips:144
+#: tips:147
 msgid ""
 "This option sets how long, in ms, you must hold a file over a directory "
 "before it will spring open. The above option must be turned on for this to "
@@ -2800,19 +2813,19 @@ msgstr ""
 "Эта опция устанавливает задержку в миллисекундах, требующуюся для "
 "автоматического открытия каталога. Предыдущая опция должна быть включена."
 
-#: tips:145
+#: tips:148
 msgid "Dragging files with the middle mouse button..."
 msgstr "Перетаскивание файлов средней кнопкой мыши: "
 
-#: tips:146
+#: tips:149
 msgid "... shows a menu of possible actions"
 msgstr "показывает меню возможных действий"
 
-#: tips:147
+#: tips:150
 msgid "... moves the files"
 msgstr "перемещает файлы"
 
-#: tips:148 tips:149 tips:150
+#: tips:151 tips:152 tips:153
 msgid ""
 "Note that you can still get the menu to appear, by dragging with the left "
 "button and holding down the Alt key"
@@ -2820,23 +2833,23 @@ msgstr ""
 "Тем не менее, вы все-равно можете использовать меню, перетаскиваяфайлы левой "
 "кнопкой и удерживая клавишу Alt"
 
-#: tips:151
+#: tips:154
 msgid "Menus"
 msgstr "Меню"
 
-#: tips:152
+#: tips:155
 msgid "`Xterm Here' program:"
 msgstr "Программа терминала:"
 
-#: tips:153
+#: tips:156
 msgid "The program to launch when you choose `Xterm Here' from the menu."
 msgstr "Программа запускаемая при выборе пункта `Терминал` из меню."
 
-#: tips:154
+#: tips:157
 msgid "Set keyboard shortcuts"
 msgstr "Установить горячие клавиши"
 
-#: tips:155
+#: tips:158
 msgid ""
 "To set a keyboard short-cut for a menu item:\n"
 "\n"
@@ -2852,27 +2865,27 @@ msgstr ""
 "В будущем можно будет нажать эту клавишу для быстрого\n"
 "доступа к функции без вызова меню."
 
-#: tips:156
+#: tips:159
 msgid "Size of icons in menus"
 msgstr "Размер пиктограмм для меню"
 
-#: tips:157
+#: tips:160
 msgid "No Icons"
 msgstr "Огромные значки"
 
-#: tips:160
+#: tips:163
 msgid "Same as current window"
 msgstr "То же что и текущее окно"
 
-#: tips:161
+#: tips:164
 msgid "Same as default"
 msgstr "То же что и по умолчанию"
 
-#: tips:162
+#: tips:165
 msgid "Menu on button 2 (RISC OS style)"
 msgstr "Меню по кнопке 2 (как в RISC OS)"
 
-#: tips:163 tips:164
+#: tips:166 tips:167
 msgid ""
 "Use button 2, the middle button (click both buttons at once on two button "
 "mice), to pop up the menu. If off, use button 3 (right) instead."
@@ -2881,15 +2894,15 @@ msgstr ""
 "двухкнопочной мыши нажмите сразу обе кнопки). Обычно для вызова конекстного "
 "меню используется кнопка 3 (правая)"
 
-#: tips:165
+#: tips:168
 msgid "Types"
 msgstr "Типы"
 
-#: tips:166
+#: tips:169
 msgid "Ignore eXecutable bit for known extensions"
 msgstr "Игнорировать запускаемый бит для известных расширений"
 
-#: tips:167
+#: tips:170
 msgid ""
 "If a file has a known extension (eg '.gif') then ignore the executable bit. "
 "This is useful if you have files on a Windows-type filesystem which are "
@@ -2899,43 +2912,43 @@ msgstr ""
 "игнорируется. Это полезно, если у вас есть файлы на файловой системе "
 "Windows, которыеотображаются как запускаемые программы."
 
-#: tips:168
+#: tips:171
 msgid "Colour files based on their types"
 msgstr "Раскрашивать файлы известных типов"
 
-#: tips:169
+#: tips:172
 msgid "Filenames (and details) are coloured according to the file's type."
 msgstr "Имена файлов (и детали) окрашиваются относительно их типа"
 
-#: tips:171
+#: tips:174
 msgid "Regular file"
 msgstr "Обычный файл"
 
-#: tips:174
+#: tips:177
 msgid "Character device"
 msgstr "Символьное устройство"
 
-#: tips:175
+#: tips:178
 msgid "Block device"
 msgstr "Блочное устройство"
 
-#: tips:176
+#: tips:179
 msgid "Executable file"
 msgstr "Запускаемый файл"
 
-#: tips:177
+#: tips:180
 msgid "Application directory"
 msgstr "Каталог приложения"
 
-#: tips:178
+#: tips:181
 msgid "Unknown type"
 msgstr "Неизвестный тип"
 
-#: tips:179
+#: tips:182
 msgid "Error"
 msgstr "Ошибка"
 
-#: tips:180 tips:181 tips:182
+#: tips:183 tips:184 tips:185
 msgid ""
 "Error, such as a symlink which points to a non-existant file, or a file "
 "which the filer does not have permission to examine."
@@ -2943,7 +2956,7 @@ msgstr ""
 "Ошибка. Ссылка указывает не несуществующий файл, или нет прав доступа к "
 "файлу."
 
-#: tips:183
+#: tips:186
 msgid ""
 "The filer uses a set of rules to work out the correct MIME type\n"
 "for each regular file, and then chooses a suitable icon for that type.\n"
@@ -2955,15 +2968,15 @@ msgstr ""
 "этого типа. После редактирования файлов нажмите на кнопку 'перечитать' "
 "илиперезапустите файловый менеджер."
 
-#: tips:184
+#: tips:187
 msgid "Show name-to-type rules"
 msgstr "Показать правила имя-тип"
 
-#: tips:185
+#: tips:188
 msgid "Re-read files"
 msgstr "Перечитать файлы"
 
-#: tips:186 tips:187 tips:188
+#: tips:189 tips:190 tips:191
 msgid "Use the 'Set Icon...' dialog box to set the icon for each type."
 msgstr "Использовать диалог 'Установить пиктограмму'"
 

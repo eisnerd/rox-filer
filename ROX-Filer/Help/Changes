@@ -9,6 +9,10 @@ Fixed libxml compile problem (reported by Keith Hopper).
 Check that libpng includes the functions we need, as Slackware's default
 version is missing some (reported by Serban Udrea).
 
+Backported changes from 1.3.x series:
+- Added Danish translation (Christian Storgaard).
+- Added Chinese translation (babyfai cheung).
+
 02-Jul-2002 (Release 1.2.1)
 ~~~~~~~~~~~
 Backported fixes from 1.3.x series:

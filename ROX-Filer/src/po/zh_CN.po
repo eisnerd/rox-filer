@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ROX-Filer 1.2.0\n"
-"POT-Creation-Date: 2002-07-16 12:45+0100\n"
+"POT-Creation-Date: 2002-07-16 12:58+0100\n"
 "PO-Revision-Date: 2002-03-26 21:00+0100\n"
 "Last-Translator: Babyfai Cheung<babyfai_cheung@hotmail.com>\n"
 "Language-Team: none\n"
@@ -395,11 +395,11 @@ msgstr "?其他的搜寻?"
 msgid "!'%s' is a symbolic link\n"
 msgstr "!'%s' 是一符号连结\n"
 
-#: action.c:1928 tips:38
+#: action.c:1928 tips:41
 msgid "Name"
 msgstr "名称"
 
-#: action.c:1929 menu.c:250 tips:170
+#: action.c:1929 menu.c:250 tips:173
 msgid "Directory"
 msgstr "目录"
 
@@ -431,11 +431,11 @@ msgstr "挂载 / 解除挂载"
 msgid "ROX-Filer does not yet support mount points on your system. Sorry."
 msgstr "ROX-Filer 对系统上的挂载点尚未支援"
 
-#: action.c:2056 action.c:2310 menu.c:239 tips:93
+#: action.c:2056 action.c:2310 menu.c:239 tips:96
 msgid "Delete"
 msgstr "删除"
 
-#: action.c:2058 tips:98
+#: action.c:2058 tips:101
 msgid "Force"
 msgstr "强制"
 
@@ -443,7 +443,7 @@ msgstr "强制"
 msgid "Don't confirm deletion of non-writeable items"
 msgstr "不可确认删除唯读的项目"
 
-#: action.c:2061 action.c:2115 tips:100
+#: action.c:2061 action.c:2115 tips:103
 msgid "Brief"
 msgstr "简洁"
 
@@ -479,7 +479,7 @@ msgstr "go=u_w (共享访问，不可写入)"
 msgid "Don't list processed files"
 msgstr "不列出已处理的档案"
 
-#: action.c:2118 tips:102
+#: action.c:2118 tips:105
 msgid "Recurse"
 msgstr "包含"
 
@@ -491,19 +491,19 @@ msgstr "同时改变子目录的内容"
 msgid "Command:"
 msgstr "指令:"
 
-#: action.c:2144 menu.c:195 menu.c:201 menu.c:207 menu.c:241 tips:34
+#: action.c:2144 menu.c:195 menu.c:201 menu.c:207 menu.c:241 tips:37
 msgid "Permissions"
 msgstr "权限"
 
-#: action.c:2174 dnd.c:135 menu.c:1842 tips:87
+#: action.c:2174 dnd.c:135 menu.c:1842 tips:90
 msgid "Copy"
 msgstr "复制"
 
-#: action.c:2196 dnd.c:136 tips:89
+#: action.c:2196 dnd.c:136 tips:92
 msgid "Move"
 msgstr "移动"
 
-#: action.c:2214 dnd.c:137 tips:91
+#: action.c:2214 dnd.c:137 tips:94
 msgid "Link"
 msgstr "连结"
 
@@ -1219,19 +1219,19 @@ msgstr "字符设定翻译"
 msgid "No (needs libiconv or Gtk+-2.0)"
 msgstr "否 (需要 libiconv 或 Gtk+-2.0)"
 
-#: menu.c:188 tips:14
+#: menu.c:188 tips:17
 msgid "Display"
 msgstr "显示"
 
-#: menu.c:189 tips:27
+#: menu.c:189 tips:30
 msgid "Huge Icons"
 msgstr "巨图示"
 
-#: menu.c:190 tips:28 tips:159
+#: menu.c:190 tips:31 tips:162
 msgid "Large Icons"
 msgstr "大图示"
 
-#: menu.c:191 tips:29 tips:158
+#: menu.c:191 tips:32 tips:161
 msgid "Small Icons"
 msgstr "小图示"
 
@@ -1239,19 +1239,19 @@ msgstr "小图示"
 msgid "Huge, With..."
 msgstr "巨图示，并显示..."
 
-#: menu.c:193 menu.c:199 menu.c:205 tips:32
+#: menu.c:193 menu.c:199 menu.c:205 tips:35
 msgid "Summary"
 msgstr "详细"
 
-#: menu.c:194 menu.c:200 menu.c:206 tips:33
+#: menu.c:194 menu.c:200 menu.c:206 tips:36
 msgid "Sizes"
 msgstr "大小"
 
-#: menu.c:196 menu.c:202 menu.c:208 tips:35 tips:39
+#: menu.c:196 menu.c:202 menu.c:208 tips:38 tips:42
 msgid "Type"
 msgstr "类型"
 
-#: menu.c:197 menu.c:203 menu.c:209 tips:36
+#: menu.c:197 menu.c:203 menu.c:209 tips:39
 msgid "Times"
 msgstr "次数"
 
@@ -1425,7 +1425,7 @@ msgstr "%d 项目"
 msgid "Unmount"
 msgstr "解除挂载%"
 
-#: menu.c:898 tips:95
+#: menu.c:898 tips:98
 msgid "Mount"
 msgstr "挂载"
 
@@ -1886,7 +1886,7 @@ msgstr "检视"
 msgid "Rescan directory contents"
 msgstr "重新检视内容"
 
-#: tips:41 toolbar.c:124
+#: tips:44 toolbar.c:124
 msgid "Size"
 msgstr "大小"
 
@@ -1894,7 +1894,7 @@ msgstr "大小"
 msgid "Change icon size"
 msgstr "改变图示大小"
 
-#: tips:30 toolbar.c:128
+#: tips:33 toolbar.c:128
 msgid "Details"
 msgstr "详述"
 
@@ -1965,11 +1965,11 @@ msgstr "字符装置"
 msgid "Block dev"
 msgstr "区块装置"
 
-#: tips:172 type.c:387
+#: tips:175 type.c:387
 msgid "Pipe"
 msgstr "管道"
 
-#: tips:173 type.c:389
+#: tips:176 type.c:389
 msgid "Socket"
 msgstr "套节"
 
@@ -2161,51 +2161,66 @@ msgid "Display messages in..."
 msgstr "显示信息于..."
 
 #: tips:4
+#, fuzzy
+msgid "Chinese (traditional)"
+msgstr "中文(繁体)"
+
+#: tips:5
+#, fuzzy
+msgid "Chinese (simplified)"
+msgstr "中文(简体)"
+
+#: tips:6
+#, fuzzy
+msgid "Danish"
+msgstr "西班牙文"
+
+#: tips:7
 msgid "Dutch"
 msgstr "荷兰文"
 
-#: tips:5
+#: tips:8
 msgid "English (no translation)"
 msgstr "英文 (不被翻译)"
 
-#: tips:6
+#: tips:9
 msgid "French"
 msgstr "法文"
 
-#: tips:7
+#: tips:10
 msgid "German"
 msgstr "德文"
 
-#: tips:8
+#: tips:11
 msgid "Hungarian"
 msgstr "匈牙利文"
 
-#: tips:9
+#: tips:12
 msgid "Italian"
 msgstr "意大利文"
 
-#: tips:10
+#: tips:13
 msgid "Polish"
 msgstr "波兰文"
 
-#: tips:11
+#: tips:14
 msgid "Russian"
 msgstr "俄罗斯文"
 
-#: tips:12
+#: tips:15
 msgid "Spanish"
 msgstr "西班牙文"
 
-#: tips:13
+#: tips:16
 msgid "Use the LANG environment variable"
 msgstr "系统预设"
 
-#: tips:15
+#: tips:18
 #, fuzzy
 msgid "Ignore case when sorting"
 msgstr "忽略排序时错误"
 
-#: tips:16
+#: tips:19
 msgid ""
 "If off: Ben, animal, zoo.\n"
 "If on: animal, Ben, zoo."
@@ -2213,22 +2228,22 @@ msgstr ""
 "如关闭此功能,则以此排序: Ben, animal, zoo.\n"
 "如开启此功能,则以此排序: animal, Ben, zoo."
 
-#: tips:17
+#: tips:20
 msgid "Directories always come first"
 msgstr "目录必须先行"
 
-#: tips:18
+#: tips:21
 msgid ""
 "If this is on then directories will always appear before anything else, "
 "regardless of the sort type."
 msgstr "如开启此功能,则永远以目录先排序,并忽略其他排序方式."
 
-#: tips:19
+#: tips:22
 #, fuzzy
 msgid "Large wrap width"
 msgstr "最大的信息栏宽度"
 
-#: tips:20
+#: tips:23
 msgid ""
 "Text wider than this is broken onto two lines in Large Icons mode. In Huge "
 "Icons mode, text is wrapped when 50% wider than this."
@@ -2236,73 +2251,73 @@ msgstr ""
 "在大图示模式下,信息文字如比此宽度为长,则自动换行.在巨图示模式下,则会比宽度多"
 "长百份之五十."
 
-#: tips:21
+#: tips:24
 #, fuzzy
 msgid "Max Small Icons width"
 msgstr "小图示最大的宽度"
 
-#: tips:22
+#: tips:25
 msgid "Maximum width for the text beside a Small Icon."
 msgstr "小图示最大的文字说明宽度"
 
-#: tips:23
+#: tips:26
 msgid "Inherit options from source window"
 msgstr "从源窗口中继承选项"
 
-#: tips:24
+#: tips:27
 msgid ""
 "If this is on then display options for a new window are inherited from the "
 "source window if possible, otherwise they are set to the defaults below."
 msgstr "如开启此功能,则新窗口会从源窗口之风格相同.反之,则以预设值开启."
 
-#: tips:25
+#: tips:28
 #, fuzzy
 msgid "Default settings for new windows:"
 msgstr "预设新窗口的设定"
 
-#: tips:26
+#: tips:29
 #, fuzzy
 msgid "Icon size"
 msgstr "图示大小"
 
-#: tips:31
+#: tips:34
 msgid "No details"
 msgstr "不须详述"
 
-#: tips:37
+#: tips:40
 #, fuzzy
 msgid "Sort by"
 msgstr "排序以"
 
-#: tips:40
+#: tips:43
 msgid "Date"
 msgstr "日期"
 
-#: tips:42
+#: tips:45
 msgid "Show hidden files"
 msgstr "显示隐藏档"
 
-#: tips:43
+#: tips:46
 msgid ""
 "If this is on then files whose names start with a dot are shown too, "
 "otherwise they are hidden."
 msgstr "如启动此功能，会颢示所有点档案,否之，点档案会被隐藏."
 
-#: tips:44
+#: tips:47
 msgid "Show image thumbnails"
 msgstr "显示影像档的缩图"
 
-#: tips:45 tips:46
+#: tips:48 tips:49
 msgid ""
 "Load every image file and display it, scaled-down, in the filer window "
 "instead of the normal icon."
 msgstr "在窗口内以小型图像载入每一影像档以代替一般的图示"
 
-#: tips:47
+#: tips:50
 msgid "Pinboard"
 msgstr "桌板"
 
-#: tips:48
+#: tips:51
 msgid ""
 "The pinboard is the desktop background.\n"
 "When the pinboard is turned on, you can drag files\n"
@@ -2314,104 +2329,104 @@ msgstr ""
 "或应用程式入内，日后便可在桌面以捷径方式开启它们.\n"
 "详情请查看说明."
 
-#: tips:49
+#: tips:52
 #, fuzzy
 msgid "Text style:"
 msgstr "文字风格"
 
-#: tips:50
+#: tips:53
 msgid "No background"
 msgstr "没有背景"
 
-#: tips:51
+#: tips:54
 msgid "The text is drawn directly on the desktop background."
 msgstr "交字会直接写在桌面上"
 
-#: tips:52
+#: tips:55
 msgid "Outlined text"
 msgstr "已围边文字"
 
-#: tips:53
+#: tips:56
 msgid "The text has a thin outline around each letter."
 msgstr "每一字体有围边"
 
-#: tips:54
+#: tips:57
 msgid "Rectangular background slab"
 msgstr "正长方型背景板"
 
-#: tips:55 tips:56
+#: tips:58 tips:59
 msgid "The text is drawn on a solid rectangle."
 msgstr "字会直接写在方型框内"
 
-#: tips:57
+#: tips:60
 #, fuzzy
 msgid "Text colours:"
 msgstr "文字颜色"
 
-#: tips:58
+#: tips:61
 #, fuzzy
 msgid "Foreground"
 msgstr "前景"
 
-#: tips:59
+#: tips:62
 #, fuzzy
 msgid "Background"
 msgstr "背景"
 
-#: tips:60
+#: tips:63
 msgid "Single-click to open"
 msgstr "单击予开启"
 
-#: tips:61 tips:130
+#: tips:64 tips:133
 msgid ""
 "Clicking on an item opens it with this on. Hold down Control to select the "
 "item instead. If off, clicking once selects an item; double click to open "
 "things."
 msgstr "单击项目以开启及浏览,反之则单击以选择,双击以开启."
 
-#: tips:62
+#: tips:65
 msgid "Keep icons within screen limits"
 msgstr "限制图示在可见屏幕上"
 
-#: tips:63
+#: tips:66
 msgid ""
 "If this is set, pinboard icons are always kept completely within screen "
 "limits, including the label."
 msgstr "桌板内的图示和标签全显示在屏幕中"
 
-#: tips:64
+#: tips:67
 msgid "Icon grid step:"
 msgstr "图示格式程序:"
 
-#: tips:65
+#: tips:68
 msgid "Fine"
 msgstr "高质素"
 
-#: tips:66
+#: tips:69
 msgid "Use a 2-pixel grid for positioning icons on the desktop."
 msgstr "以2像素图示在桌面显示"
 
-#: tips:67
+#: tips:70
 msgid "Medium"
 msgstr "中等"
 
-#: tips:68
+#: tips:71
 msgid "Use a 16-pixel grid for positioning icons on the desktop."
 msgstr "以16像素图示在桌面显示"
 
-#: tips:69
+#: tips:72
 msgid "Coarse"
 msgstr "粗糙的"
 
-#: tips:70 tips:71 tips:72 tips:73
+#: tips:73 tips:74 tips:75 tips:76
 msgid "Use a 32-pixel grid for positioning icons on the desktop."
 msgstr "以32像素图示在桌面显示"
 
-#: tips:74
+#: tips:77
 msgid "Panels"
 msgstr "面板"
 
-#: tips:75
+#: tips:78
 #, fuzzy
 msgid ""
 "Panels are bars of icons that run along the side of the screen.\n"
@@ -2420,114 +2435,114 @@ msgstr ""
 "面板是以多图示连成的工具栏.\n"
 "详情请参阅说明."
 
-#: tips:76
+#: tips:79
 msgid "Image and text"
 msgstr "图像及文字"
 
-#: tips:77
+#: tips:80
 msgid "Every panel icon is shown with an image and some text."
 msgstr "面板上显示图示及文字"
 
-#: tips:78
+#: tips:81
 msgid "Image only for applications"
 msgstr "程式档只显示图像"
 
-#: tips:79
+#: tips:82
 msgid ""
 "Applications have just an image, everything else has both an image and text."
 msgstr "程式档只以图示表达,其他的档案则有图示及文字叙述."
 
-#: tips:80
+#: tips:83
 msgid "Image only"
 msgstr "只显示图像"
 
-#: tips:81 tips:82 tips:83
+#: tips:84 tips:85 tips:86
 msgid "Only the image is shown."
 msgstr "只显示该图像"
 
-#: tips:84
+#: tips:87
 msgid "Action windows"
 msgstr "程序诊断窗口"
 
-#: tips:85
+#: tips:88
 msgid ""
 "Action windows appear when you start a background\n"
 "operation, such as copying or deleting some files."
 msgstr "程序诊断窗口会在你执行一些程序,如复制或删除档案时,自动出现."
 
-#: tips:86
+#: tips:89
 #, fuzzy
 msgid "Auto-start (Quiet) these actions:"
 msgstr "自动启用 (离开) 这些程序:"
 
-#: tips:88
+#: tips:91
 msgid "Copy files without confirming first."
 msgstr "复制档案而无须先被确认"
 
-#: tips:90
+#: tips:93
 msgid "Move files without confirming first."
 msgstr "移动档案而无须先被确认"
 
-#: tips:92
+#: tips:95
 msgid "Create links to files without confirming first."
 msgstr "连结档案而无须先被确认"
 
-#: tips:94
+#: tips:97
 msgid "Delete files without confirming first."
 msgstr "删除档案而无须先被确认"
 
-#: tips:96
+#: tips:99
 msgid "Mount and unmount filesystems without confirming first."
 msgstr "挂载档案而无须先被确认"
 
-#: tips:97
+#: tips:100
 #, fuzzy
 msgid "Default settings:"
 msgstr "默认设定"
 
-#: tips:99
+#: tips:102
 msgid "Don't confirm deletion of non-writeable items."
 msgstr "不可确认删除唯读项目"
 
-#: tips:101
+#: tips:104
 msgid "Don't display so much information in the message area."
 msgstr "不可在信息框内显示太多资料"
 
-#: tips:103 tips:104
+#: tips:106 tips:107
 msgid "Also change contents of subdirectories."
 msgstr "同样改变子目录内容"
 
-#: tips:105
+#: tips:108
 msgid "Toolbar"
 msgstr "工具栏"
 
-#: tips:106
+#: tips:109
 #, fuzzy
 msgid "Unshade the tools you want:"
 msgstr "收起不要工具:"
 
-#: tips:107
+#: tips:110
 #, fuzzy
 msgid "Toolbar type"
 msgstr "工具栏类型"
 
-#: tips:108
+#: tips:111
 msgid "None"
 msgstr "没有"
 
-#: tips:109
+#: tips:112
 msgid "Small"
 msgstr "小"
 
-#: tips:110
+#: tips:113
 msgid "Large"
 msgstr "大"
 
-#: tips:111
+#: tips:114
 msgid "Show totals of items"
 msgstr "显示项目总数"
 
-#: tips:112 tips:113
+#: tips:115 tips:116
 msgid ""
 "Show the number of items displayed in a filer window, as well as the number "
 "of hidden items (if any). When there's a selection, show the number of "
@@ -2536,61 +2551,61 @@ msgstr ""
 "在窗口的工具栏显示项目总数,并会显示隐藏档数目,当以右键选档案时,还会显示其大"
 "小."
 
-#: tips:114
+#: tips:117
 msgid "Filer windows"
 msgstr "Filer 窗口"
 
-#: tips:115
+#: tips:118
 #, fuzzy
 msgid "Automatically resize filer windows..."
 msgstr "自动改变窗口大小..."
 
-#: tips:116
+#: tips:119
 msgid "...never"
 msgstr "...永不"
 
-#: tips:117
+#: tips:120
 msgid ""
 "You'll have to resize windows manually, using the window manager, the "
 "`Resize Window' menu entry or by double-clicking on the window background."
 msgstr "你将需要手动更改窗口大小或在选单的`调整窗口大小`及双击窗口背景改变它"
 
-#: tips:118
+#: tips:121
 #, fuzzy
 msgid "...when changing the display style"
 msgstr "...在变更显示风格时"
 
-#: tips:119
+#: tips:122
 msgid ""
 "Changing the size of the icons or which details are displayed will resize "
 "the window for you."
 msgstr "当改变图示大小时或叙述时.窗口大小会自行调整"
 
-#: tips:120
+#: tips:123
 msgid "...always"
 msgstr "...必定"
 
-#: tips:121 tips:122
+#: tips:124 tips:125
 msgid ""
 "The filer will resize windows whenever it seems useful (that is, when "
 "changing directory or display style)."
 msgstr "当改变图示大小时或叙述时,及转变到其他目录时.窗口大小会自行调整."
 
-#: tips:123
+#: tips:126
 msgid "Window size limit"
 msgstr "窗口大小限制"
 
-#: tips:124
+#: tips:127
 msgid ""
 "The largest size, as a percentage of the screen size, that the auto-resizer "
 "will resize a window to."
 msgstr "窗口大小自行调整时,会跟据该百份比来限制窗口最大的值"
 
-#: tips:125
+#: tips:128
 msgid "Unique windows"
 msgstr "唯一的窗口"
 
-#: tips:126
+#: tips:129
 msgid ""
 "If you open a directory and that directory is already displayed in another "
 "window, then this option causes the other window to be closed."
@@ -2598,11 +2613,11 @@ msgstr ""
 "如你要开启一个目录而此目录已经存在于另一窗口内 , 开启此选项后你已经存在的窗口"
 "便会被关闭."
 
-#: tips:127
+#: tips:130
 msgid "New window on button 1 (RISC OS style)"
 msgstr "按滑鼠1(左)键以开启新窗口 (RISC OS 风格)"
 
-#: tips:128
+#: tips:131
 msgid ""
 "Clicking with mouse button 1 (usually the left button) opens a directory in "
 "a new window with this turned on. Clicking with the button-2 (middle) will "
@@ -2610,40 +2625,40 @@ msgid ""
 msgstr ""
 "单击滑鼠1(左)键以开启目录于新窗口内 单击滑鼠2(中)键会开启目录于 原有的窗口内."
 
-#: tips:129
+#: tips:132
 msgid "Single-click navigation in filer windows"
 msgstr "单击以浏览档案"
 
-#: tips:131
+#: tips:134
 msgid "Beep if Tab-completion fails"
 msgstr ""
 
-#: tips:132
+#: tips:135
 msgid ""
 "When using the `Enter Path...' minibuffer and Tab is pressed, beep if "
 "nothing happens (eg, because there are several possibilities and the next "
 "letter varies)."
 msgstr ""
 
-#: tips:133
+#: tips:136
 msgid "Beep if there are several matches"
 msgstr ""
 
-#: tips:134 tips:135
+#: tips:137 tips:138
 msgid ""
 "When using the `Enter Path...' minibuffer and Tab is pressed, beep if there "
 "is more than one matching file, even though some more letters were added."
 msgstr ""
 
-#: tips:136
+#: tips:139
 msgid "Drag and Drop"
 msgstr "滑鼠拖放"
 
-#: tips:137
+#: tips:140
 msgid "Don't use hostnames"
 msgstr "不用主机名称"
 
-#: tips:138
+#: tips:141
 msgid ""
 "Some older applications don't support XDND fully and may need to have this "
 "option turned on. Use this if dragging files to an application shows a + "
@@ -2652,11 +2667,11 @@ msgstr ""
 "某些旧的应用程式不完全支援拖放来执行的功能 此选项便须要开启，以达致将档案拖到"
 "当鼠标出现 a + 符号的应用程式上."
 
-#: tips:139
+#: tips:142
 msgid "Allow dragging to icons in filer windows"
 msgstr "容许在窗口间拖效图示"
 
-#: tips:140
+#: tips:143
 msgid ""
 "When this is on you can drag a file over a sub-directory or program in a "
 "filer window. The item will highlight when you do this and dropping the file "
@@ -2665,11 +2680,11 @@ msgstr ""
 "选项开启后你可将档案在子目录或程式上拖放.该项目会被加亮并拖放进你指定的目录"
 "内 或在你拖放进的程式内执行."
 
-#: tips:141
+#: tips:144
 msgid "Directories spring open"
 msgstr "目录弹出并开启"
 
-#: tips:142
+#: tips:145
 msgid ""
 "This option, which requires the above option to be turned on too, causes the "
 "highlighted directory to 'spring open' after the file is held over it for a "
@@ -2678,12 +2693,12 @@ msgstr ""
 "此选项必须连带上一个选项同时开启,在指向加亮的目录时,使它在按着滑鼠一段短时间"
 "内自动开启."
 
-#: tips:143
+#: tips:146
 #, fuzzy
 msgid "Spring delay"
 msgstr "延迟弹出"
 
-#: tips:144
+#: tips:147
 msgid ""
 "This option sets how long, in ms, you must hold a file over a directory "
 "before it will spring open. The above option must be turned on for this to "
@@ -2692,45 +2707,45 @@ msgstr ""
 "此选项是用作是设定:你在加亮的目录上按着滑鼠而引发该目录被自动开启的延迟时间,"
 "并会以 ms 微秒来计算"
 
-#: tips:145
+#: tips:148
 #, fuzzy
 msgid "Dragging files with the middle mouse button..."
 msgstr "以滑鼠中键拖放"
 
-#: tips:146
+#: tips:149
 #, fuzzy
 msgid "... shows a menu of possible actions"
 msgstr "...显示一个可用的动作选单"
 
-#: tips:147
+#: tips:150
 #, fuzzy
 msgid "... moves the files"
 msgstr "...移动档案"
 
-#: tips:148 tips:149 tips:150
+#: tips:151 tips:152 tips:153
 msgid ""
 "Note that you can still get the menu to appear, by dragging with the left "
 "button and holding down the Alt key"
 msgstr "注意，如想选单再出现，可按着左键并 同时按下键盘上的 Alt 键"
 
-#: tips:151
+#: tips:154
 msgid "Menus"
 msgstr "选单"
 
-#: tips:152
+#: tips:155
 #, fuzzy
 msgid "`Xterm Here' program:"
 msgstr "预设的终端机程式:"
 
-#: tips:153
+#: tips:156
 msgid "The program to launch when you choose `Xterm Here' from the menu."
 msgstr "当你从选单选择“终端机”这程式将被启动"
 
-#: tips:154
+#: tips:157
 msgid "Set keyboard shortcuts"
 msgstr "设定热键"
 
-#: tips:155
+#: tips:158
 msgid ""
 "To set a keyboard short-cut for a menu item:\n"
 "\n"
@@ -2750,28 +2765,28 @@ msgstr ""
 "对应的热键会出现在选单的某个项目上，而日后你想开启这项目． 祗须按下热键而不需"
 "先开启选单."
 
-#: tips:156
+#: tips:159
 #, fuzzy
 msgid "Size of icons in menus"
 msgstr "选单上的图示大小"
 
-#: tips:157
+#: tips:160
 msgid "No Icons"
 msgstr "没有图示"
 
-#: tips:160
+#: tips:163
 msgid "Same as current window"
 msgstr "跟现行窗口相同"
 
-#: tips:161
+#: tips:164
 msgid "Same as default"
 msgstr "跟预设值相同"
 
-#: tips:162
+#: tips:165
 msgid "Menu on button 2 (RISC OS style)"
 msgstr "以滑鼠2(中)键启动选单 (RISC OS 风格)"
 
-#: tips:163 tips:164
+#: tips:166 tips:167
 msgid ""
 "Use button 2, the middle button (click both buttons at once on two button "
 "mice), to pop up the menu. If off, use button 3 (right) instead."
@@ -2779,15 +2794,15 @@ msgstr ""
 "以滑鼠第2键，即中键 (或对双键滑鼠两键同时按下)来开启选单，否则，会用第3键(右"
 "键)代替."
 
-#: tips:165
+#: tips:168
 msgid "Types"
 msgstr "类型"
 
-#: tips:166
+#: tips:169
 msgid "Ignore eXecutable bit for known extensions"
 msgstr "忽略已知绅延档的执行性"
 
-#: tips:167
+#: tips:170
 msgid ""
 "If a file has a known extension (eg '.gif') then ignore the executable bit. "
 "This is useful if you have files on a Windows-type filesystem which are "
@@ -2797,55 +2812,55 @@ msgstr ""
 "你正在浏览一些MS-Windows的系统时，遇到某些在你的系统上没法执行但 被标记为可执"
 "行的档案，你便有需要忽略其可执行性."
 
-#: tips:168
+#: tips:171
 msgid "Colour files based on their types"
 msgstr "基于档案类型配色"
 
-#: tips:169
+#: tips:172
 msgid "Filenames (and details) are coloured according to the file's type."
 msgstr "档案名称(及详述)会根据它的类型而配色"
 
-#: tips:171
+#: tips:174
 #, fuzzy
 msgid "Regular file"
 msgstr "常规档"
 
-#: tips:174
+#: tips:177
 #, fuzzy
 msgid "Character device"
 msgstr "字符设备"
 
-#: tips:175
+#: tips:178
 #, fuzzy
 msgid "Block device"
 msgstr "区块设备"
 
-#: tips:176
+#: tips:179
 #, fuzzy
 msgid "Executable file"
 msgstr "可执行档"
 
-#: tips:177
+#: tips:180
 #, fuzzy
 msgid "Application directory"
 msgstr "应用程式目录"
 
-#: tips:178
+#: tips:181
 #, fuzzy
 msgid "Unknown type"
 msgstr "不明类型"
 
-#: tips:179
+#: tips:182
 msgid "Error"
 msgstr "错误"
 
-#: tips:180 tips:181 tips:182
+#: tips:183 tips:184 tips:185
 msgid ""
 "Error, such as a symlink which points to a non-existant file, or a file "
 "which the filer does not have permission to examine."
 msgstr "错误，此连结所指向的是一个不存在或 你的权限不足以检察的档案."
 
-#: tips:183
+#: tips:186
 #, fuzzy
 msgid ""
 "The filer uses a set of rules to work out the correct MIME type\n"
@@ -2857,15 +2872,15 @@ msgstr ""
 "于每一常规的档案，并会为每一档案的类型配置一个合适的图示.\n"
 "请在每次编辑档案后，单击“重新读取”的按钮，或重新启动 ROX-Filer."
 
-#: tips:184
+#: tips:187
 msgid "Show name-to-type rules"
 msgstr "显示名称类型的规则"
 
-#: tips:185
+#: tips:188
 msgid "Re-read files"
 msgstr "重新读取档案"
 
-#: tips:186 tips:187 tips:188
+#: tips:189 tips:190 tips:191
 #, fuzzy
 msgid "Use the 'Set Icon...' dialog box to set the icon for each type."
 msgstr "请以“设定图示...”对话框来设定图示的类型"
@@ -2992,18 +3007,6 @@ msgstr "请以“设定图示...”对话框来设定图示的类型"
 #, fuzzy
 #~ msgid "Language"
 #~ msgstr "大"
-
-#, fuzzy
-#~ msgid "Chinese (traditional)"
-#~ msgstr "中文(繁体)"
-
-#, fuzzy
-#~ msgid "Chinese (simplified)"
-#~ msgstr "中文(简体)"
-
-#, fuzzy
-#~ msgid "Danish"
-#~ msgstr "西班牙文"
 
 #, fuzzy
 #~ msgid "Never automatically resize"
