@@ -2,10 +2,44 @@
 			A RISC OS-like filer for X
 			by Thomas Leonard
 
+30-Jun-2003
+~~~~~~~~~~~
+When renaming a non-UTF8 file, still assume the directory is valid UTF-8
+(reported by Arnaud Calvo).
+
+29-Jun-2003
+~~~~~~~~~~~
+Sort items on the SendTo menu (requested by John Pettigrew).
+
+27-Jun-2003
+~~~~~~~~~~~
+Removed the menu-on-button-2 option. It was too inconsistant with everything
+else, including panel applets and window managers, to be useful. Edit bind.c if
+you really need it.
+
+25-Jun-2003
+~~~~~~~~~~~
+Button-2 drags on panel applets always work now, even if the applet doesn't
+forward them explicitly.
+
 19-Jun-2003
 ~~~~~~~~~~~
 Fix scrolling problem with GTK+-2.2.2 (reported by Alastair Porter, with
 help from Götz Waschk).
+
+16-Jun-2003
+~~~~~~~~~~~
+Bugfix: Resize on style change didn't do anything (Andy Hanton).
+Bugfix: Dragging to panel and pinboard directories didn't offer the DnD
+	menu (reported by BluPhoenyx).
+
+04-Jun-2003
+~~~~~~~~~~~
+Bugfix: Closing a window using the menu didn't offer to unmount (James Bursa).
+
+01-Jun-2003
+~~~~~~~~~~~
+Fix compiler warning when not using dnotify (reported by Damien Couderc).
 
 30-May-2003 (Release 2.0.0)
 ~~~~~~~~~~~

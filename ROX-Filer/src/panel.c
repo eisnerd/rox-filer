@@ -1032,6 +1032,15 @@ static gboolean drag_motion(GtkWidget		*widget,
 
 	type = dnd_motion_item(context, &item);
 
+	if ((context->actions & GDK_ACTION_ASK) && o_dnd_left_menu.int_value
+		&& type != drop_dest_prog)
+	{
+		guint state;
+		gdk_window_get_pointer(NULL, NULL, NULL, &state);
+		if (state & GDK_BUTTON1_MASK)
+			action = GDK_ACTION_ASK;
+	}
+
 	if (!item)
 		type = NULL;
 out:
@@ -1562,6 +1571,15 @@ static void run_applet(PanelIcon *pi)
 	gtk_container_add(GTK_CONTAINER(pi->widget), pi->socket);
 	gtk_widget_show_all(pi->socket);
 	gtk_widget_realize(pi->socket);
+
+	/* Always get button-2 events so we can drag */
+	XGrabButton(gdk_display, Button2, AnyModifier,
+			GDK_WINDOW_XWINDOW(pi->socket->window),
+			False,
+			ButtonPressMask | ButtonReleaseMask | Button2MotionMask,
+			GrabModeAsync,	/* Pointer */
+			GrabModeAsync,	/* Keyboard */
+			None, None);
 
 	{
 		gchar		*pos;
