@@ -3,6 +3,9 @@
   <section title='Translation'>
     <label>Display messages in...</label>
     <radio-group name='i18n_translation' label='Translation'>
+      <radio label='Chinese (traditional)' value='zh_TW'/>
+      <radio label='Chinese (simplified)' value='zh_CN'/>
+      <radio label='Danish' value='da'/>
       <radio label='Dutch' value='nl'/>
       <radio label='English (no translation)' value='None'/>
       <radio label='French' value='fr'/>
