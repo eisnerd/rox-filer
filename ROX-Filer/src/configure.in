@@ -201,8 +201,9 @@ if test "$disable_vfs" != "yes" ; then
 fi
 
 dnl Check for libpng
+dnl Slackware doesn't have png_set_palette_to_rgb compiled in!
 LIBPNG=""
-AC_CHECK_LIB(png, png_read_info,
+AC_CHECK_LIB(png, png_set_palette_to_rgb,
   AC_TRY_CPP([#include <png.h>], png=yes, png=no),
   png=no,
   -lz -lm)
