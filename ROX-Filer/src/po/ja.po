@@ -5,7 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: rox-ja\n"
-"POT-Creation-Date: 2003-05-24 11:46+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2003-07-23 16:51+0100\n"
 "PO-Revision-Date: 2003-05-30 01:13+0900\n"
 "Last-Translator: UTUMI Hirosi <*>\n"
 "Language-Team: Japanese <ja@li.org>\n"
@@ -541,7 +542,7 @@ msgstr "再帰的"
 msgid "Also change contents of subdirectories"
 msgstr "サブディレクトリの内容も変更する"
 
-#: action.c:1822 dnd.c:123 menu.c:1832 tips:183
+#: action.c:1822 dnd.c:123 menu.c:1878 tips:183
 msgid "Copy"
 msgstr "コピー"
 
@@ -628,17 +629,17 @@ msgstr "ブックマークを編集"
 msgid "Recently Visited"
 msgstr "最近行った場所"
 
-#: dir.c:924
+#: dir.c:926
 #, c-format
 msgid "Can't stat directory: %s"
 msgstr "Can't stat directory: %s"
 
-#: dir.c:933
+#: dir.c:935
 #, c-format
 msgid "Can't open directory: %s"
 msgstr "ディレクトリを開けません: %s"
 
-#: display.c:557
+#: display.c:568
 #, c-format
 msgid "lstat(2) failed: %s"
 msgstr "lstat(2) failed: %s"
@@ -668,8 +669,10 @@ msgid "Sorry - I require a target type of text/uri-list or XdndDirectSave0."
 msgstr "Sorry - I require a target type of text/uri-list or XdndDirectSave0."
 
 #: dnd.c:601
-msgid "Sorry - I require a target type of text/uri-list or application/octet-stream."
-msgstr "Sorry - I require a target type of text/uri-list or application/octet-stream."
+msgid ""
+"Sorry - I require a target type of text/uri-list or application/octet-stream."
+msgstr ""
+"Sorry - I require a target type of text/uri-list or application/octet-stream."
 
 #: dnd.c:700
 msgid "Unknown target"
@@ -701,14 +704,17 @@ msgid "No URIs in the text/uri-list (nothing to do!)"
 msgstr "text/uri-listにURIがありません(することがありません)"
 
 #: dnd.c:887
-msgid "Can't get data from remote machine (application/octet-stream not provided)"
+msgid ""
+"Can't get data from remote machine (application/octet-stream not provided)"
 msgstr ""
 "リモートマシンからデータを取得できません(application/octet-stream not "
 "provided)"
 
 #: dnd.c:908
-msgid "Some of these files are on a different machine - they will be ignored - sorry"
-msgstr "Some of these files are on a different machine - they will be ignored - sorry"
+msgid ""
+"Some of these files are on a different machine - they will be ignored - sorry"
+msgstr ""
+"Some of these files are on a different machine - they will be ignored - sorry"
 
 #: dnd.c:915
 msgid ""
@@ -793,7 +799,7 @@ msgstr ""
 "\n"
 "デバイスをアンマウントすると安全にディスクを取り出すことができます"
 
-#: filer.c:383 menu.c:831
+#: filer.c:383 menu.c:872
 msgid "Unmount"
 msgstr "アンマウント"
 
@@ -826,39 +832,39 @@ msgstr "ディレクトリ'%s'はありません"
 msgid "Cancel"
 msgstr "キャンセル"
 
-#: filer.c:1671
+#: filer.c:1672
 msgid "S"
 msgstr "S"
 
-#: filer.c:1672
+#: filer.c:1673
 msgid "A"
 msgstr "A"
 
-#: filer.c:1673
+#: filer.c:1674
 msgid "T"
 msgstr "T"
 
-#: filer.c:1679
+#: filer.c:1680
 msgid "Scanning, "
 msgstr "Scanning, "
 
-#: filer.c:1680
+#: filer.c:1681
 msgid "All, "
 msgstr "全て, "
 
-#: filer.c:1681
+#: filer.c:1682
 msgid "Thumbs, "
 msgstr "サムネール, "
 
-#: filer.c:1950
+#: filer.c:1951
 msgid "Symbolic link to "
 msgstr "以下へのシンボリックリンク "
 
-#: filer.c:1981
+#: filer.c:1982
 msgid "This filename is not valid UTF-8. You should rename it.\n"
 msgstr "不正なUTF-8のファイル名です。リネームしてください\n"
 
-#: filer.c:2285 menu.c:1822
+#: filer.c:2286 menu.c:1868
 msgid "Item no longer exists!"
 msgstr "アイテムは存在しません"
 
@@ -1093,7 +1099,8 @@ msgstr ""
 #: gui_support.c:361
 #, c-format
 msgid "Attempt to read an XML file as a text file. File '%s' may be corrupted."
-msgstr "Attempt to read an XML file as a text file. File '%s' may be corrupted."
+msgstr ""
+"Attempt to read an XML file as a text file. File '%s' may be corrupted."
 
 #: gui_support.c:378
 #, c-format
@@ -1165,7 +1172,7 @@ msgstr "ホームディレクトリ"
 msgid "File"
 msgstr "ファイル"
 
-#: icon.c:142 menu.c:212 menu.c:844
+#: icon.c:142 menu.c:212 menu.c:885
 msgid "Shift Open"
 msgstr "開く"
 
@@ -1217,7 +1224,7 @@ msgstr "まず削除するアイテムを選んでください"
 msgid "You must open the menu over an item"
 msgstr "メニューはアイテムの上で開いてください"
 
-#: icon.c:619 menu.c:1193
+#: icon.c:619 menu.c:1237
 msgid "You can only set the run action for a regular file"
 msgstr "「実行」はレギュラーファイルにのみ設定できます"
 
@@ -1250,7 +1257,7 @@ msgstr "本当に %d 個のウィンドウを開きますか？"
 msgid "Show Info"
 msgstr "情報を表示"
 
-#: infobox.c:114 menu.c:747
+#: infobox.c:114 menu.c:788
 msgid "(bad utf-8)"
 msgstr "(不正なutf-8)"
 
@@ -1258,7 +1265,7 @@ msgstr "(不正なutf-8)"
 msgid "Show _Help Files"
 msgstr "ヘルプファイルを表示"
 
-#: infobox.c:376 tips:261
+#: infobox.c:376 tips:259
 msgid "Error:"
 msgstr "エラー:"
 
@@ -1489,7 +1496,7 @@ msgstr "アイコンと以下を表示.."
 msgid "Sizes"
 msgstr "サイズ"
 
-#: menu.c:186 tips:244
+#: menu.c:186 tips:242
 msgid "Types"
 msgstr "種類"
 
@@ -1653,40 +1660,40 @@ msgstr "ここでxtermを開く"
 msgid "Switch to xterm"
 msgstr "xtermに切り替える"
 
-#: menu.c:696
+#: menu.c:737
 msgid "You should Shift+Menu click over a file to send it somewhere"
 msgstr "You should Shift+Menu click over a file to send it somewhere"
 
-#: menu.c:732
+#: menu.c:773
 msgid "Next Click"
 msgstr "何をしますか"
 
-#: menu.c:754
+#: menu.c:795
 #, c-format
 msgid "%d items"
 msgstr "%d 個のアイテム"
 
-#: menu.c:833
+#: menu.c:874
 msgid "Open unmounted"
 msgstr "アンマウントしているものを開く"
 
-#: menu.c:836
+#: menu.c:877
 msgid "Show Target"
 msgstr "リンク先を表示"
 
-#: menu.c:838
+#: menu.c:879
 msgid "Look Inside"
 msgstr "Look Inside"
 
-#: menu.c:840
+#: menu.c:881
 msgid "Open As Text"
 msgstr "テキストとして開く"
 
-#: menu.c:1008
+#: menu.c:1049
 msgid "_Relative link"
 msgstr "_相対リンク"
 
-#: menu.c:1014
+#: menu.c:1055
 msgid ""
 "If on, the symlink will store the path from the symlink to the target file. "
 "Use this if the symlink and the target will be moved together.\n"
@@ -1698,42 +1705,42 @@ msgstr ""
 "If off, the path from the root directory is stored - use this if the symlink "
 "may move but the target will stay put."
 
-#: menu.c:1081
+#: menu.c:1125
 msgid "New pathname is not absolute"
 msgstr "New pathname is not absolute"
 
-#: menu.c:1147
+#: menu.c:1191
 #, c-format
 msgid "Symlink from '%s' already exists. Replace it with a link to '%s'?"
 msgstr "Symlink from '%s' already exists. Replace it with a link to '%s'?"
 
-#: menu.c:1153
+#: menu.c:1197
 msgid "_Replace"
 msgstr "_置き換え"
 
-#: menu.c:1284 menu.c:1325 menu.c:1385
+#: menu.c:1328 menu.c:1369 menu.c:1429
 msgid "Create"
 msgstr "作成"
 
-#: menu.c:1285
+#: menu.c:1329
 msgid "NewDir"
 msgstr "NewDir"
 
-#: menu.c:1299 menu.c:1305
+#: menu.c:1343 menu.c:1349
 #, c-format
 msgid "Error creating '%s': %s"
 msgstr "Error creating '%s': %s"
 
-#: menu.c:1326
+#: menu.c:1370
 msgid "NewFile"
 msgstr "NewFile"
 
-#: menu.c:1344
+#: menu.c:1388
 #, c-format
 msgid "Error creating file: could not find the template for %s"
 msgstr "Error creating file: could not find the template for %s"
 
-#: menu.c:1415
+#: menu.c:1459
 #, c-format
 msgid ""
 "The `Send To' menu provides a quick way to send some files to an "
@@ -1762,7 +1769,7 @@ msgstr ""
 "will only be shown for files of that type. `.group' is shown only when "
 "multiple files are selected."
 
-#: menu.c:1426
+#: menu.c:1470
 msgid ""
 "I'll show you your SendTo directory now; you should symlink (Ctrl+Shift "
 "drag) any applications you want into it."
@@ -1770,19 +1777,19 @@ msgstr ""
 "I'll show you your SendTo directory now; you should symlink (Ctrl+Shift "
 "drag) any applications you want into it."
 
-#: menu.c:1429
+#: menu.c:1473
 msgid "Your CHOICESPATH variable setting prevents customisations - sorry."
 msgstr "Your CHOICESPATH variable setting prevents customisations - sorry."
 
-#: menu.c:1506
+#: menu.c:1550
 msgid "Customise"
 msgstr "カスタマイズ"
 
-#: menu.c:1571
+#: menu.c:1615
 msgid "This is already the canonical name for this directory."
 msgstr "This is already the canonical name for this directory."
 
-#: menu.c:1602
+#: menu.c:1646
 msgid ""
 "You can't open a second view onto this directory because the `Unique "
 "Windows' option is turned on in the Options window."
@@ -1790,75 +1797,75 @@ msgstr ""
 "You can't open a second view onto this directory because the `Unique "
 "Windows' option is turned on in the Options window."
 
-#: menu.c:1721
+#: menu.c:1767
 msgid "Copy ... ?"
 msgstr "コピーする"
 
-#: menu.c:1724
+#: menu.c:1770
 msgid "Rename ... ?"
 msgstr "リネームする"
 
-#: menu.c:1727
+#: menu.c:1773
 msgid "Symlink ... ?"
 msgstr "Symlinkを張る"
 
-#: menu.c:1730
+#: menu.c:1776
 msgid "Shift Open ... ?"
 msgstr "開く"
 
-#: menu.c:1733
+#: menu.c:1779
 msgid "Help about ... ?"
 msgstr "ヘルプを見る"
 
-#: menu.c:1736
+#: menu.c:1782
 msgid "Examine ... ?"
 msgstr "情報を調べる"
 
-#: menu.c:1739
+#: menu.c:1785
 msgid "Set run action for ... ?"
 msgstr "関連づけを設定"
 
-#: menu.c:1742
+#: menu.c:1788
 msgid "Set icon for ... ?"
 msgstr "アイコンを設定"
 
-#: menu.c:1745
+#: menu.c:1791
 msgid "Send ... to ... ?"
 msgstr "送る"
 
-#: menu.c:1748
+#: menu.c:1794
 msgid "DELETE ... ?"
 msgstr "削除する"
 
-#: menu.c:1751
+#: menu.c:1797
 msgid "Count the size of ... ?"
 msgstr "容量を計算する"
 
-#: menu.c:1754
+#: menu.c:1800
 msgid "Set permissions on ... ?"
 msgstr "権限を設定"
 
-#: menu.c:1757
+#: menu.c:1803
 msgid "Search inside ... ?"
 msgstr "検索する"
 
-#: menu.c:1760
+#: menu.c:1806
 msgid "Look inside ... ?"
 msgstr "中を見る"
 
-#: menu.c:1805
+#: menu.c:1851
 msgid "You cannot do this to more than one item at a time"
 msgstr "複数アイテムを同時に処理することはできません"
 
-#: menu.c:1837
+#: menu.c:1883
 msgid "Rename"
 msgstr "リネーム"
 
-#: menu.c:1842
+#: menu.c:1888
 msgid "Symlink"
 msgstr "シンボリックリンク"
 
-#: menu.c:1877
+#: menu.c:1923
 msgid ""
 "User-definable shortcuts are disabled by default in Gtk2, and you have not "
 "enabled them. You can turn this feature on by:\n"
@@ -1874,7 +1881,7 @@ msgstr ""
 "2) adding this line to ~/.gtkrc-2.0:\n"
 "\tgtk-can-change-accels = 1"
 
-#: menu.c:1887
+#: menu.c:1933
 msgid ""
 "To set a keyboard short-cut for a menu item:\n"
 "\n"
@@ -1893,7 +1900,7 @@ msgstr ""
 "\n"
 "ダイアログが表示されるので指示に従ってください。"
 
-#: menu.c:1902
+#: menu.c:1948
 msgid "Set keyboard shortcuts"
 msgstr "キーボードのショートカットを設定"
 
@@ -1918,8 +1925,10 @@ msgstr ""
 "the longest match. Escape to close the minibuffer."
 
 #: minibuffer.c:250
-msgid "Enter a shell command to execute. Click on a file to add it to the buffer."
-msgstr "Enter a shell command to execute. Click on a file to add it to the buffer."
+msgid ""
+"Enter a shell command to execute. Click on a file to add it to the buffer."
+msgstr ""
+"Enter a shell command to execute. Click on a file to add it to the buffer."
 
 #: minibuffer.c:820
 msgid "Invalid Find condition"
@@ -1988,16 +1997,16 @@ msgstr ""
 msgid "Missing < or > in panel config file"
 msgstr "Missing < or > in panel config file"
 
-#: panel.c:1206
+#: panel.c:1215
 #, c-format
 msgid "Error saving panel %s: %s"
 msgstr "Error saving panel %s: %s"
 
-#: panel.c:1509
+#: panel.c:1518
 msgid "Applet quit without ever creating a widget!"
 msgstr "Applet quit without ever creating a widget!"
 
-#: panel.c:1594
+#: panel.c:1612
 #, c-format
 msgid ""
 "Error running applet:\n"
@@ -2099,7 +2108,7 @@ msgstr "Missing ',' after icon label"
 msgid "Error saving pinboard %s: %s"
 msgstr "Error saving pinboard %s: %s"
 
-#: pinboard.c:2018
+#: pinboard.c:2027
 #, c-format
 msgid ""
 "Error loading backdrop image:\n"
@@ -2110,7 +2119,7 @@ msgstr ""
 "%s\n"
 "Backdrop removed."
 
-#: pinboard.c:2296
+#: pinboard.c:2305
 msgid ""
 "No pinboard was in use... the 'Default' pinboard has been selected. Use 'rox "
 "-p=Default' to turn it on in future."
@@ -2118,7 +2127,7 @@ msgstr ""
 "No pinboard was in use... the 'Default' pinboard has been selected. Use 'rox "
 "-p=Default' to turn it on in future."
 
-#: pixmaps.c:876
+#: pixmaps.c:874
 #, c-format
 msgid ""
 "Can't delete thumbnails in %s:\n"
@@ -2127,11 +2136,11 @@ msgstr ""
 "%s のサムネールを削除できません:\n"
 "%s"
 
-#: pixmaps.c:897
+#: pixmaps.c:895
 msgid "There are no thumbnails to delete"
 msgstr "削除するサムネールはありません"
 
-#: pixmaps.c:910
+#: pixmaps.c:908
 msgid "Purge thumbnails disk cache"
 msgstr "サムネールのキャッシュを削除"
 
@@ -2150,7 +2159,7 @@ msgstr "不明な詳細の種類'%s'"
 msgid "Unknown sorting type '%s'"
 msgstr "不明な並べ変え方法'%s'"
 
-#: remote.c:989
+#: remote.c:995
 #, c-format
 msgid "Attempt to invoke unknown SOAP method '%s'"
 msgstr "Attempt to invoke unknown SOAP method '%s'"
@@ -2514,8 +2523,10 @@ msgid "Set run action"
 msgstr "関連づけを設定"
 
 #: type.c:816
-msgid "If a handler for the specific type isn't set up, use this as the default."
-msgstr "If a handler for the specific type isn't set up, use this as the default."
+msgid ""
+"If a handler for the specific type isn't set up, use this as the default."
+msgstr ""
+"If a handler for the specific type isn't set up, use this as the default."
 
 #: type.c:818
 #, c-format
@@ -2641,8 +2652,10 @@ msgid "Set icon"
 msgstr "アイコンを設定"
 
 #: usericons.c:277
-msgid "Use a copy of the image as the default for all files of these MIME types."
-msgstr "Use a copy of the image as the default for all files of these MIME types."
+msgid ""
+"Use a copy of the image as the default for all files of these MIME types."
+msgstr ""
+"Use a copy of the image as the default for all files of these MIME types."
 
 #: usericons.c:279
 #, c-format
@@ -2895,8 +2908,8 @@ msgid ""
 "a new window with this turned on. Clicking with the button-2 (middle) will "
 "reuse the current window."
 msgstr ""
-"左ボタンをクリックすると、ディレクトリを新しいウィンドウで開く。"
-"中ボタンをクリックすると現在のウィンドウで開く。"
+"左ボタンをクリックすると、ディレクトリを新しいウィンドウで開く。中ボタンをク"
+"リックすると現在のウィンドウで開く。"
 
 #: tips:40
 msgid "Single-click navigation"
@@ -3146,8 +3159,8 @@ msgid ""
 "When thumbnails are turned on, each image file in a directory is loaded and "
 "a small thumbnail of it is shown."
 msgstr ""
-"サムネールを有効にすると、ディレクトリ内の画像ファイルが小さなサムネールで"
-"表示されます。"
+"サムネールを有効にすると、ディレクトリ内の画像ファイルが小さなサムネールで表"
+"示されます。"
 
 #: tips:120
 msgid "Show image thumbnails"
@@ -3171,8 +3184,8 @@ msgid ""
 "thumbnails directory. Click here to remove all the cached thumbnails. They "
 "will be created again as needed."
 msgstr ""
-"速度を上げるため、生成したサムネールは隠しディレクトリ ~/.thumbnails に"
-"保存されます。ここをクリックすると保存したサムネールを削除します。"
+"速度を上げるため、生成したサムネールは隠しディレクトリ ~/.thumbnails に保存さ"
+"れます。ここをクリックすると保存したサムネールを削除します。"
 
 #: tips:125
 msgid "Pinboard"
@@ -3235,8 +3248,8 @@ msgid ""
 "If this is set, pinboard icons are always kept completely within screen "
 "limits, including the label."
 msgstr ""
-"これを指定すると、デスクトップのアイコンがラベルも含めて常に画面内に収まるように"
-"なります。"
+"これを指定すると、デスクトップのアイコンがラベルも含めて常に画面内に収まるよ"
+"うになります。"
 
 #: tips:142
 msgid "Icon grid step:"
@@ -3354,8 +3367,11 @@ msgid "Image only for applications"
 msgstr "アプリケーションの場合はアイコンのみ"
 
 #: tips:171
-msgid "Applications have just an image, everything else has both an image and text."
-msgstr "アプリケーションの場合はアイコンのみ。その他の場合はアイコンと文字の両方を表示。"
+msgid ""
+"Applications have just an image, everything else has both an image and text."
+msgstr ""
+"アプリケーションの場合はアイコンのみ。その他の場合はアイコンと文字の両方を表"
+"示。"
 
 #: tips:172
 msgid "Image only"
@@ -3545,38 +3561,26 @@ msgid "Behaviour"
 msgstr "動作"
 
 #: tips:238
-msgid "Menu on button 2 (RISC OS style)"
-msgstr "中ボタンでメニューを表示(RISC OS風)"
-
-#: tips:239
-msgid ""
-"Use button 2, the middle button (click both buttons at once on two button "
-"mice), to pop up the menu. If off, use button 3 (right) instead."
-msgstr ""
-"中ボタンでポップアップメニューを表示する。オフにしている場合は右ボタンで"
-"ポップアップ。"
-
-#: tips:240
 msgid "`Xterm Here' program"
 msgstr "ここでXtermを開く"
 
-#: tips:241 tips:242
+#: tips:239 tips:240
 msgid "The program to launch when you choose `Xterm Here' from the menu."
 msgstr "メニューの`ここでxtermを開く'を選んだときに起動するプログラム"
 
-#: tips:243
+#: tips:241
 msgid "Keyboard shortcuts"
 msgstr "キーボードのショートカット"
 
-#: tips:245
+#: tips:243
 msgid "Executable files"
 msgstr "実行ファイル"
 
-#: tips:246
+#: tips:244
 msgid "Ignore eXecutable bit for known extensions"
 msgstr "既知の拡張子については実行属性を無視する"
 
-#: tips:247 tips:248
+#: tips:245 tips:246
 msgid ""
 "If a file has a known extension (eg '.gif') then ignore the executable bit. "
 "This is useful if you have files on a Windows-type filesystem which are "
@@ -3586,11 +3590,11 @@ msgstr ""
 "属性を無視する。Windowsのファイルが実行ファイルのように表示されている場合に効"
 "果がある。"
 
-#: tips:249
+#: tips:247
 msgid "MIME types"
 msgstr "MIME types"
 
-#: tips:250
+#: tips:248
 msgid ""
 "The filer uses a set of rules to work out the correct MIME type for each "
 "regular file, and then chooses a suitable icon for that type. Use the MIME-"
@@ -3604,43 +3608,43 @@ msgstr ""
 "\n"
 "http://rox.sourceforge.net/mime_editor.html"
 
-#: tips:251 tips:252
+#: tips:249 tips:250
 msgid "Use the 'Set Icon...' dialog box to set the icon for each MIME type."
 msgstr "Use the 'Set Icon...' dialog box to set the icon for each MIME type."
 
-#: tips:253
+#: tips:251
 msgid "Colours"
 msgstr "色"
 
-#: tips:254
+#: tips:252
 msgid "File type colours"
 msgstr "ファイルの色分け"
 
-#: tips:255
+#: tips:253
 msgid "Colour files based on their types"
 msgstr "種類別にファイルを色分けする"
 
-#: tips:256
+#: tips:254
 msgid "Filenames (and details) are coloured according to the file's type."
 msgstr "Filenames (and details) are coloured according to the file's type."
 
-#: tips:257
+#: tips:255
 msgid "Directory:"
 msgstr "ディレクトリ:"
 
-#: tips:258
+#: tips:256
 msgid "Regular file:"
 msgstr "一般ファイル:"
 
-#: tips:259
+#: tips:257
 msgid "Pipe:"
 msgstr "パイプ:"
 
-#: tips:260
+#: tips:258
 msgid "Socket:"
 msgstr "ソケット:"
 
-#: tips:262 tips:263
+#: tips:260 tips:261
 msgid ""
 "Error, such as a symlink which points to a non-existant file, or a file "
 "which the filer does not have permission to examine."
@@ -3648,19 +3652,19 @@ msgstr ""
 "Error, such as a symlink which points to a non-existant file, or a file "
 "which the filer does not have permission to examine."
 
-#: tips:264
+#: tips:262
 msgid "Character device:"
 msgstr "Character device:"
 
-#: tips:265
+#: tips:263
 msgid "Block device:"
 msgstr "ブロックデバイス:"
 
-#: tips:266
+#: tips:264
 msgid "Door:"
 msgstr "Door:"
 
-#: tips:267
+#: tips:265
 msgid ""
 "Door files are a bit like sockets or pipes, and have only been seen on "
 "Solaris."
@@ -3668,31 +3672,31 @@ msgstr ""
 "Door files are a bit like sockets or pipes, and have only been seen on "
 "Solaris."
 
-#: tips:268
+#: tips:266
 msgid "Executable file:"
 msgstr "実行ファイル:"
 
-#: tips:269
+#: tips:267
 msgid "Application directory:"
 msgstr "アプリケーションのディレクトリ:"
 
-#: tips:270
+#: tips:268
 msgid "Unknown type:"
 msgstr "不明な種類:"
 
-#: tips:271
+#: tips:269
 msgid "Compatibility"
 msgstr "互換性"
 
-#: tips:272
+#: tips:270
 msgid "Window manager problems"
 msgstr "ウィンドウマネージャとの問題"
 
-#: tips:273
+#: tips:271
 msgid "Override window manager control of the pinboard and panels"
 msgstr "ウィンドウマネージャによるデスクトップとパネルの制御を無視する"
 
-#: tips:274
+#: tips:272
 msgid ""
 "Some window managers don't support the new Extended Window Manager Hints "
 "system, and so treat the pinboard and panels like normal windows. Turn this "
@@ -3705,11 +3709,11 @@ msgstr ""
 "チェックを入れるとデスクトップが前面に来るというような問題を修正することがで"
 "きる。ウィンドウ周りの装飾等についても同様。"
 
-#: tips:275
+#: tips:273
 msgid "Pass all backdrop mouse clicks to window manager"
 msgstr "デスクトップの背景でのマウスクリックはウィンドウマネージャに渡す"
 
-#: tips:276
+#: tips:274
 msgid ""
 "Normally, right clicking on the desktop background will open the pinboard "
 "menu and left clicking will clear the selection. Turn this on to forward the "
@@ -3718,31 +3722,31 @@ msgstr ""
 "デスクトップの背景で右クリックをすると、通常はROXのデスクトップメニューが現れ"
 "る。しかしここにチェックを入れると、ウィンドウマネージャ本来の表示が現れる。"
 
-#: tips:277
+#: tips:275
 msgid "Blackbox root menus hack"
 msgstr "Blackboxのrootメニューの改善"
 
-#: tips:278 tips:279
+#: tips:276 tips:277
 msgid ""
 "Blackbox, Fluxbox and similar window managers do not yet work well with the "
 "ROX-Filer pinboard. This option enables some workarounds. These window "
 "managers are expected to change their behaviour in new versions so that this "
 "isn't necessary."
 msgstr ""
-"Blackbox系のウィンドウマネージャ(Fluxboxなど)ではROX-Filerのデスクトップが"
-"うまく動作しません。このオプションを有効にするといくらか改善されます。"
-"新版のウィンドウマネージャでは修正されるはずですので、そのときは"
-"不要になるでしょう。"
+"Blackbox系のウィンドウマネージャ(Fluxboxなど)ではROX-Filerのデスクトップがう"
+"まく動作しません。このオプションを有効にするといくらか改善されます。新版の"
+"ウィンドウマネージャでは修正されるはずですので、そのときは不要になるでしょ"
+"う。"
 
-#: tips:280
+#: tips:278
 msgid "Drag and drop"
 msgstr "ドラッグ＆ドロップ"
 
-#: tips:281
+#: tips:279
 msgid "Don't use hostnames"
 msgstr "ホスト名を使わない"
 
-#: tips:282 tips:283 tips:284 tips:285
+#: tips:280 tips:281 tips:282 tips:283
 msgid ""
 "Some older applications don't support XDND fully and may need to have this "
 "option turned on. Use this if dragging files to an application shows a + "
@@ -3752,106 +3756,115 @@ msgstr ""
 "option turned on. Use this if dragging files to an application shows a + "
 "sign on the pointer but the drop doesn't work."
 
-msgid "Show name-to-type rules"
-msgstr "名前->種類 の順で表示"
+#~ msgid "Menu on button 2 (RISC OS style)"
+#~ msgstr "中ボタンでメニューを表示(RISC OS風)"
 
-msgid "DirItem"
-msgstr "Dirアイテム"
+#~ msgid ""
+#~ "Use button 2, the middle button (click both buttons at once on two button "
+#~ "mice), to pop up the menu. If off, use button 3 (right) instead."
+#~ msgstr ""
+#~ "中ボタンでポップアップメニューを表示する。オフにしている場合は右ボタンで"
+#~ "ポップアップ。"
 
-msgid "Background color"
-msgstr "背景の色"
+#~ msgid "Show name-to-type rules"
+#~ msgstr "名前->種類 の順で表示"
 
-msgid "Background color as a GdkColor"
-msgstr "Background color as a GdkColor"
+#~ msgid "DirItem"
+#~ msgstr "Dirアイテム"
 
-msgid "Vertical Adjustment"
-msgstr "Vertical Adjustment"
+#~ msgid "Background color"
+#~ msgstr "背景の色"
 
-msgid "The GtkAdjustment for the vertical position."
-msgstr "The GtkAdjustment for the vertical position."
+#~ msgid "Background color as a GdkColor"
+#~ msgstr "Background color as a GdkColor"
 
-msgid "Has Discard"
-msgstr "Has Discard"
+#~ msgid "Vertical Adjustment"
+#~ msgstr "Vertical Adjustment"
 
-msgid "The dialog has a Discard button"
-msgstr "The dialog has a Discard button"
+#~ msgid "The GtkAdjustment for the vertical position."
+#~ msgstr "The GtkAdjustment for the vertical position."
 
-msgid "Huge"
-msgstr "巨大なアイコン"
+#~ msgid "Has Discard"
+#~ msgstr "Has Discard"
 
-msgid "Large"
-msgstr "大きなアイコン"
+#~ msgid "The dialog has a Discard button"
+#~ msgstr "The dialog has a Discard button"
 
-msgid "Small"
-msgstr "小さいアイコン"
+#~ msgid "Huge"
+#~ msgstr "巨大なアイコン"
 
-msgid "Set Icon"
-msgstr "アイコンを設定"
+#~ msgid "Large"
+#~ msgstr "大きなアイコン"
 
-msgid "You can't use multiple files with Set Icon!"
-msgstr "You can't use multiple files with Set Icon!"
+#~ msgid "Small"
+#~ msgstr "小さいアイコン"
 
-msgid "Display backdrop image:"
-msgstr "背景の画像を表示:"
+#~ msgid "Set Icon"
+#~ msgstr "アイコンを設定"
 
-msgid ""
-"You should drop a single (local) image file onto the drop box - that image "
-"will be used for the desktop background. You can also drag certain "
-"applications onto this box."
-msgstr ""
-"You should drop a single (local) image file onto the drop box - that image "
-"will be used for the desktop background. You can also drag certain "
-"applications onto this box."
+#~ msgid "You can't use multiple files with Set Icon!"
+#~ msgstr "You can't use multiple files with Set Icon!"
 
-msgid ""
-"You should drop a single (local) application onto the drop box - that "
-"application will be used to load files of this type in future"
-msgstr ""
-"You should drop a single (local) application onto the drop box - that "
-"application will be used to load files of this type in future"
+#~ msgid "Display backdrop image:"
+#~ msgstr "背景の画像を表示:"
 
-msgid "Currently %s"
-msgstr "Currently %s"
+#~ msgid ""
+#~ "You should drop a single (local) image file onto the drop box - that "
+#~ "image will be used for the desktop background. You can also drag certain "
+#~ "applications onto this box."
+#~ msgstr ""
+#~ "You should drop a single (local) image file onto the drop box - that "
+#~ "image will be used for the desktop background. You can also drag certain "
+#~ "applications onto this box."
 
-msgid "Menu of directories previously used for icons"
-msgstr "Menu of directories previously used for icons"
+#~ msgid ""
+#~ "You should drop a single (local) application onto the drop box - that "
+#~ "application will be used to load files of this type in future"
+#~ msgstr ""
+#~ "You should drop a single (local) application onto the drop box - that "
+#~ "application will be used to load files of this type in future"
 
-msgid "Enter the path of an icon file:"
-msgstr "アイコンファイルのパスを入力:"
+#~ msgid "Currently %s"
+#~ msgstr "Currently %s"
 
-msgid "_Remove"
-msgstr "削除(_R)"
+#~ msgid "Menu of directories previously used for icons"
+#~ msgstr "Menu of directories previously used for icons"
 
-msgid ""
-"You should drop a single local icon file onto the drop box - that icon will "
-"be used for this file from now on."
-msgstr ""
-"You should drop a single local icon file onto the drop box - that icon will "
-"be used for this file from now on."
+#~ msgid "Enter the path of an icon file:"
+#~ msgstr "アイコンファイルのパスを入力:"
 
-msgid ""
-"Enter the full path of a file that contains a valid image to be used as the "
-"icon for this file or directory."
-msgstr ""
-"Enter the full path of a file that contains a valid image to be used as the "
-"icon for this file or directory."
+#~ msgid "_Remove"
+#~ msgstr "削除(_R)"
 
-msgid ""
-"You have not yet set any special icons; therefore, I have no directories to "
-"show you"
-msgstr ""
-"You have not yet set any special icons; therefore, I have no directories to "
-"show you"
+#~ msgid ""
+#~ "You should drop a single local icon file onto the drop box - that icon "
+#~ "will be used for this file from now on."
+#~ msgstr ""
+#~ "You should drop a single local icon file onto the drop box - that icon "
+#~ "will be used for this file from now on."
 
-msgid "Large wrap width:"
-msgstr "Large wrap width:"
+#~ msgid ""
+#~ "Enter the full path of a file that contains a valid image to be used as "
+#~ "the icon for this file or directory."
+#~ msgstr ""
+#~ "Enter the full path of a file that contains a valid image to be used as "
+#~ "the icon for this file or directory."
 
-msgid "Max Small Icons width:"
-msgstr "小さいアイコンの最大幅:"
+#~ msgid ""
+#~ "You have not yet set any special icons; therefore, I have no directories "
+#~ "to show you"
+#~ msgstr ""
+#~ "You have not yet set any special icons; therefore, I have no directories "
+#~ "to show you"
 
-msgid "Name:"
-msgstr "名前:"
+#~ msgid "Large wrap width:"
+#~ msgstr "Large wrap width:"
 
-msgid "Summary"
-msgstr "概要"
+#~ msgid "Max Small Icons width:"
+#~ msgstr "小さいアイコンの最大幅:"
 
+#~ msgid "Name:"
+#~ msgstr "名前:"
+
+#~ msgid "Summary"
+#~ msgstr "概要"

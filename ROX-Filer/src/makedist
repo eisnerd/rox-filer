@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 
-chdir "../../../rox";
+chdir "../../../rox-stable";
 
 system "cvs rel .";
 
@@ -27,10 +27,11 @@ chdir;
 mkdir "rox-$a.$b.$c", 0775 or warn "mkdir() failed: $!\n";
 chdir "rox-$a.$b.$c";
 
-system "cvs -d:pserver:anonymous\@cvs.rox.sourceforge.net:/cvsroot/rox export -r Release-$a-$b-$c rox";
+system "cvs -dtal197\@cvs.rox.sourceforge.net:/cvsroot/rox export -r Release-$a-$b-$c rox";
+#system "cvs -d:pserver:anonymous\@cvs.rox.sourceforge.net:/cvsroot/rox export -r Release-$a-$b-$c rox";
 
 system "cd rox/ROX-Filer/src; autoconf; cd Docs; make";
-system "cp -r ~/Projects/rox/ROX-Filer/Messages/*.gmo rox/ROX-Filer/Messages";
+system "cp -r ~/Projects/rox-stable/ROX-Filer/Messages/*.gmo rox/ROX-Filer/Messages";
 
 system "mv rox/* .";
 rmdir "rox";

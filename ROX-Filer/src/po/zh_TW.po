@@ -6,7 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ROX-Filer 1.2.0\n"
-"POT-Creation-Date: 2003-05-29 12:05+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2003-07-23 16:51+0100\n"
 "PO-Revision-Date: 2002-11-10 21:00+0100\n"
 "Last-Translator: Babyfai Cheung<babyfai_cheung@hotmail.com>\n"
 "Language-Team: none\n"
@@ -473,7 +474,7 @@ msgstr "包含"
 msgid "Also change contents of subdirectories"
 msgstr "同時改變子目錄的內容"
 
-#: action.c:1822 dnd.c:123 menu.c:1832 tips:183
+#: action.c:1822 dnd.c:123 menu.c:1878 tips:183
 msgid "Copy"
 msgstr "複製"
 
@@ -561,17 +562,17 @@ msgstr ""
 msgid "Recently Visited"
 msgstr ""
 
-#: dir.c:924
+#: dir.c:926
 #, c-format
 msgid "Can't stat directory: %s"
 msgstr "不能打開目錄: %s"
 
-#: dir.c:933
+#: dir.c:935
 #, c-format
 msgid "Can't open directory: %s"
 msgstr "不能打開目錄: %s"
 
-#: display.c:557
+#: display.c:568
 #, c-format
 msgid "lstat(2) failed: %s"
 msgstr ""
@@ -721,7 +722,7 @@ msgid ""
 "Unmounting a device makes it safe to remove the disk."
 msgstr ""
 
-#: filer.c:383 menu.c:831
+#: filer.c:383 menu.c:872
 msgid "Unmount"
 msgstr "解除掛載"
 
@@ -785,7 +786,7 @@ msgstr "符號連結予"
 msgid "This filename is not valid UTF-8. You should rename it.\n"
 msgstr "不是正確的 UTF-8 名稱，請重新命名.\n"
 
-#: filer.c:2286 menu.c:1822
+#: filer.c:2286 menu.c:1868
 msgid "Item no longer exists!"
 msgstr "項目已不存在!"
 
@@ -1076,7 +1077,7 @@ msgstr "家目錄"
 msgid "File"
 msgstr "檔案"
 
-#: icon.c:142 menu.c:212 menu.c:844
+#: icon.c:142 menu.c:212 menu.c:885
 msgid "Shift Open"
 msgstr "以新窗口開啟"
 
@@ -1128,7 +1129,7 @@ msgstr "請先選擇項目以刪除"
 msgid "You must open the menu over an item"
 msgstr "請在項目上開啟選單"
 
-#: icon.c:619 menu.c:1193
+#: icon.c:619 menu.c:1237
 msgid "You can only set the run action for a regular file"
 msgstr "只可對常規檔案設定開啟的程式"
 
@@ -1161,7 +1162,7 @@ msgstr "您想開啟 %d 窗口"
 msgid "Show Info"
 msgstr "顯示信息"
 
-#: infobox.c:114 menu.c:747
+#: infobox.c:114 menu.c:788
 msgid "(bad utf-8)"
 msgstr "(不正確的 utf-8)"
 
@@ -1169,7 +1170,7 @@ msgstr "(不正確的 utf-8)"
 msgid "Show _Help Files"
 msgstr "顯示說明檔"
 
-#: infobox.c:376 tips:261
+#: infobox.c:376 tips:259
 msgid "Error:"
 msgstr "錯誤"
 
@@ -1371,7 +1372,7 @@ msgstr "巨圖示，並顯示..."
 msgid "Sizes"
 msgstr "大小"
 
-#: menu.c:186 tips:244
+#: menu.c:186 tips:242
 msgid "Types"
 msgstr "類型"
 
@@ -1540,41 +1541,41 @@ msgstr "終端機"
 msgid "Switch to xterm"
 msgstr "切換至終端機"
 
-#: menu.c:696
+#: menu.c:737
 msgid "You should Shift+Menu click over a file to send it somewhere"
 msgstr "你可用滑鼠在檔案上點擊選單,並同時按下Shift鍵.開啟`傳送至'功能"
 
-#: menu.c:732
+#: menu.c:773
 msgid "Next Click"
 msgstr "進階"
 
-#: menu.c:754
+#: menu.c:795
 #, c-format
 msgid "%d items"
 msgstr "%d 項目"
 
-#: menu.c:833
+#: menu.c:874
 #, fuzzy
 msgid "Open unmounted"
 msgstr "已解除掛載"
 
-#: menu.c:836
+#: menu.c:877
 msgid "Show Target"
 msgstr "顯示目標"
 
-#: menu.c:838
+#: menu.c:879
 msgid "Look Inside"
 msgstr "察看內部"
 
-#: menu.c:840
+#: menu.c:881
 msgid "Open As Text"
 msgstr "以文字模式開啟"
 
-#: menu.c:1008
+#: menu.c:1049
 msgid "_Relative link"
 msgstr "相關連結(_R)"
 
-#: menu.c:1014
+#: menu.c:1055
 msgid ""
 "If on, the symlink will store the path from the symlink to the target file. "
 "Use this if the symlink and the target will be moved together.\n"
@@ -1582,42 +1583,42 @@ msgid ""
 "may move but the target will stay put."
 msgstr ""
 
-#: menu.c:1081
+#: menu.c:1125
 msgid "New pathname is not absolute"
 msgstr "新的路徑名稱屬不絕對"
 
-#: menu.c:1147
+#: menu.c:1191
 #, c-format
 msgid "Symlink from '%s' already exists. Replace it with a link to '%s'?"
 msgstr " '%' 的連結檔已存在，是否要替換？"
 
-#: menu.c:1153
+#: menu.c:1197
 msgid "_Replace"
 msgstr "替換(_R)"
 
-#: menu.c:1284 menu.c:1325 menu.c:1385
+#: menu.c:1328 menu.c:1369 menu.c:1429
 msgid "Create"
 msgstr "創建"
 
-#: menu.c:1285
+#: menu.c:1329
 msgid "NewDir"
 msgstr "新目錄"
 
-#: menu.c:1299 menu.c:1305
+#: menu.c:1343 menu.c:1349
 #, c-format
 msgid "Error creating '%s': %s"
 msgstr "錯誤創建 '%s': %s"
 
-#: menu.c:1326
+#: menu.c:1370
 msgid "NewFile"
 msgstr "新檔案"
 
-#: menu.c:1344
+#: menu.c:1388
 #, c-format
 msgid "Error creating file: could not find the template for %s"
 msgstr "錯誤創建檔案: 找不到樣板予 %s"
 
-#: menu.c:1415
+#: menu.c:1459
 #, c-format
 msgid ""
 "The `Send To' menu provides a quick way to send some files to an "
@@ -1640,25 +1641,25 @@ msgstr ""
 "%s\n"
 "這'傳送至'功能,可用滑鼠和Shift+Menu來快速開啟."
 
-#: menu.c:1426
+#: menu.c:1470
 msgid ""
 "I'll show you your SendTo directory now; you should symlink (Ctrl+Shift "
 "drag) any applications you want into it."
 msgstr "請將適用的程式以符號連結 (Ctrl+Shift並 拖放)到'傳送至'的目錄內."
 
-#: menu.c:1429
+#: menu.c:1473
 msgid "Your CHOICESPATH variable setting prevents customisations - sorry."
 msgstr "不容許自定路徑"
 
-#: menu.c:1506
+#: menu.c:1550
 msgid "Customise"
 msgstr "自定"
 
-#: menu.c:1571
+#: menu.c:1615
 msgid "This is already the canonical name for this directory."
 msgstr "此目錄已有預設名稱"
 
-#: menu.c:1602
+#: menu.c:1646
 msgid ""
 "You can't open a second view onto this directory because the `Unique "
 "Windows' option is turned on in the Options window."
@@ -1666,75 +1667,75 @@ msgstr ""
 "你不能對此目錄開啟第二個窗口,因為你已在選項->Filer窗口內選了「唯一的窗口」的"
 "功能."
 
-#: menu.c:1721
+#: menu.c:1767
 msgid "Copy ... ?"
 msgstr "複製...?"
 
-#: menu.c:1724
+#: menu.c:1770
 msgid "Rename ... ?"
 msgstr "改名為...?"
 
-#: menu.c:1727
+#: menu.c:1773
 msgid "Symlink ... ?"
 msgstr "符號連...?"
 
-#: menu.c:1730
+#: menu.c:1776
 msgid "Shift Open ... ?"
 msgstr "新窗口開啟...?"
 
-#: menu.c:1733
+#: menu.c:1779
 msgid "Help about ... ?"
 msgstr "說明關於...?"
 
-#: menu.c:1736
+#: menu.c:1782
 msgid "Examine ... ?"
 msgstr "檢查...?"
 
-#: menu.c:1739
+#: menu.c:1785
 msgid "Set run action for ... ?"
 msgstr "設定執行程式予... ?"
 
-#: menu.c:1742
+#: menu.c:1788
 msgid "Set icon for ... ?"
 msgstr "設定圖示予...?"
 
-#: menu.c:1745
+#: menu.c:1791
 msgid "Send ... to ... ?"
 msgstr "傳送...至...?"
 
-#: menu.c:1748
+#: menu.c:1794
 msgid "DELETE ... ?"
 msgstr "移除...?"
 
-#: menu.c:1751
+#: menu.c:1797
 msgid "Count the size of ... ?"
 msgstr "計算容量從 ...?"
 
-#: menu.c:1754
+#: menu.c:1800
 msgid "Set permissions on ... ?"
 msgstr "改變權限予...?"
 
-#: menu.c:1757
+#: menu.c:1803
 msgid "Search inside ... ?"
 msgstr "搜索內部...?"
 
-#: menu.c:1760
+#: menu.c:1806
 msgid "Look inside ... ?"
 msgstr "察看內部...?"
 
-#: menu.c:1805
+#: menu.c:1851
 msgid "You cannot do this to more than one item at a time"
 msgstr "不可同時以此方式處理多個項目"
 
-#: menu.c:1837
+#: menu.c:1883
 msgid "Rename"
 msgstr "改名"
 
-#: menu.c:1842
+#: menu.c:1888
 msgid "Symlink"
 msgstr "符號連結"
 
-#: menu.c:1877
+#: menu.c:1923
 msgid ""
 "User-definable shortcuts are disabled by default in Gtk2, and you have not "
 "enabled them. You can turn this feature on by:\n"
@@ -1749,7 +1750,7 @@ msgstr ""
 "二) 在 ~/.gtkrc-2.0 內加入這行:\n"
 "\tgtk-can-chang-accels = 1"
 
-#: menu.c:1887
+#: menu.c:1933
 msgid ""
 "To set a keyboard short-cut for a menu item:\n"
 "\n"
@@ -1769,7 +1770,7 @@ msgstr ""
 "對應的熱鍵會出現在選單的某個項目上，而日後你想開啟這項目． 祗須按下熱鍵而不需"
 "先開啟選單."
 
-#: menu.c:1902
+#: menu.c:1948
 msgid "Set keyboard shortcuts"
 msgstr "設定熱鍵"
 
@@ -1861,16 +1862,16 @@ msgstr "你要從Window Manger中關閉面板確定要關閉?"
 msgid "Missing < or > in panel config file"
 msgstr "沒有 < 或 > 於面板的設定檔"
 
-#: panel.c:1206
+#: panel.c:1215
 #, c-format
 msgid "Error saving panel %s: %s"
 msgstr "錯誤儲存面板 %s: %s"
 
-#: panel.c:1509
+#: panel.c:1518
 msgid "Applet quit without ever creating a widget!"
 msgstr ""
 
-#: panel.c:1594
+#: panel.c:1612
 #, c-format
 msgid ""
 "Error running applet:\n"
@@ -1967,7 +1968,7 @@ msgstr "沒有 ',' 在圖示標簽後"
 msgid "Error saving pinboard %s: %s"
 msgstr "錯誤儲存桌板 %s: %s"
 
-#: pinboard.c:2018
+#: pinboard.c:2027
 #, c-format
 msgid ""
 "Error loading backdrop image:\n"
@@ -1975,7 +1976,7 @@ msgid ""
 "Backdrop removed."
 msgstr ""
 
-#: pinboard.c:2296
+#: pinboard.c:2305
 msgid ""
 "No pinboard was in use... the 'Default' pinboard has been selected. Use 'rox "
 "-p=Default' to turn it on in future."
@@ -3347,40 +3348,28 @@ msgid "Behaviour"
 msgstr "窗口行為"
 
 #: tips:238
-msgid "Menu on button 2 (RISC OS style)"
-msgstr "以滑鼠2(中)鍵啟動選單 (RISC OS 風格)"
-
-#: tips:239
-msgid ""
-"Use button 2, the middle button (click both buttons at once on two button "
-"mice), to pop up the menu. If off, use button 3 (right) instead."
-msgstr ""
-"以滑鼠第2鍵，即中鍵 (或對雙鍵滑鼠兩鍵同時按下)來開啟選單，否則，會用第3鍵(右"
-"鍵)代替."
-
-#: tips:240
 msgid "`Xterm Here' program"
 msgstr "預設的終端機程式:"
 
-#: tips:241 tips:242
+#: tips:239 tips:240
 msgid "The program to launch when you choose `Xterm Here' from the menu."
 msgstr "當你從選單選擇“終端機”這程式將被啟動"
 
-#: tips:243
+#: tips:241
 #, fuzzy
 msgid "Keyboard shortcuts"
 msgstr "設定熱鍵"
 
-#: tips:245
+#: tips:243
 #, fuzzy
 msgid "Executable files"
 msgstr "可執行檔"
 
-#: tips:246
+#: tips:244
 msgid "Ignore eXecutable bit for known extensions"
 msgstr "忽略已知紳延檔的執行性"
 
-#: tips:247 tips:248
+#: tips:245 tips:246
 msgid ""
 "If a file has a known extension (eg '.gif') then ignore the executable bit. "
 "This is useful if you have files on a Windows-type filesystem which are "
@@ -3390,11 +3379,11 @@ msgstr ""
 "你正在瀏覽一些MS-Windows的系統時，遇到某些在你的系統上沒法執行但 被標記為可執"
 "行的檔案，你便有需要忽略其可執行性."
 
-#: tips:249
+#: tips:247
 msgid "MIME types"
 msgstr ""
 
-#: tips:250
+#: tips:248
 #, fuzzy
 msgid ""
 "The filer uses a set of rules to work out the correct MIME type for each "
@@ -3407,91 +3396,91 @@ msgstr ""
 "於每一常規的檔案，並會為每一檔案的類型配置一個合適的圖示.\n"
 "請在每次編輯檔案後，單擊“重新讀取”的按鈕，或重新啟動 ROX-Filer."
 
-#: tips:251 tips:252
+#: tips:249 tips:250
 msgid "Use the 'Set Icon...' dialog box to set the icon for each MIME type."
 msgstr "請以“設定圖示...”對話框來設定圖示的類型"
 
-#: tips:253
+#: tips:251
 msgid "Colours"
 msgstr "顏色"
 
-#: tips:254
+#: tips:252
 msgid "File type colours"
 msgstr "檔案類型顏色"
 
-#: tips:255
+#: tips:253
 msgid "Colour files based on their types"
 msgstr "基於檔案類型配色"
 
-#: tips:256
+#: tips:254
 msgid "Filenames (and details) are coloured according to the file's type."
 msgstr "檔案名稱(及詳述)會根據它的類型而配色"
 
-#: tips:257
+#: tips:255
 msgid "Directory:"
 msgstr "目錄"
 
-#: tips:258
+#: tips:256
 msgid "Regular file:"
 msgstr "常規檔"
 
-#: tips:259
+#: tips:257
 msgid "Pipe:"
 msgstr "管道"
 
-#: tips:260
+#: tips:258
 msgid "Socket:"
 msgstr "套節"
 
-#: tips:262 tips:263
+#: tips:260 tips:261
 msgid ""
 "Error, such as a symlink which points to a non-existant file, or a file "
 "which the filer does not have permission to examine."
 msgstr "錯誤，此連結所指向的是一個不存在或 你的權限不足以檢察的檔案."
 
-#: tips:264
+#: tips:262
 msgid "Character device:"
 msgstr "字符設備"
 
-#: tips:265
+#: tips:263
 msgid "Block device:"
 msgstr "區塊設備"
 
-#: tips:266
+#: tips:264
 msgid "Door:"
 msgstr "入口:"
 
-#: tips:267
+#: tips:265
 msgid ""
 "Door files are a bit like sockets or pipes, and have only been seen on "
 "Solaris."
 msgstr ""
 
-#: tips:268
+#: tips:266
 msgid "Executable file:"
 msgstr "可執行檔"
 
-#: tips:269
+#: tips:267
 msgid "Application directory:"
 msgstr "應用程式目錄"
 
-#: tips:270
+#: tips:268
 msgid "Unknown type:"
 msgstr "不明類型"
 
-#: tips:271
+#: tips:269
 msgid "Compatibility"
 msgstr "相容性"
 
-#: tips:272
+#: tips:270
 msgid "Window manager problems"
 msgstr ""
 
-#: tips:273
+#: tips:271
 msgid "Override window manager control of the pinboard and panels"
 msgstr ""
 
-#: tips:274
+#: tips:272
 msgid ""
 "Some window managers don't support the new Extended Window Manager Hints "
 "system, and so treat the pinboard and panels like normal windows. Turn this "
@@ -3500,22 +3489,22 @@ msgid ""
 "them appear in window-select lists."
 msgstr ""
 
-#: tips:275
+#: tips:273
 msgid "Pass all backdrop mouse clicks to window manager"
 msgstr ""
 
-#: tips:276
+#: tips:274
 msgid ""
 "Normally, right clicking on the desktop background will open the pinboard "
 "menu and left clicking will clear the selection. Turn this on to forward the "
 "events to your window manager instead. Clicks on icons will not be forwarded."
 msgstr ""
 
-#: tips:277
+#: tips:275
 msgid "Blackbox root menus hack"
 msgstr ""
 
-#: tips:278 tips:279
+#: tips:276 tips:277
 msgid ""
 "Blackbox, Fluxbox and similar window managers do not yet work well with the "
 "ROX-Filer pinboard. This option enables some workarounds. These window "
@@ -3523,15 +3512,15 @@ msgid ""
 "isn't necessary."
 msgstr ""
 
-#: tips:280
+#: tips:278
 msgid "Drag and drop"
 msgstr "滑鼠拖放"
 
-#: tips:281
+#: tips:279
 msgid "Don't use hostnames"
 msgstr "不用主機名稱"
 
-#: tips:282 tips:283 tips:284 tips:285
+#: tips:280 tips:281 tips:282 tips:283
 msgid ""
 "Some older applications don't support XDND fully and may need to have this "
 "option turned on. Use this if dragging files to an application shows a + "
@@ -3539,6 +3528,16 @@ msgid ""
 msgstr ""
 "某些舊的應用程式不完全支援拖放來執行的功能 此選項便須要開啟，以達致將檔案拖到"
 "當鼠標出現 a + 符號的應用程式上."
+
+#~ msgid "Menu on button 2 (RISC OS style)"
+#~ msgstr "以滑鼠2(中)鍵啟動選單 (RISC OS 風格)"
+
+#~ msgid ""
+#~ "Use button 2, the middle button (click both buttons at once on two button "
+#~ "mice), to pop up the menu. If off, use button 3 (right) instead."
+#~ msgstr ""
+#~ "以滑鼠第2鍵，即中鍵 (或對雙鍵滑鼠兩鍵同時按下)來開啟選單，否則，會用第3鍵"
+#~ "(右鍵)代替."
 
 #~ msgid "Show name-to-type rules"
 #~ msgstr "顯示名稱類型的規則"

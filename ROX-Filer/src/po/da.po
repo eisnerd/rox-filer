@@ -5,7 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2003-05-29 12:05+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2003-07-23 16:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Christian Storgaard <cybolic@goth.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -503,7 +504,7 @@ msgstr "Rekursivt"
 msgid "Also change contents of subdirectories"
 msgstr "Indholdet af undermapper skal også ændres."
 
-#: action.c:1822 dnd.c:123 menu.c:1832 tips:183
+#: action.c:1822 dnd.c:123 menu.c:1878 tips:183
 msgid "Copy"
 msgstr "Kopier"
 
@@ -596,17 +597,17 @@ msgstr ""
 msgid "Recently Visited"
 msgstr ""
 
-#: dir.c:924
+#: dir.c:926
 #, fuzzy, c-format
 msgid "Can't stat directory: %s"
 msgstr "Kan ikke åbne mappen: %s"
 
-#: dir.c:933
+#: dir.c:935
 #, c-format
 msgid "Can't open directory: %s"
 msgstr "Kan ikke åbne mappen: %s"
 
-#: display.c:557
+#: display.c:568
 #, c-format
 msgid "lstat(2) failed: %s"
 msgstr "lstat(2) mislykkedes: %s"
@@ -765,7 +766,7 @@ msgid ""
 "Unmounting a device makes it safe to remove the disk."
 msgstr ""
 
-#: filer.c:383 menu.c:831
+#: filer.c:383 menu.c:872
 msgid "Unmount"
 msgstr "Umount"
 
@@ -829,7 +830,7 @@ msgstr "Symbolsk genvej til "
 msgid "This filename is not valid UTF-8. You should rename it.\n"
 msgstr ""
 
-#: filer.c:2286 menu.c:1822
+#: filer.c:2286 menu.c:1868
 msgid "Item no longer exists!"
 msgstr "Objektet eksisterer ikke længere!"
 
@@ -1135,7 +1136,7 @@ msgstr "Hjemme-mappen"
 msgid "File"
 msgstr "Fil"
 
-#: icon.c:142 menu.c:212 menu.c:844
+#: icon.c:142 menu.c:212 menu.c:885
 msgid "Shift Open"
 msgstr "Shift Åben"
 
@@ -1187,7 +1188,7 @@ msgstr "Du skal først vælge nogle objekter at fjerne"
 msgid "You must open the menu over an item"
 msgstr "Du skal åbne menuen over et objekt"
 
-#: icon.c:619 menu.c:1193
+#: icon.c:619 menu.c:1237
 msgid "You can only set the run action for a regular file"
 msgstr "Du kan kun sætte kør hændelsen for en normal fil"
 
@@ -1222,7 +1223,7 @@ msgstr ""
 msgid "Show Info"
 msgstr "Info"
 
-#: infobox.c:114 menu.c:747
+#: infobox.c:114 menu.c:788
 msgid "(bad utf-8)"
 msgstr ""
 
@@ -1231,7 +1232,7 @@ msgstr ""
 msgid "Show _Help Files"
 msgstr "Vis skjulte filer"
 
-#: infobox.c:376 tips:261
+#: infobox.c:376 tips:259
 msgid "Error:"
 msgstr "Fejl:"
 
@@ -1469,7 +1470,7 @@ msgstr "Kæmpe, Med..."
 msgid "Sizes"
 msgstr "Størrelser"
 
-#: menu.c:186 tips:244
+#: menu.c:186 tips:242
 msgid "Types"
 msgstr "Typer"
 
@@ -1640,42 +1641,42 @@ msgstr "Xterm Her"
 msgid "Switch to xterm"
 msgstr ""
 
-#: menu.c:696
+#: menu.c:737
 msgid "You should Shift+Menu click over a file to send it somewhere"
 msgstr "Du burde Shift-klikke på en fil for at sende den til noget"
 
-#: menu.c:732
+#: menu.c:773
 msgid "Next Click"
 msgstr "Næste Klik"
 
-#: menu.c:754
+#: menu.c:795
 #, c-format
 msgid "%d items"
 msgstr "%d objekter"
 
-#: menu.c:833
+#: menu.c:874
 #, fuzzy
 msgid "Open unmounted"
 msgstr "Umount"
 
-#: menu.c:836
+#: menu.c:877
 msgid "Show Target"
 msgstr "Hvis Mål"
 
-#: menu.c:838
+#: menu.c:879
 msgid "Look Inside"
 msgstr "Kig Indeni"
 
-#: menu.c:840
+#: menu.c:881
 msgid "Open As Text"
 msgstr "Åben Som Tekst"
 
-#: menu.c:1008
+#: menu.c:1049
 #, fuzzy
 msgid "_Relative link"
 msgstr "Relativ genvej"
 
-#: menu.c:1014
+#: menu.c:1055
 msgid ""
 "If on, the symlink will store the path from the symlink to the target file. "
 "Use this if the symlink and the target will be moved together.\n"
@@ -1687,43 +1688,43 @@ msgstr ""
 "Hvis slået fra vil den fulde sti til mål-filen blive gemt - brug dette hvis "
 "genvejen måske bliver flyttet, men mål-filen altid vil være samme sted."
 
-#: menu.c:1081
+#: menu.c:1125
 msgid "New pathname is not absolute"
 msgstr "Nyt mappenavn er ikke absolut"
 
-#: menu.c:1147
+#: menu.c:1191
 #, c-format
 msgid "Symlink from '%s' already exists. Replace it with a link to '%s'?"
 msgstr ""
 
-#: menu.c:1153
+#: menu.c:1197
 msgid "_Replace"
 msgstr ""
 
-#: menu.c:1284 menu.c:1325 menu.c:1385
+#: menu.c:1328 menu.c:1369 menu.c:1429
 #, fuzzy
 msgid "Create"
 msgstr "Lav Thumbs"
 
-#: menu.c:1285
+#: menu.c:1329
 msgid "NewDir"
 msgstr "Ny Mappe"
 
-#: menu.c:1299 menu.c:1305
+#: menu.c:1343 menu.c:1349
 #, c-format
 msgid "Error creating '%s': %s"
 msgstr "Fejl under skabning af: '%s': %s"
 
-#: menu.c:1326
+#: menu.c:1370
 msgid "NewFile"
 msgstr "Ny Fil"
 
-#: menu.c:1344
+#: menu.c:1388
 #, c-format
 msgid "Error creating file: could not find the template for %s"
 msgstr "Fejl under skabning af fil: kunne ikke finde skabelonen for %s"
 
-#: menu.c:1415
+#: menu.c:1459
 #, fuzzy, c-format
 msgid ""
 "The `Send To' menu provides a quick way to send some files to an "
@@ -1746,7 +1747,7 @@ msgstr ""
 "%s\n"
 "'Send Til' menuen kan åbnes ved at Shift-klikke på en fil."
 
-#: menu.c:1426
+#: menu.c:1470
 msgid ""
 "I'll show you your SendTo directory now; you should symlink (Ctrl+Shift "
 "drag) any applications you want into it."
@@ -1754,19 +1755,19 @@ msgstr ""
 "Jeg viser dig nu din 'Send Til' mappe; du bør lave symbolske genveje (Ctrl"
 "+Shift træk) til ethvert program du vil have i den."
 
-#: menu.c:1429
+#: menu.c:1473
 msgid "Your CHOICESPATH variable setting prevents customisations - sorry."
 msgstr "Din CHOICESPATH variabel indstilling umuliggør ændringer - desværre."
 
-#: menu.c:1506
+#: menu.c:1550
 msgid "Customise"
 msgstr "Indstil"
 
-#: menu.c:1571
+#: menu.c:1615
 msgid "This is already the canonical name for this directory."
 msgstr ""
 
-#: menu.c:1602
+#: menu.c:1646
 msgid ""
 "You can't open a second view onto this directory because the `Unique "
 "Windows' option is turned on in the Options window."
@@ -1774,75 +1775,75 @@ msgstr ""
 "Du kan ikke åbne en til oversigt over denne mappe fordi 'Unikke Vinduer' "
 "insdstillingen er slået til i Indstillinger vinduet."
 
-#: menu.c:1721
+#: menu.c:1767
 msgid "Copy ... ?"
 msgstr "Kopier ... ?"
 
-#: menu.c:1724
+#: menu.c:1770
 msgid "Rename ... ?"
 msgstr "Omdøb ... ?"
 
-#: menu.c:1727
+#: menu.c:1773
 msgid "Symlink ... ?"
 msgstr "Lav symbolsk genvej ... ?"
 
-#: menu.c:1730
+#: menu.c:1776
 msgid "Shift Open ... ?"
 msgstr "Shift Åben ... ?"
 
-#: menu.c:1733
+#: menu.c:1779
 msgid "Help about ... ?"
 msgstr "Hjælp omkring ... ?"
 
-#: menu.c:1736
+#: menu.c:1782
 msgid "Examine ... ?"
 msgstr "Undersøg ... ?"
 
-#: menu.c:1739
+#: menu.c:1785
 msgid "Set run action for ... ?"
 msgstr "Sæt kør handlingen for ... ?"
 
-#: menu.c:1742
+#: menu.c:1788
 msgid "Set icon for ... ?"
 msgstr "Definer ikonet for ... ?"
 
-#: menu.c:1745
+#: menu.c:1791
 msgid "Send ... to ... ?"
 msgstr "Send ... til ... ?"
 
-#: menu.c:1748
+#: menu.c:1794
 msgid "DELETE ... ?"
 msgstr "SLET ... ?"
 
-#: menu.c:1751
+#: menu.c:1797
 msgid "Count the size of ... ?"
 msgstr "Udregn størrelsen af ... ?"
 
-#: menu.c:1754
+#: menu.c:1800
 msgid "Set permissions on ... ?"
 msgstr "Sæt tilladelserne på ... ?"
 
-#: menu.c:1757
+#: menu.c:1803
 msgid "Search inside ... ?"
 msgstr "Søg indeni ... ?"
 
-#: menu.c:1760
+#: menu.c:1806
 msgid "Look inside ... ?"
 msgstr "Kig indendi ... ?"
 
-#: menu.c:1805
+#: menu.c:1851
 msgid "You cannot do this to more than one item at a time"
 msgstr "Du kan ikke gøre dette ved mere end et objekt ad gangen"
 
-#: menu.c:1837
+#: menu.c:1883
 msgid "Rename"
 msgstr "Omdøb"
 
-#: menu.c:1842
+#: menu.c:1888
 msgid "Symlink"
 msgstr "Lav symbolsk genvej"
 
-#: menu.c:1877
+#: menu.c:1923
 msgid ""
 "User-definable shortcuts are disabled by default in Gtk2, and you have not "
 "enabled them. You can turn this feature on by:\n"
@@ -1852,7 +1853,7 @@ msgid ""
 "\tgtk-can-change-accels = 1"
 msgstr ""
 
-#: menu.c:1887
+#: menu.c:1933
 msgid ""
 "To set a keyboard short-cut for a menu item:\n"
 "\n"
@@ -1872,7 +1873,7 @@ msgstr ""
 "Tasten vil vise sig ved siden af funktionen og du kan bare presse den tast "
 "uden at åbne menuen for fremtiden."
 
-#: menu.c:1902
+#: menu.c:1948
 msgid "Set keyboard shortcuts"
 msgstr "Indstil tastatur-genveje"
 
@@ -1973,16 +1974,16 @@ msgstr ""
 msgid "Missing < or > in panel config file"
 msgstr "Mangler < eller > i panel configurations filen"
 
-#: panel.c:1206
+#: panel.c:1215
 #, c-format
 msgid "Error saving panel %s: %s"
 msgstr "Fejl under gemning af panel %s: %s"
 
-#: panel.c:1509
+#: panel.c:1518
 msgid "Applet quit without ever creating a widget!"
 msgstr "Applet afsluttede uden overhovedet at lave et widget!"
 
-#: panel.c:1594
+#: panel.c:1612
 #, fuzzy, c-format
 msgid ""
 "Error running applet:\n"
@@ -2082,7 +2083,7 @@ msgstr "Mangler ',' efter ikon titlen"
 msgid "Error saving pinboard %s: %s"
 msgstr "Fejl under gemning af opslagstavlen %s: %s"
 
-#: pinboard.c:2018
+#: pinboard.c:2027
 #, c-format
 msgid ""
 "Error loading backdrop image:\n"
@@ -2090,7 +2091,7 @@ msgid ""
 "Backdrop removed."
 msgstr ""
 
-#: pinboard.c:2296
+#: pinboard.c:2305
 msgid ""
 "No pinboard was in use... the 'Default' pinboard has been selected. Use 'rox "
 "-p=Default' to turn it on in future."
@@ -3532,41 +3533,29 @@ msgid "Behaviour"
 msgstr ""
 
 #: tips:238
-msgid "Menu on button 2 (RISC OS style)"
-msgstr "Menu på knap 2 (RISC OS stil)"
-
-#: tips:239
-msgid ""
-"Use button 2, the middle button (click both buttons at once on two button "
-"mice), to pop up the menu. If off, use button 3 (right) instead."
-msgstr ""
-"Brug knap 2, den midterste knap (klik begge knapper samtidig på to-knaps "
-"mus), for at poppe menuen op. Hvis slået fra, brug knap 3 (højre) istedet."
-
-#: tips:240
 #, fuzzy
 msgid "`Xterm Here' program"
 msgstr "'Xterm Her' program:"
 
-#: tips:241 tips:242
+#: tips:239 tips:240
 msgid "The program to launch when you choose `Xterm Here' from the menu."
 msgstr "Programmet der bliver startet når du vælger 'Xterm Her' fra menuen."
 
-#: tips:243
+#: tips:241
 #, fuzzy
 msgid "Keyboard shortcuts"
 msgstr "Indstil tastatur-genveje"
 
-#: tips:245
+#: tips:243
 #, fuzzy
 msgid "Executable files"
 msgstr "Kørbar fil"
 
-#: tips:246
+#: tips:244
 msgid "Ignore eXecutable bit for known extensions"
 msgstr "Ignorer filer sat til kørbar for kendte fil-typer"
 
-#: tips:247 tips:248
+#: tips:245 tips:246
 msgid ""
 "If a file has a known extension (eg '.gif') then ignore the executable bit. "
 "This is useful if you have files on a Windows-type filesystem which are "
@@ -3576,11 +3565,11 @@ msgstr ""
 "Dette er brugbart hvis du har på et Windows-agtigt filsystem vor alle filer "
 "bliver vist some kørbare."
 
-#: tips:249
+#: tips:247
 msgid "MIME types"
 msgstr ""
 
-#: tips:250
+#: tips:248
 #, fuzzy
 msgid ""
 "The filer uses a set of rules to work out the correct MIME type for each "
@@ -3594,51 +3583,51 @@ msgstr ""
 "Efter at have editeret filerne, klik på genlæs knappen nedenunder, eller "
 "genstart 'fileren'."
 
-#: tips:251 tips:252
+#: tips:249 tips:250
 #, fuzzy
 msgid "Use the 'Set Icon...' dialog box to set the icon for each MIME type."
 msgstr ""
 "Brug 'Definer Ikon...' dialog boksen til at definere ikonet for hver type."
 
-#: tips:253
+#: tips:251
 #, fuzzy
 msgid "Colours"
 msgstr "Timer"
 
-#: tips:254
+#: tips:252
 #, fuzzy
 msgid "File type colours"
 msgstr "Tekst farver:"
 
-#: tips:255
+#: tips:253
 msgid "Colour files based on their types"
 msgstr "Farv filer baseret på deres type"
 
-#: tips:256
+#: tips:254
 msgid "Filenames (and details) are coloured according to the file's type."
 msgstr "Filnavne (og detaljer) skal farves efter deres fils type."
 
-#: tips:257
+#: tips:255
 #, fuzzy
 msgid "Directory:"
 msgstr "Mappe"
 
-#: tips:258
+#: tips:256
 #, fuzzy
 msgid "Regular file:"
 msgstr "Normal fil"
 
-#: tips:259
+#: tips:257
 #, fuzzy
 msgid "Pipe:"
 msgstr "Pipe"
 
-#: tips:260
+#: tips:258
 #, fuzzy
 msgid "Socket:"
 msgstr "Socket"
 
-#: tips:262 tips:263
+#: tips:260 tips:261
 msgid ""
 "Error, such as a symlink which points to a non-existant file, or a file "
 "which the filer does not have permission to examine."
@@ -3646,55 +3635,55 @@ msgstr ""
 "Fejl, som f.eks. en symbolsk genvej der peger mod en ikke-eksisterende fil, "
 "eller en fil som der er problemer med at undersøge."
 
-#: tips:264
+#: tips:262
 #, fuzzy
 msgid "Character device:"
 msgstr "Character device"
 
-#: tips:265
+#: tips:263
 #, fuzzy
 msgid "Block device:"
 msgstr "Block device"
 
-#: tips:266
+#: tips:264
 #, fuzzy
 msgid "Door:"
 msgstr "Gå til:"
 
-#: tips:267
+#: tips:265
 msgid ""
 "Door files are a bit like sockets or pipes, and have only been seen on "
 "Solaris."
 msgstr ""
 
-#: tips:268
+#: tips:266
 #, fuzzy
 msgid "Executable file:"
 msgstr "Kørbar fil"
 
-#: tips:269
+#: tips:267
 #, fuzzy
 msgid "Application directory:"
 msgstr "Program mappe"
 
-#: tips:270
+#: tips:268
 #, fuzzy
 msgid "Unknown type:"
 msgstr "Ukendt type"
 
-#: tips:271
+#: tips:269
 msgid "Compatibility"
 msgstr ""
 
-#: tips:272
+#: tips:270
 msgid "Window manager problems"
 msgstr ""
 
-#: tips:273
+#: tips:271
 msgid "Override window manager control of the pinboard and panels"
 msgstr ""
 
-#: tips:274
+#: tips:272
 msgid ""
 "Some window managers don't support the new Extended Window Manager Hints "
 "system, and so treat the pinboard and panels like normal windows. Turn this "
@@ -3703,22 +3692,22 @@ msgid ""
 "them appear in window-select lists."
 msgstr ""
 
-#: tips:275
+#: tips:273
 msgid "Pass all backdrop mouse clicks to window manager"
 msgstr ""
 
-#: tips:276
+#: tips:274
 msgid ""
 "Normally, right clicking on the desktop background will open the pinboard "
 "menu and left clicking will clear the selection. Turn this on to forward the "
 "events to your window manager instead. Clicks on icons will not be forwarded."
 msgstr ""
 
-#: tips:277
+#: tips:275
 msgid "Blackbox root menus hack"
 msgstr ""
 
-#: tips:278 tips:279
+#: tips:276 tips:277
 msgid ""
 "Blackbox, Fluxbox and similar window managers do not yet work well with the "
 "ROX-Filer pinboard. This option enables some workarounds. These window "
@@ -3726,16 +3715,16 @@ msgid ""
 "isn't necessary."
 msgstr ""
 
-#: tips:280
+#: tips:278
 #, fuzzy
 msgid "Drag and drop"
 msgstr "Træk og Slip"
 
-#: tips:281
+#: tips:279
 msgid "Don't use hostnames"
 msgstr "Bug ikke værtsnavn"
 
-#: tips:282 tips:283 tips:284 tips:285
+#: tips:280 tips:281 tips:282 tips:283
 msgid ""
 "Some older applications don't support XDND fully and may need to have this "
 "option turned on. Use this if dragging files to an application shows a + "
@@ -3744,6 +3733,16 @@ msgstr ""
 "Nogle ældre programmer understøtter ikke XDND fuldt ud og kan have brug for "
 "at denne indstilling er slået til. Slå denne til hvis træk af filer til et "
 "program viser et + tegn på muse-pointeren men trækket ikke virker."
+
+#~ msgid "Menu on button 2 (RISC OS style)"
+#~ msgstr "Menu på knap 2 (RISC OS stil)"
+
+#~ msgid ""
+#~ "Use button 2, the middle button (click both buttons at once on two button "
+#~ "mice), to pop up the menu. If off, use button 3 (right) instead."
+#~ msgstr ""
+#~ "Brug knap 2, den midterste knap (klik begge knapper samtidig på to-knaps "
+#~ "mus), for at poppe menuen op. Hvis slået fra, brug knap 3 (højre) istedet."
 
 #~ msgid "Show name-to-type rules"
 #~ msgstr "Vis navn-til-type regler"

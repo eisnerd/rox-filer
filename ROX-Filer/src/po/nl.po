@@ -21,7 +21,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ROX-Filer 1.3.9\n"
-"POT-Creation-Date: 2003-05-29 12:05+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2003-07-23 16:51+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Jan Wagemakers <janw@easynet.be>\n"
 "Language-Team: ROX Mailing List <rox-devel@sourceforge.net>\n"
@@ -560,7 +561,7 @@ msgstr "Doorlopen"
 msgid "Also change contents of subdirectories"
 msgstr "Ook de inhoud van sub-mappen veranderen"
 
-#: action.c:1822 dnd.c:123 menu.c:1832 tips:183
+#: action.c:1822 dnd.c:123 menu.c:1878 tips:183
 msgid "Copy"
 msgstr "Kopiëren"
 
@@ -649,17 +650,17 @@ msgstr "Pas bladwijzers aan"
 msgid "Recently Visited"
 msgstr "Recent bekeken"
 
-#: dir.c:924
+#: dir.c:926
 #, c-format
 msgid "Can't stat directory: %s"
 msgstr "Kan map status niet verkrijgen: %s"
 
-#: dir.c:933
+#: dir.c:935
 #, c-format
 msgid "Can't open directory: %s"
 msgstr "Kan map niet openen: %s"
 
-#: display.c:557
+#: display.c:568
 #, c-format
 msgid "lstat(2) failed: %s"
 msgstr "lstat(2) mislukt: %s"
@@ -823,7 +824,7 @@ msgstr ""
 "\n"
 "Bij een afgekoppeld toestel is het veilig om de diskette te verwijderen."
 
-#: filer.c:383 menu.c:831
+#: filer.c:383 menu.c:872
 msgid "Unmount"
 msgstr "Afkoppelen"
 
@@ -890,7 +891,7 @@ msgid "This filename is not valid UTF-8. You should rename it.\n"
 msgstr ""
 "Dit bestand heeft geen geldige UTF-8 naam.  U zou het moeten hernoemen.\n"
 
-#: filer.c:2286 menu.c:1822
+#: filer.c:2286 menu.c:1868
 msgid "Item no longer exists!"
 msgstr "Item bestaat niet meer!"
 
@@ -1193,7 +1194,7 @@ msgstr "Thuis map"
 msgid "File"
 msgstr "Bestand"
 
-#: icon.c:142 menu.c:212 menu.c:844
+#: icon.c:142 menu.c:212 menu.c:885
 msgid "Shift Open"
 msgstr "Shift Open"
 
@@ -1245,7 +1246,7 @@ msgstr "Selecteer eerst de items om te verwijderen"
 msgid "You must open the menu over an item"
 msgstr "Open het menu boven een item"
 
-#: icon.c:619 menu.c:1193
+#: icon.c:619 menu.c:1237
 msgid "You can only set the run action for a regular file"
 msgstr "De startactie kan alleen ingesteld worden voor een gewoon bestand"
 
@@ -1278,7 +1279,7 @@ msgstr "Wilt u echt %d vensters openen?"
 msgid "Show Info"
 msgstr "Toon Informatie"
 
-#: infobox.c:114 menu.c:747
+#: infobox.c:114 menu.c:788
 msgid "(bad utf-8)"
 msgstr "(Slechte utf-8)"
 
@@ -1286,7 +1287,7 @@ msgstr "(Slechte utf-8)"
 msgid "Show _Help Files"
 msgstr "Toon _Help Bestanden"
 
-#: infobox.c:376 tips:261
+#: infobox.c:376 tips:259
 msgid "Error:"
 msgstr "Fout:"
 
@@ -1517,7 +1518,7 @@ msgstr "Iconen, Met..."
 msgid "Sizes"
 msgstr "Grootte"
 
-#: menu.c:186 tips:244
+#: menu.c:186 tips:242
 msgid "Types"
 msgstr "Types"
 
@@ -1681,40 +1682,40 @@ msgstr "Xterm hier"
 msgid "Switch to xterm"
 msgstr "Schakel over naar xterm"
 
-#: menu.c:696
+#: menu.c:737
 msgid "You should Shift+Menu click over a file to send it somewhere"
 msgstr "Gebruik menu-muisknop + Shift om het bestand ergens naartoe te zenden"
 
-#: menu.c:732
+#: menu.c:773
 msgid "Next Click"
 msgstr "Volgende klik"
 
-#: menu.c:754
+#: menu.c:795
 #, c-format
 msgid "%d items"
 msgstr "%d items"
 
-#: menu.c:833
+#: menu.c:874
 msgid "Open unmounted"
 msgstr "Open afgekoppelde"
 
-#: menu.c:836
+#: menu.c:877
 msgid "Show Target"
 msgstr "Doel tonen"
 
-#: menu.c:838
+#: menu.c:879
 msgid "Look Inside"
 msgstr "Binnenin kijken"
 
-#: menu.c:840
+#: menu.c:881
 msgid "Open As Text"
 msgstr "Als tekst openen"
 
-#: menu.c:1008
+#: menu.c:1049
 msgid "_Relative link"
 msgstr "_Relatieve link"
 
-#: menu.c:1014
+#: menu.c:1055
 msgid ""
 "If on, the symlink will store the path from the symlink to the target file. "
 "Use this if the symlink and the target will be moved together.\n"
@@ -1728,43 +1729,43 @@ msgstr ""
 "bevatten; gebruik dit als de link verplaatst kan worden en het \n"
 "doelbestand niet."
 
-#: menu.c:1081
+#: menu.c:1125
 msgid "New pathname is not absolute"
 msgstr "Nieuwe padnaam is niet absoluut"
 
-#: menu.c:1147
+#: menu.c:1191
 #, c-format
 msgid "Symlink from '%s' already exists. Replace it with a link to '%s'?"
 msgstr ""
 "Symbolische link van '$s' bestaat reeds. Vervangen door link naar '%s'?"
 
-#: menu.c:1153
+#: menu.c:1197
 msgid "_Replace"
 msgstr "_Vervangen"
 
-#: menu.c:1284 menu.c:1325 menu.c:1385
+#: menu.c:1328 menu.c:1369 menu.c:1429
 msgid "Create"
 msgstr "Nieuw"
 
-#: menu.c:1285
+#: menu.c:1329
 msgid "NewDir"
 msgstr "NieuweMap"
 
-#: menu.c:1299 menu.c:1305
+#: menu.c:1343 menu.c:1349
 #, c-format
 msgid "Error creating '%s': %s"
 msgstr "Fout tijdens maken bestand '%s': %s"
 
-#: menu.c:1326
+#: menu.c:1370
 msgid "NewFile"
 msgstr "NieuwBestand"
 
-#: menu.c:1344
+#: menu.c:1388
 #, c-format
 msgid "Error creating file: could not find the template for %s"
 msgstr "Fout bij aanmaken bestand: Kon masker niet vinden voor %s"
 
-#: menu.c:1415
+#: menu.c:1459
 #, c-format
 msgid ""
 "The `Send To' menu provides a quick way to send some files to an "
@@ -1793,7 +1794,7 @@ msgstr ""
 "alleen worden getoond bij bestanden van dat type. `.group' wordt alleen "
 "getoond als meer dan 1 bestand geselecteerd is."
 
-#: menu.c:1426
+#: menu.c:1470
 msgid ""
 "I'll show you your SendTo directory now; you should symlink (Ctrl+Shift "
 "drag) any applications you want into it."
@@ -1801,19 +1802,19 @@ msgstr ""
 "Ik zal nu de SendTo map laten zien; maak een symbolische link (Ctrl+Shift "
 "slepen) voor de gewenste applicaties."
 
-#: menu.c:1429
+#: menu.c:1473
 msgid "Your CHOICESPATH variable setting prevents customisations - sorry."
 msgstr "Uw CHOICESPATH variable laat geen aanpassingen toe - sorry."
 
-#: menu.c:1506
+#: menu.c:1550
 msgid "Customise"
 msgstr "Aanpassen"
 
-#: menu.c:1571
+#: menu.c:1615
 msgid "This is already the canonical name for this directory."
 msgstr "Dit is reeds de gebruikelijke naam voor deze map."
 
-#: menu.c:1602
+#: menu.c:1646
 msgid ""
 "You can't open a second view onto this directory because the `Unique "
 "Windows' option is turned on in the Options window."
@@ -1821,75 +1822,75 @@ msgstr ""
 "Kan geen tweede venster met deze map openen omdat de 'Unieke vensters' optie "
 "ingesteld is in het Opties venster."
 
-#: menu.c:1721
+#: menu.c:1767
 msgid "Copy ... ?"
 msgstr "Kopiëren ... ?"
 
-#: menu.c:1724
+#: menu.c:1770
 msgid "Rename ... ?"
 msgstr "Hernoemen ... ?"
 
-#: menu.c:1727
+#: menu.c:1773
 msgid "Symlink ... ?"
 msgstr "Symlink ... ?"
 
-#: menu.c:1730
+#: menu.c:1776
 msgid "Shift Open ... ?"
 msgstr "Shift Open ... ?"
 
-#: menu.c:1733
+#: menu.c:1779
 msgid "Help about ... ?"
 msgstr "Help over ... ?"
 
-#: menu.c:1736
+#: menu.c:1782
 msgid "Examine ... ?"
 msgstr "Onderzoeken ... ?"
 
-#: menu.c:1739
+#: menu.c:1785
 msgid "Set run action for ... ?"
 msgstr "Start actie instellen voor ... ?"
 
-#: menu.c:1742
+#: menu.c:1788
 msgid "Set icon for ... ?"
 msgstr "Icoon instellen voor ... ?"
 
-#: menu.c:1745
+#: menu.c:1791
 msgid "Send ... to ... ?"
 msgstr "Zend ... naar ... ?"
 
-#: menu.c:1748
+#: menu.c:1794
 msgid "DELETE ... ?"
 msgstr "VERWIJDER ... ?"
 
-#: menu.c:1751
+#: menu.c:1797
 msgid "Count the size of ... ?"
 msgstr "Geef de grootte van ... ?"
 
-#: menu.c:1754
+#: menu.c:1800
 msgid "Set permissions on ... ?"
 msgstr "Toegangsrechten instellen voor ... ?"
 
-#: menu.c:1757
+#: menu.c:1803
 msgid "Search inside ... ?"
 msgstr "Binnenin zoeken ... ?"
 
-#: menu.c:1760
+#: menu.c:1806
 msgid "Look inside ... ?"
 msgstr "Binnenin kijken ... ?"
 
-#: menu.c:1805
+#: menu.c:1851
 msgid "You cannot do this to more than one item at a time"
 msgstr "Dit is niet mogelijk voor meer dan één item tegelijk"
 
-#: menu.c:1837
+#: menu.c:1883
 msgid "Rename"
 msgstr "Hernoemen"
 
-#: menu.c:1842
+#: menu.c:1888
 msgid "Symlink"
 msgstr "Symlink"
 
-#: menu.c:1877
+#: menu.c:1923
 msgid ""
 "User-definable shortcuts are disabled by default in Gtk2, and you have not "
 "enabled them. You can turn this feature on by:\n"
@@ -1905,7 +1906,7 @@ msgstr ""
 "2) de volgende regel aan ~/.gtkrc-2.0 toe te voegen:\n"
 "\tgtk-can-change-accels = 1"
 
-#: menu.c:1887
+#: menu.c:1933
 msgid ""
 "To set a keyboard short-cut for a menu item:\n"
 "\n"
@@ -1924,7 +1925,7 @@ msgstr ""
 "In het vervolg is het mogelijk deze sneltoets te gebruiken zonder het menu "
 "te optenen."
 
-#: menu.c:1902
+#: menu.c:1948
 msgid "Set keyboard shortcuts"
 msgstr "Toetsenbord sneltoetsen instellen"
 
@@ -2025,16 +2026,16 @@ msgstr ""
 msgid "Missing < or > in panel config file"
 msgstr "Ontbrekende < of > in paneel configuratie bestand"
 
-#: panel.c:1206
+#: panel.c:1215
 #, c-format
 msgid "Error saving panel %s: %s"
 msgstr "Fout tijdens bewaren paneel %s: %s"
 
-#: panel.c:1509
+#: panel.c:1518
 msgid "Applet quit without ever creating a widget!"
 msgstr "Applet afgesloten zonder dat het een venster aanmaakte!"
 
-#: panel.c:1594
+#: panel.c:1612
 #, c-format
 msgid ""
 "Error running applet:\n"
@@ -2136,7 +2137,7 @@ msgstr "Ontbrekende ',' na icoon label"
 msgid "Error saving pinboard %s: %s"
 msgstr "Fout tijdens bewaren van prikbord %s: %s"
 
-#: pinboard.c:2018
+#: pinboard.c:2027
 #, c-format
 msgid ""
 "Error loading backdrop image:\n"
@@ -2147,7 +2148,7 @@ msgstr ""
 "%s\n"
 "Achtergrond verwijderd."
 
-#: pinboard.c:2296
+#: pinboard.c:2305
 msgid ""
 "No pinboard was in use... the 'Default' pinboard has been selected. Use 'rox "
 "-p=Default' to turn it on in future."
@@ -3608,39 +3609,26 @@ msgid "Behaviour"
 msgstr "Gedrag"
 
 #: tips:238
-msgid "Menu on button 2 (RISC OS style)"
-msgstr "Menu op knop 2 (RISC OS stijl)"
-
-#: tips:239
-msgid ""
-"Use button 2, the middle button (click both buttons at once on two button "
-"mice), to pop up the menu. If off, use button 3 (right) instead."
-msgstr ""
-"Gebruik knop 2, de middelste knop (klik met beide knoppen tegelijkertijd op "
-"twee-knops muizen), om het menu tevoorschijn te halen. Indien 'af', gebruik "
-"knop 3 (rechts) in de plaats."
-
-#: tips:240
 msgid "`Xterm Here' program"
 msgstr "`Xterm hier' programma"
 
-#: tips:241 tips:242
+#: tips:239 tips:240
 msgid "The program to launch when you choose `Xterm Here' from the menu."
 msgstr "Het programma dat moet starten als je `Xterm hier' kiest van het menu."
 
-#: tips:243
+#: tips:241
 msgid "Keyboard shortcuts"
 msgstr "Toetsenbord sneltoetsen"
 
-#: tips:245
+#: tips:243
 msgid "Executable files"
 msgstr "Uitvoerbare bestanden:"
 
-#: tips:246
+#: tips:244
 msgid "Ignore eXecutable bit for known extensions"
 msgstr "Negeer eXecutable bit voor bekende extensies"
 
-#: tips:247 tips:248
+#: tips:245 tips:246
 msgid ""
 "If a file has a known extension (eg '.gif') then ignore the executable bit. "
 "This is useful if you have files on a Windows-type filesystem which are "
@@ -3651,11 +3639,11 @@ msgstr ""
 "bestandssysteem hebt, zonder permissies, die worden aangegeven alsof ze "
 "uitvoerbaar zijn."
 
-#: tips:249
+#: tips:247
 msgid "MIME types"
 msgstr "MIME types"
 
-#: tips:250
+#: tips:248
 msgid ""
 "The filer uses a set of rules to work out the correct MIME type for each "
 "regular file, and then chooses a suitable icon for that type. Use the MIME-"
@@ -3669,46 +3657,46 @@ msgstr ""
 "\n"
 "http://rox.sourceforge.net/mime_editor.html"
 
-#: tips:251 tips:252
+#: tips:249 tips:250
 msgid "Use the 'Set Icon...' dialog box to set the icon for each MIME type."
 msgstr ""
 "Gebruik de 'Icoon instellen' dialoog om het icoon in te stellen voor elk "
 "individueel type."
 
-#: tips:253
+#: tips:251
 msgid "Colours"
 msgstr "Kleuren"
 
-#: tips:254
+#: tips:252
 msgid "File type colours"
 msgstr "Kleuren bestandstypen"
 
-#: tips:255
+#: tips:253
 msgid "Colour files based on their types"
 msgstr "Kleur bestanden op basis van hun type"
 
-#: tips:256
+#: tips:254
 msgid "Filenames (and details) are coloured according to the file's type."
 msgstr ""
 "Bestandsnamen (en details) worden gekleurd naargelang hun bestandstype."
 
-#: tips:257
+#: tips:255
 msgid "Directory:"
 msgstr "Map:"
 
-#: tips:258
+#: tips:256
 msgid "Regular file:"
 msgstr "Normaal bestand:"
 
-#: tips:259
+#: tips:257
 msgid "Pipe:"
 msgstr "Pipe:"
 
-#: tips:260
+#: tips:258
 msgid "Socket:"
 msgstr "Socket:"
 
-#: tips:262 tips:263
+#: tips:260 tips:261
 msgid ""
 "Error, such as a symlink which points to a non-existant file, or a file "
 "which the filer does not have permission to examine."
@@ -3716,19 +3704,19 @@ msgstr ""
 "Fout, zoals wanneer een symlink wijst naar een niet bestaand bestand, of "
 "naar een bestand waar geen toegang toe te krijgen is."
 
-#: tips:264
+#: tips:262
 msgid "Character device:"
 msgstr "Karakter device:"
 
-#: tips:265
+#: tips:263
 msgid "Block device:"
 msgstr "Blok device:"
 
-#: tips:266
+#: tips:264
 msgid "Door:"
 msgstr "Door:"
 
-#: tips:267
+#: tips:265
 msgid ""
 "Door files are a bit like sockets or pipes, and have only been seen on "
 "Solaris."
@@ -3736,32 +3724,32 @@ msgstr ""
 "Door bestanden zijn een beetje zoals sockets or pipes, en komen enkel voor "
 "onder Solaris."
 
-#: tips:268
+#: tips:266
 msgid "Executable file:"
 msgstr "Uitvoerbaar bestand:"
 
-#: tips:269
+#: tips:267
 msgid "Application directory:"
 msgstr "Applicatie map:"
 
-#: tips:270
+#: tips:268
 msgid "Unknown type:"
 msgstr "Onbekend type:"
 
-#: tips:271
+#: tips:269
 msgid "Compatibility"
 msgstr "Uitwisselbaarheid"
 
-#: tips:272
+#: tips:270
 msgid "Window manager problems"
 msgstr "Window manager (Venster Beheerder) problemen"
 
-#: tips:273
+#: tips:271
 msgid "Override window manager control of the pinboard and panels"
 msgstr ""
 "Neem de controle van de window manager over voor het prikbord en de panelen"
 
-#: tips:274
+#: tips:272
 msgid ""
 "Some window managers don't support the new Extended Window Manager Hints "
 "system, and so treat the pinboard and panels like normal windows. Turn this "
@@ -3775,11 +3763,11 @@ msgstr ""
 "komt wanneer je er op klikt, of titelbalken of andere decoraties die rond "
 "vensters verschijnen, of wanneer ze getoond worden in de venster-lijst."
 
-#: tips:275
+#: tips:273
 msgid "Pass all backdrop mouse clicks to window manager"
 msgstr "Geef all achtergrond muis klikken door aan de window manager"
 
-#: tips:276
+#: tips:274
 msgid ""
 "Normally, right clicking on the desktop background will open the pinboard "
 "menu and left clicking will clear the selection. Turn this on to forward the "
@@ -3790,11 +3778,11 @@ msgstr ""
 "in om de muisklik naar de window manager door te sturen. Klikken op iconen "
 "zullen niet worden doorgestuurd."
 
-#: tips:277
+#: tips:275
 msgid "Blackbox root menus hack"
 msgstr ""
 
-#: tips:278 tips:279
+#: tips:276 tips:277
 msgid ""
 "Blackbox, Fluxbox and similar window managers do not yet work well with the "
 "ROX-Filer pinboard. This option enables some workarounds. These window "
@@ -3806,15 +3794,15 @@ msgstr ""
 "gewerkt.Er van uit gaande dat deze window managers hun gedrag in een "
 "nieuwere versie zullen aanpassen kan het zijn dat dit niet meer nodig is."
 
-#: tips:280
+#: tips:278
 msgid "Drag and drop"
 msgstr "Sleep en Drop"
 
-#: tips:281
+#: tips:279
 msgid "Don't use hostnames"
 msgstr "Gebruik geen 'host'-namen"
 
-#: tips:282 tips:283 tips:284 tips:285
+#: tips:280 tips:281 tips:282 tips:283
 msgid ""
 "Some older applications don't support XDND fully and may need to have this "
 "option turned on. Use this if dragging files to an application shows a + "
@@ -3824,3 +3812,14 @@ msgstr ""
 "nodig kunnen hebben dat deze optie aanstaat. Gebruik dit wanneer het slepen "
 "van een applicatie een + teken toont op de aanwijzer maar het droppen niet "
 "werkt."
+
+#~ msgid "Menu on button 2 (RISC OS style)"
+#~ msgstr "Menu op knop 2 (RISC OS stijl)"
+
+#~ msgid ""
+#~ "Use button 2, the middle button (click both buttons at once on two button "
+#~ "mice), to pop up the menu. If off, use button 3 (right) instead."
+#~ msgstr ""
+#~ "Gebruik knop 2, de middelste knop (klik met beide knoppen tegelijkertijd "
+#~ "op twee-knops muizen), om het menu tevoorschijn te halen. Indien 'af', "
+#~ "gebruik knop 3 (rechts) in de plaats."

@@ -5,7 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ROX-Filer 1.3.9\n"
-"POT-Creation-Date: 2003-05-29 12:05+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2003-07-23 16:51+0100\n"
 "PO-Revision-Date: 2003-05-24 11:45+0200\n"
 "Last-Translator: Vincent Lefevre <vincent@vinc17.org>\n"
 "Language-Team: ROX Mailing List <rox-devel@lists.sourceforge.net>\n"
@@ -554,7 +555,7 @@ msgstr "Récursif"
 msgid "Also change contents of subdirectories"
 msgstr "Changer aussi le contenu des sous-répertoires"
 
-#: action.c:1822 dnd.c:123 menu.c:1832 tips:183
+#: action.c:1822 dnd.c:123 menu.c:1878 tips:183
 msgid "Copy"
 msgstr "Copier"
 
@@ -645,17 +646,17 @@ msgstr "Éditer les signets"
 msgid "Recently Visited"
 msgstr "Récemment visités"
 
-#: dir.c:924
+#: dir.c:926
 #, c-format
 msgid "Can't stat directory: %s"
 msgstr "Impossible de faire un stat du répertoire : %s"
 
-#: dir.c:933
+#: dir.c:935
 #, c-format
 msgid "Can't open directory: %s"
 msgstr "Impossible d'ouvrir le répertoire : %s"
 
-#: display.c:557
+#: display.c:568
 #, c-format
 msgid "lstat(2) failed: %s"
 msgstr "lstat(2) a échoué : %s"
@@ -826,7 +827,7 @@ msgstr ""
 "Démonter un fichier de périphérique permet d'enlever le disque de manière "
 "sure."
 
-#: filer.c:383 menu.c:831
+#: filer.c:383 menu.c:872
 msgid "Unmount"
 msgstr "Démonter"
 
@@ -893,7 +894,7 @@ msgid "This filename is not valid UTF-8. You should rename it.\n"
 msgstr ""
 "Ce nom de fichier n'est pas en UTF-8 valide. Vous devriez le renommer.\n"
 
-#: filer.c:2286 menu.c:1822
+#: filer.c:2286 menu.c:1868
 msgid "Item no longer exists!"
 msgstr "L'objet n'existe plus !"
 
@@ -1199,7 +1200,7 @@ msgstr "Répertoire personnel"
 msgid "File"
 msgstr "Fichier"
 
-#: icon.c:142 menu.c:212 menu.c:844
+#: icon.c:142 menu.c:212 menu.c:885
 msgid "Shift Open"
 msgstr "Shift Ouvrir"
 
@@ -1251,7 +1252,7 @@ msgstr "Vous devez d'abord sélectionner des objets à supprimer"
 msgid "You must open the menu over an item"
 msgstr "Vous devez ouvrir le menu au-dessus d'un objet"
 
-#: icon.c:619 menu.c:1193
+#: icon.c:619 menu.c:1237
 msgid "You can only set the run action for a regular file"
 msgstr ""
 "Vous ne pouvez fixer l'action d'exécution que pour un fichier ordinaire"
@@ -1285,7 +1286,7 @@ msgstr "Êtes-vous sûr de vouloir ouvrir %d fenêtres ?"
 msgid "Show Info"
 msgstr "Montrer"
 
-#: infobox.c:114 menu.c:747
+#: infobox.c:114 menu.c:788
 msgid "(bad utf-8)"
 msgstr "(utf-8 incorrect)"
 
@@ -1293,7 +1294,7 @@ msgstr "(utf-8 incorrect)"
 msgid "Show _Help Files"
 msgstr "Voir les fichiers d'_aide"
 
-#: infobox.c:376 tips:261
+#: infobox.c:376 tips:259
 msgid "Error:"
 msgstr "Erreur :"
 
@@ -1524,7 +1525,7 @@ msgstr "Icônes, avec..."
 msgid "Sizes"
 msgstr "Tailles"
 
-#: menu.c:186 tips:244
+#: menu.c:186 tips:242
 msgid "Types"
 msgstr "Types"
 
@@ -1688,42 +1689,42 @@ msgstr "Xterm ici"
 msgid "Switch to xterm"
 msgstr "Remplacer par un xterm"
 
-#: menu.c:696
+#: menu.c:737
 msgid "You should Shift+Menu click over a file to send it somewhere"
 msgstr ""
 "Vous devez cliquer avec Menu, touche Shift enfoncée, au-dessus d'un fichier "
 "pour l'envoyer quelque part"
 
-#: menu.c:732
+#: menu.c:773
 msgid "Next Click"
 msgstr "Clic suivant"
 
-#: menu.c:754
+#: menu.c:795
 #, c-format
 msgid "%d items"
 msgstr "%d objets"
 
-#: menu.c:833
+#: menu.c:874
 msgid "Open unmounted"
 msgstr "Ouvrir démonté"
 
-#: menu.c:836
+#: menu.c:877
 msgid "Show Target"
 msgstr "Voir la cible"
 
-#: menu.c:838
+#: menu.c:879
 msgid "Look Inside"
 msgstr "Voir à l'intérieur"
 
-#: menu.c:840
+#: menu.c:881
 msgid "Open As Text"
 msgstr "Ouvrir en texte"
 
-#: menu.c:1008
+#: menu.c:1049
 msgid "_Relative link"
 msgstr "_Lien relatif"
 
-#: menu.c:1014
+#: menu.c:1055
 msgid ""
 "If on, the symlink will store the path from the symlink to the target file. "
 "Use this if the symlink and the target will be moved together.\n"
@@ -1735,44 +1736,44 @@ msgstr ""
 "Si désactivée, le lien symbolique est absolu - utiliser ceci si le lien peut "
 "être déplacé sans que la cible bouge."
 
-#: menu.c:1081
+#: menu.c:1125
 msgid "New pathname is not absolute"
 msgstr "Le nouveau chemin n'est pas absolu"
 
-#: menu.c:1147
+#: menu.c:1191
 #, c-format
 msgid "Symlink from '%s' already exists. Replace it with a link to '%s'?"
 msgstr "Un lien depuis '%s' existe déjà. Le remplacer par un lien vers '%s' ?"
 
-#: menu.c:1153
+#: menu.c:1197
 msgid "_Replace"
 msgstr "_Remplacer"
 
-#: menu.c:1284 menu.c:1325 menu.c:1385
+#: menu.c:1328 menu.c:1369 menu.c:1429
 msgid "Create"
 msgstr "Créer"
 
-#: menu.c:1285
+#: menu.c:1329
 msgid "NewDir"
 msgstr "NouveauRep"
 
-#: menu.c:1299 menu.c:1305
+#: menu.c:1343 menu.c:1349
 #, c-format
 msgid "Error creating '%s': %s"
 msgstr "Erreur lors de la création de '%s' : %s"
 
-#: menu.c:1326
+#: menu.c:1370
 msgid "NewFile"
 msgstr "NouveauFichier"
 
-#: menu.c:1344
+#: menu.c:1388
 #, c-format
 msgid "Error creating file: could not find the template for %s"
 msgstr ""
 "Erreur lors de la création du fichier : impossible de trouver le modèle pour "
 "%s"
 
-#: menu.c:1415
+#: menu.c:1459
 #, c-format
 msgid ""
 "The `Send To' menu provides a quick way to send some files to an "
@@ -1802,7 +1803,7 @@ msgstr ""
 "etc. qui n'apparaîtront que pour des fichiers de ce type. `.group' n'est "
 "montré que si plusieurs fichiers sont sélectionnés."
 
-#: menu.c:1426
+#: menu.c:1470
 msgid ""
 "I'll show you your SendTo directory now; you should symlink (Ctrl+Shift "
 "drag) any applications you want into it."
@@ -1811,21 +1812,21 @@ msgstr ""
 "vous devez y lier (faire glisser avec <Ctrl> et <Shift> enfoncées) les "
 "applications voulues."
 
-#: menu.c:1429
+#: menu.c:1473
 msgid "Your CHOICESPATH variable setting prevents customisations - sorry."
 msgstr ""
 "Le contenu de votre variable CHOICESPATH ne permet pas la personnalisation - "
 "désolé."
 
-#: menu.c:1506
+#: menu.c:1550
 msgid "Customise"
 msgstr "Personnaliser"
 
-#: menu.c:1571
+#: menu.c:1615
 msgid "This is already the canonical name for this directory."
 msgstr "C'est déjà le nom canonique de ce répertoire."
 
-#: menu.c:1602
+#: menu.c:1646
 msgid ""
 "You can't open a second view onto this directory because the `Unique "
 "Windows' option is turned on in the Options window."
@@ -1833,75 +1834,75 @@ msgstr ""
 "Vous ne pouvez pas ouvrir une seconde vue de ce répertoire parce que "
 "l'option « Fenêtres Uniques » est activée dans la fenêtre « Options »."
 
-#: menu.c:1721
+#: menu.c:1767
 msgid "Copy ... ?"
 msgstr "Copier ... ?"
 
-#: menu.c:1724
+#: menu.c:1770
 msgid "Rename ... ?"
 msgstr "Renommer ... ?"
 
-#: menu.c:1727
+#: menu.c:1773
 msgid "Symlink ... ?"
 msgstr "Lien symbolique ... ?"
 
-#: menu.c:1730
+#: menu.c:1776
 msgid "Shift Open ... ?"
 msgstr "Shift Ouvrir ... ?"
 
-#: menu.c:1733
+#: menu.c:1779
 msgid "Help about ... ?"
 msgstr "Aide à propos de ... ?"
 
-#: menu.c:1736
+#: menu.c:1782
 msgid "Examine ... ?"
 msgstr "Examiner ... ?"
 
-#: menu.c:1739
+#: menu.c:1785
 msgid "Set run action for ... ?"
 msgstr "Fixer l'action d'exécution pour ... ?"
 
-#: menu.c:1742
+#: menu.c:1788
 msgid "Set icon for ... ?"
 msgstr "Fixer l'icône pour ... ?"
 
-#: menu.c:1745
+#: menu.c:1791
 msgid "Send ... to ... ?"
 msgstr "Envoyer ... à ... ?"
 
-#: menu.c:1748
+#: menu.c:1794
 msgid "DELETE ... ?"
 msgstr "SUPPRIMER ... ?"
 
-#: menu.c:1751
+#: menu.c:1797
 msgid "Count the size of ... ?"
 msgstr "Calculer la taille de ... ?"
 
-#: menu.c:1754
+#: menu.c:1800
 msgid "Set permissions on ... ?"
 msgstr "Fixer les permissions de ... ?"
 
-#: menu.c:1757
+#: menu.c:1803
 msgid "Search inside ... ?"
 msgstr "Chercher dans ... ?"
 
-#: menu.c:1760
+#: menu.c:1806
 msgid "Look inside ... ?"
 msgstr "Regarder dans ... ?"
 
-#: menu.c:1805
+#: menu.c:1851
 msgid "You cannot do this to more than one item at a time"
 msgstr "Vous ne pouvez pas appliquer cette action à plus d'un objet à la fois"
 
-#: menu.c:1837
+#: menu.c:1883
 msgid "Rename"
 msgstr "Renommer"
 
-#: menu.c:1842
+#: menu.c:1888
 msgid "Symlink"
 msgstr "Lien symbolique"
 
-#: menu.c:1877
+#: menu.c:1923
 msgid ""
 "User-definable shortcuts are disabled by default in Gtk2, and you have not "
 "enabled them. You can turn this feature on by:\n"
@@ -1916,7 +1917,7 @@ msgstr ""
 "2) ajoutant cette ligne à ~/.gtkrc-2.0 :\n"
 "\tgtk-can-change-accels = 1"
 
-#: menu.c:1887
+#: menu.c:1933
 msgid ""
 "To set a keyboard short-cut for a menu item:\n"
 "\n"
@@ -1936,7 +1937,7 @@ msgstr ""
 "La touche apparaîtra à côté de l'entrée du menu et vous pourrez à l'avenir "
 "juste appuyer sur cette touche, sans avoir à ouvrir le menu."
 
-#: menu.c:1902
+#: menu.c:1948
 msgid "Set keyboard shortcuts"
 msgstr "Fixer les raccourcis clavier"
 
@@ -2037,16 +2038,16 @@ msgstr ""
 msgid "Missing < or > in panel config file"
 msgstr "'<' ou '>' manquant dans le fichier de config du panneau"
 
-#: panel.c:1206
+#: panel.c:1215
 #, c-format
 msgid "Error saving panel %s: %s"
 msgstr "Erreur lors de la sauvegarde du panneau %s : %s"
 
-#: panel.c:1509
+#: panel.c:1518
 msgid "Applet quit without ever creating a widget!"
 msgstr "L'appliquette a quitté sans avoir créé de widget !"
 
-#: panel.c:1594
+#: panel.c:1612
 #, c-format
 msgid ""
 "Error running applet:\n"
@@ -2151,7 +2152,7 @@ msgstr "',' manquant après l'étiquette de l'icône"
 msgid "Error saving pinboard %s: %s"
 msgstr "Erreur lors de la sauvegarde du punaiseur %s : %s"
 
-#: pinboard.c:2018
+#: pinboard.c:2027
 #, c-format
 msgid ""
 "Error loading backdrop image:\n"
@@ -2162,7 +2163,7 @@ msgstr ""
 "%s\n"
 "Image de fond enlevée."
 
-#: pinboard.c:2296
+#: pinboard.c:2305
 msgid ""
 "No pinboard was in use... the 'Default' pinboard has been selected. Use 'rox "
 "-p=Default' to turn it on in future."
@@ -3643,40 +3644,27 @@ msgid "Behaviour"
 msgstr "Comportement"
 
 #: tips:238
-msgid "Menu on button 2 (RISC OS style)"
-msgstr "Menu avec le bouton 2 (style RISC OS)"
-
-#: tips:239
-msgid ""
-"Use button 2, the middle button (click both buttons at once on two button "
-"mice), to pop up the menu. If off, use button 3 (right) instead."
-msgstr ""
-"Utilisez le bouton 2, le bouton du milieu (cliquez sur les deux boutons à la "
-"fois avec une souris à deux boutons), pour faire afficher un menu. Si option "
-"non choisie, utilisez le bouton 3 (à droite) à la place."
-
-#: tips:240
 msgid "`Xterm Here' program"
 msgstr "Programme pour « Xterm ici »"
 
-#: tips:241 tips:242
+#: tips:239 tips:240
 msgid "The program to launch when you choose `Xterm Here' from the menu."
 msgstr ""
 "Le programme à lancer quand vous choisissez « Xterm ici » dans le menu."
 
-#: tips:243
+#: tips:241
 msgid "Keyboard shortcuts"
 msgstr "Raccourcis clavier"
 
-#: tips:245
+#: tips:243
 msgid "Executable files"
 msgstr "Fichiers exécutables"
 
-#: tips:246
+#: tips:244
 msgid "Ignore eXecutable bit for known extensions"
 msgstr "Ignorer le bit « eXécutable » pour les extensions connues"
 
-#: tips:247 tips:248
+#: tips:245 tips:246
 msgid ""
 "If a file has a known extension (eg '.gif') then ignore the executable bit. "
 "This is useful if you have files on a Windows-type filesystem which are "
@@ -3687,11 +3675,11 @@ msgstr ""
 "fichiers sur un système de fichiers de type Windows qui sont montrés comme "
 "des programmes exécutables."
 
-#: tips:249
+#: tips:247
 msgid "MIME types"
 msgstr "Types MIME"
 
-#: tips:250
+#: tips:248
 msgid ""
 "The filer uses a set of rules to work out the correct MIME type for each "
 "regular file, and then chooses a suitable icon for that type. Use the MIME-"
@@ -3706,47 +3694,47 @@ msgstr ""
 "\n"
 "http://rox.sourceforge.net/mime_editor.html"
 
-#: tips:251 tips:252
+#: tips:249 tips:250
 msgid "Use the 'Set Icon...' dialog box to set the icon for each MIME type."
 msgstr ""
 "Utilisez la boîte de dialogue « Fixer l'icône... » pour fixer l'icône pour "
 "chaque type MIME."
 
-#: tips:253
+#: tips:251
 msgid "Colours"
 msgstr "Couleurs"
 
-#: tips:254
+#: tips:252
 msgid "File type colours"
 msgstr "Couleurs des types de fichier"
 
-#: tips:255
+#: tips:253
 msgid "Colour files based on their types"
 msgstr "Mettre les fichiers en couleur en fonction de leur type"
 
-#: tips:256
+#: tips:254
 msgid "Filenames (and details) are coloured according to the file's type."
 msgstr ""
 "Les noms de fichier (et les détails) sont mis en couleur en fonction du type "
 "du fichier."
 
-#: tips:257
+#: tips:255
 msgid "Directory:"
 msgstr "Répertoire :"
 
-#: tips:258
+#: tips:256
 msgid "Regular file:"
 msgstr "Fichier ordinaire :"
 
-#: tips:259
+#: tips:257
 msgid "Pipe:"
 msgstr "Tube :"
 
-#: tips:260
+#: tips:258
 msgid "Socket:"
 msgstr "Socket :"
 
-#: tips:262 tips:263
+#: tips:260 tips:261
 msgid ""
 "Error, such as a symlink which points to a non-existant file, or a file "
 "which the filer does not have permission to examine."
@@ -3754,19 +3742,19 @@ msgstr ""
 "Erreur, comme un lien qui pointe vers un fichier inexistant, ou un fichier "
 "que le filer n'a pas la permission d'examiner."
 
-#: tips:264
+#: tips:262
 msgid "Character device:"
 msgstr "Périphérique caractère :"
 
-#: tips:265
+#: tips:263
 msgid "Block device:"
 msgstr "Périphérique bloc :"
 
-#: tips:266
+#: tips:264
 msgid "Door:"
 msgstr "Porte :"
 
-#: tips:267
+#: tips:265
 msgid ""
 "Door files are a bit like sockets or pipes, and have only been seen on "
 "Solaris."
@@ -3774,31 +3762,31 @@ msgstr ""
 "Les portes sont un peu comme les sockets ou les tubes, et n'ont été vues que "
 "sous Solaris."
 
-#: tips:268
+#: tips:266
 msgid "Executable file:"
 msgstr "Fichier exécutable :"
 
-#: tips:269
+#: tips:267
 msgid "Application directory:"
 msgstr "Répertoire application :"
 
-#: tips:270
+#: tips:268
 msgid "Unknown type:"
 msgstr "Type inconnu :"
 
-#: tips:271
+#: tips:269
 msgid "Compatibility"
 msgstr "Compatibilité"
 
-#: tips:272
+#: tips:270
 msgid "Window manager problems"
 msgstr "Problèmes de WM (gestionnaires de fenêtres)"
 
-#: tips:273
+#: tips:271
 msgid "Override window manager control of the pinboard and panels"
 msgstr "Outrepasser le contrôle du punaiseur et des panneaux par le WM"
 
-#: tips:274
+#: tips:272
 msgid ""
 "Some window managers don't support the new Extended Window Manager Hints "
 "system, and so treat the pinboard and panels like normal windows. Turn this "
@@ -3814,11 +3802,11 @@ msgstr ""
 "fenêtres, ou ces fenêtres apparaissent dans les listes de sélection de "
 "fenêtres."
 
-#: tips:275
+#: tips:273
 msgid "Pass all backdrop mouse clicks to window manager"
 msgstr "Passer tous les clics sur l'image de fond au gestionnaire de fenêtres"
 
-#: tips:276
+#: tips:274
 msgid ""
 "Normally, right clicking on the desktop background will open the pinboard "
 "menu and left clicking will clear the selection. Turn this on to forward the "
@@ -3829,11 +3817,11 @@ msgstr ""
 "Activez cette option pour transmettre à la place les événements à votre "
 "gestionnaire de fenêtres. Les clics sur les icônes ne seront pas transmis."
 
-#: tips:277
+#: tips:275
 msgid "Blackbox root menus hack"
 msgstr "Hack des menus racine de Blackbox"
 
-#: tips:278 tips:279
+#: tips:276 tips:277
 msgid ""
 "Blackbox, Fluxbox and similar window managers do not yet work well with the "
 "ROX-Filer pinboard. This option enables some workarounds. These window "
@@ -3845,15 +3833,15 @@ msgstr ""
 "gestionnaires de fenêtres devraient changer leur comportement dans leurs "
 "nouvelles versions de manière à ce que ceci ne soit pas nécessaire."
 
-#: tips:280
+#: tips:278
 msgid "Drag and drop"
 msgstr "Glisser-déposer"
 
-#: tips:281
+#: tips:279
 msgid "Don't use hostnames"
 msgstr "Ne pas utiliser de nom d'hôte"
 
-#: tips:282 tips:283 tips:284 tips:285
+#: tips:280 tips:281 tips:282 tips:283
 msgid ""
 "Some older applications don't support XDND fully and may need to have this "
 "option turned on. Use this if dragging files to an application shows a + "
@@ -3864,6 +3852,17 @@ msgstr ""
 "option. Utilisez-la si le « glisser » de fichiers vers une application "
 "provoque bien l'apparition d'un signe '+' sur le pointeur mais que le "
 "« déposer » ne fonctionne pas."
+
+#~ msgid "Menu on button 2 (RISC OS style)"
+#~ msgstr "Menu avec le bouton 2 (style RISC OS)"
+
+#~ msgid ""
+#~ "Use button 2, the middle button (click both buttons at once on two button "
+#~ "mice), to pop up the menu. If off, use button 3 (right) instead."
+#~ msgstr ""
+#~ "Utilisez le bouton 2, le bouton du milieu (cliquez sur les deux boutons à "
+#~ "la fois avec une souris à deux boutons), pour faire afficher un menu. Si "
+#~ "option non choisie, utilisez le bouton 3 (à droite) à la place."
 
 #~ msgid "Show name-to-type rules"
 #~ msgstr "Montrer les règles nom->type"

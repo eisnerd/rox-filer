@@ -447,7 +447,8 @@ static GPtrArray *list_dir(const guchar *path)
 	names = g_ptr_array_new();
 
 	while ((leaf = g_dir_read_name(dir)))
-		g_ptr_array_add(names, g_strdup(leaf));
+		if (leaf[0] != '.')
+			g_ptr_array_add(names, g_strdup(leaf));
 
 	g_dir_close(dir);
 
