@@ -154,6 +154,7 @@ static gboolean drag_motion(GtkWidget		*widget,
                             gint		y,
                             guint		time,
 			    FilerWindow		*filer_window);
+static gboolean filer_match_filter_wrap(gpointer item, gpointer data);
 
 static void load_learnt_mounts(void);
 static void save_learnt_mounts(void);
@@ -413,6 +414,7 @@ static void update_display(Directory *dir,
 			toolbar_update_info(filer_window);
 			open_filer_window(filer_window);
 
+			view_delete_if(view, filer_match_filter_wrap, filer_window);
 			if (filer_window->had_cursor &&
 					!view_cursor_visible(view))
 			{
@@ -2997,6 +2999,11 @@ static inline gboolean is_hidden(const char *dir, DirItem *item)
 	return FALSE;
 }
 
+gboolean filer_match_filter_wrap(gpointer item, gpointer data)
+{
+    return !filer_match_filter((FilerWindow*)data, (DirItem*)item);
+}
+
 gboolean filer_match_filter(FilerWindow *filer_window, DirItem *item)
 {
 	g_return_val_if_fail(item != NULL, FALSE);
@@ -3005,12 +3012,18 @@ gboolean filer_match_filter(FilerWindow *filer_window, DirItem *item)
 	   (!filer_window->temp_show_hidden && !filer_window->show_hidden))
 		return FALSE;
 
+	int t = item->base_type;
+	int f = item->flags;
 	switch(filer_window->filter) {
 	case FILER_SHOW_GLOB:
-		return fnmatch(filer_window->filter_string,
-			       item->leafname, 0)==0 ||
-		  (item->base_type==TYPE_DIRECTORY &&
-		   !filer_window->filter_directories);
+		return
+            fnmatch(filer_window->filter_string,
+                item->leafname, 0)==0
+            || (item->base_type==TYPE_DIRECTORY
+                || (item->base_type==TYPE_UNKNOWN
+                    || item->base_type==TYPE_ERROR)
+                    && (item->flags & ITEM_FLAG_SYMLINK))
+            && !filer_window->filter_directories;
 		
 	case FILER_SHOW_ALL:
 	default:

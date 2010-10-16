@@ -51,7 +51,7 @@ static void open_mountpoint(const guchar *full_path, DirItem *item,
 			    gboolean edit);
 static gboolean run_desktop(const char *full_path,
 			    const char **args, const char *dir);
-static gboolean type_open(const char *path, MIME_type *type);
+static gboolean type_open(gchar *argv[], MIME_type *type);
 
 typedef struct _PipedData PipedData;
 
@@ -68,6 +68,29 @@ struct _PipedData
  *			EXTERNAL INTERFACE			*
  ****************************************************************/
 
+
+/* Load this file into an appropriate editor */
+static gboolean open_files(const GList *paths, MIME_type *type)
+{
+    int i, N;
+    GList *paths1 = paths;
+	g_return_val_if_fail(type != NULL, FALSE);
+            for (N=0; paths; paths = paths->next, N++)
+            {
+            }
+
+	gchar **argv = malloc(sizeof(gchar*)*(N+2));
+	argv[0] = NULL;
+	argv[N+1] = NULL;
+
+    paths = paths1;
+    for (i=1; paths; paths = paths->next, i++)
+        argv[i]= (guchar *) paths->data;
+
+	if (type_open(argv, type))
+		return TRUE;
+    return FALSE;
+}
 
 /* An application has been double-clicked (or run in some other way) */
 void run_app(const char *path)
@@ -296,6 +319,10 @@ gboolean run_diritem(const guchar *full_path,
 				return rox_spawn(dir, argv) != 0;
 			}
 
+        GList *paths = filer_selected_items(src_window);
+        if (!edit && paths && paths->next)
+            return open_files(paths, item->mime_type);
+        else
 			return open_file(full_path, edit ? text_plain
 						  : item->mime_type);
 		case TYPE_ERROR:
@@ -566,7 +593,10 @@ static gboolean open_file(const guchar *path, MIME_type *type)
 {
 	g_return_val_if_fail(type != NULL, FALSE);
 
-	if (type_open(path, type))
+	gchar *argv[] = {NULL, NULL, NULL};
+	argv[1] = (char *) path;
+
+	if (type_open(argv, type))
 		return TRUE;
 
 	report_error(
@@ -726,13 +756,10 @@ err:
 }
 
 /* Returns FALSE is no run action is set for this type. */
-static gboolean type_open(const char *path, MIME_type *type)
+static gboolean type_open(gchar *argv[], MIME_type *type)
 {
-	gchar *argv[] = {NULL, NULL, NULL};
 	char		*open;
 	struct stat	info;
-
-	argv[1] = (char *) path;
 
 	open = handler_for(type);
 	if (!open)

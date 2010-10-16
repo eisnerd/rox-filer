@@ -1064,9 +1064,6 @@ static void view_collection_add_items(ViewIface *view, GPtrArray *items)
 	{
 		DirItem *item = (DirItem *) items->pdata[i];
 
-		if (!filer_match_filter(filer_window, item))
-			continue;
-
 		add_item(view_collection, item);
 	}
 
